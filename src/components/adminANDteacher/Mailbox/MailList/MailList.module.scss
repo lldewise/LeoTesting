@@ -1,0 +1,399 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+$body-color: #fff;
+$app-height: 100vh;
+
+.header {
+  padding: 4px 14px;
+  background-color: $body-color;
+  border-bottom: 1px solid $gray-lightest;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerCheckBoxWrapper {
+  display: flex;
+}
+.headerFolderName {
+  padding: 5px;
+  font-weight: $semiBold;
+  font-size: 16px;
+}
+
+.checkAll div {
+  border-radius: 50%;
+  width: 23px !important;
+  height: 23px !important;
+  align-self: center;
+}
+.deletedItems {
+  margin-right: 210px;
+}
+
+.filterIcon {
+  position: relative;
+  width: 24px !important;
+  height: 24px !important;
+  top: 3px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.empty {
+  position: absolute;
+  top: 40%;
+  font-weight: $light;
+  width: 20%;
+  height: $app-height;
+  align-items: center;
+  text-align: center;
+}
+.time {
+  float: right;
+  text-align: right;
+  width: 40%;
+}
+
+.from {
+  width: 60%;
+}
+
+.checkItem div {
+  position: relative;
+  border-radius: 50% !important;
+  width: 23px !important;
+  height: 23px !important;
+  z-index: 99;
+}
+.checkItemHover div {
+  position: relative;
+  border-radius: 50% !important;
+  width: 23px !important;
+  height: 23px !important;
+  z-index: 99;
+  display: none;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-bottom: 1px solid $gray-lightest;
+  cursor: pointer;
+  padding: 14px 12px;
+  position: relative;
+  &:hover {
+    background-color: $purple-lighter;
+    transition: background 0.1s linear;
+  }
+}
+.contentContainerUnread {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-bottom: 1px solid $gray-lightest;
+  border-left: 3px solid $purple;
+  cursor: pointer;
+  padding: 14px 12px;
+  position: relative;
+  &:hover {
+    background-color: $purple-lighter;
+    transition: background 0.1s linear;
+  }
+}
+.draftTag {
+  color: $red;
+  font-weight: $regular;
+}
+.emailListContainer {
+  //height:  100vh;
+  main {
+    //height: calc(100% - 75px);
+   // height:100px;
+
+   .loading {
+      height: 14px;
+      border: 0px;
+      align-items: center;
+  }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      //  height: 100%;
+      //height: calc(100vh - 200px);
+      //  overflow-y: auto;
+      border: 1px solid #F0F0F0;
+      cursor: pointer;
+      li:hover,
+      li.selected {
+       // background-color:   #F9F6FD ;
+        background-color:  #FAF9F8 ;
+        border-bottom: 1px solid $gray-lightest;
+        border-left: 3px solid transparent;
+        opacity: 1; 
+      }
+      li {
+        margin: 0;
+        padding: 10px 1rem 10px 10px;
+        border-bottom: 1px solid $gray-lightest;
+        border-left: 3px solid transparent;
+        transition: all 200ms ease-out;
+        display: flex;
+        height:81px;
+       // width: 320px;
+        // min-width: 320px;
+      //  width:270px;
+
+        &.unread {
+          background-color:  transparent ;
+          border-bottom: 1px solid $gray-lightest;
+          border-left: 3px solid $purple;
+          opacity: 1; 
+        }
+
+        .persona {
+          flex-shrink: 0;
+          width: 10%;
+          padding-top: 5px;
+        }
+        .checkItem div {
+          position: relative;
+          border-radius: 50% !important;
+          width: 23px !important;
+          height: 23px !important;
+          z-index: 99;
+        }
+        .personaCheck {
+          width: 23px;
+          position: relative;
+          display: inline-block;
+        }
+        .checkTop {
+          width: 23px;
+          position: relative;
+          display: inline-block;
+        }
+        .loading {
+          display: flex;
+          height: 14px;
+          border: 0px;
+          text-align: center;
+
+        }
+      .mailInfo {
+        width: 90%;
+        .iconTitleWrapper {
+          display:flex;
+          justify-content:  space-between;
+
+          .unread {
+            font-weight: bold; 
+          }
+            .name {
+                text-align: left;
+                overflow: hidden;
+                word-wrap: none;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-size: 0.9em;
+                max-width: 80%;
+                padding-left:6px;
+                padding-top: 5px;
+              }
+              .iconWrapper {
+                display: flex;
+                justify-content: flex-end;
+                //align-items: top;
+                //flex-wrap: nowrap;
+                margin: 0;
+                padding: 6px 10px 0 0;
+                  .iconStyles {
+                    size: 12px !important;
+                    padding: 0 4px 0 3px;
+                    background-color: transparent;
+                    color:#595959 !important;
+                    //color:#17c917 !important;
+                    cursor: pointer;
+                      &:hover {
+                          color: black;
+                      }
+                      &.iconFlagSelectedStyles {
+                      //    color:  ;
+                          display: inline !important;
+                          &:hover {
+                         
+                          }
+                      }
+                  }
+                  .iconDeleteStyles {
+                      display: none;
+                  }
+                  .iconEnvelopeStyles {
+                      display: none;
+                  }
+                  .iconFlagStyles {
+                      display: none;
+                  }
+                  .iconClipStyles {
+                    display: inline;
+                  }
+                  .iconImportantStyles {
+                    display: inline;
+                  }
+                }
+              }
+          &:hover {
+            .iconWrapper {
+                .iconDeleteStyles {
+                    display: inline;
+                }
+                .iconEnvelopeStyles {
+                    display: inline;
+                }
+                .iconFlagStyles {
+                    display: inline;
+                }
+                .iconClipStyles {
+                  display: none;
+                }
+                .iconImportantStyles {
+                  display: none;
+                }
+            }
+            .loading {
+              background-color: transparent;
+            }
+          }
+          
+        }
+        .subjectWrapper {
+           display:flex;
+           justify-content:  space-between;
+         // width:90%;
+           .unread {
+            color:  $purple; 
+            font-weight: bold; 
+          }
+          .subject {
+            text-align: left;
+            overflow: hidden;
+            word-wrap: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+           // font-size: 0.9em;
+            max-width: 60%;
+            padding-left: 6px;
+          }
+          .dateWrapper {
+            display: flex;
+         //   min-width: 0px;
+            justify-content: flex-end;
+            font-size: $text-small;
+            padding-right: 6px;
+            .date {
+              display: inline;
+            }
+          }
+        }
+        .subjectContent {
+          padding: 0 10px 10px 6px;
+          overflow: hidden;
+          word-wrap: none;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          //max-width: 100%;
+        }  
+
+        .personaCheck {
+          width: 23px;
+          align-self: center;
+          position: relative;
+          display: flex;
+          flex-shrink: 0;
+  
+        }
+        .checkBox {
+          display: inline;
+          width: 23px;
+          align-self: center;
+          position: relative;
+          display: flex;
+          flex-shrink: 0;
+       }
+       .checkBoxHover {
+          width: 23px;
+          align-self: center;
+          position: relative;
+          display: flex;
+          flex-shrink: 0;
+      }
+        .checkTop {
+          width: 23px;
+          align-self: center;
+          position: relative;
+          display: inline-block;
+          flex-shrink: 0;
+        }
+        .name {
+          font-size: 14px !important;
+          font-weight: $semiBold;
+          margin-bottom: 5px;
+        }
+      } 
+    }
+  }
+
+
+  
+}
+.emailItem {
+  padding: 0 2px 0 10px;
+  position: relative;
+  width: 100%;
+}
+
+.name {
+  font-size: 14px !important;
+  font-weight: $semiBold;
+  margin-bottom: 5px;
+}
+
+.subject {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subjectName {
+  font-size: 14px !important;
+}
+
+.date {
+  font-size: $text-small;
+}
+
+.details {
+  font-size: 12px;
+  opacity: 0.5;
+/*   overflow: hidden;
+  word-wrap: none;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+}
+.textOverflow {
+  overflow: hidden;
+  word-wrap: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.btnFilterCustom {
+  height: 35px;
+  color: #000 !important;
+  font-weight: $semiBold !important;
+  &:hover {
+    cursor: pointer;
+  }
+}

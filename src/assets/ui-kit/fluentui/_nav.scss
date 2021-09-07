@@ -1,0 +1,19 @@
+.navCustom {
+    // .ms-Nav-compositeLink.is-expanded,
+    // .ms-Nav-compositeLink.is-expanded .ms-Nav-navItems    {
+    //     background-color: #f7f7f6;
+    // }
+
+    .ms-Button .ms-Nav-linkText {
+        padding-left: 20px;
+    }
+
+    .ms-Button.ms-Button--command.ms-Nav-link {
+        padding: 0 5px;
+    }
+
+    .ms-Icon {
+        color: $black;
+    }
+}
+

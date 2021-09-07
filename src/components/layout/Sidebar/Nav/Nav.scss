@@ -1,0 +1,13 @@
+
+.nav-group{
+    height: calc(100% - 100px);
+    overflow: auto;
+}
+.nav-toggler{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    i{
+        background-color: transparent;
+    }
+}

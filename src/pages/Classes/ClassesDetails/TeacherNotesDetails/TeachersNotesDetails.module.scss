@@ -1,0 +1,19 @@
+
+@import '../../../../assets/ui-kit/_variables.scss';
+
+.divnewFeeds{
+    margin-bottom: 15px;
+    border: 1px solid $card-border;
+}
+.cursor{
+    cursor: pointer;
+}
+
+.headerFilter{
+    padding:0px 0px 20px  0px; 
+    font-weight: 500;
+  }
+
+  .container{
+    border-top: 1px solid #e7e7ee;
+  }

@@ -1,0 +1,153 @@
+@import "../../../../../assets/ui-kit/_variables";
+
+.headerContainer {
+  width: 100%;
+}
+
+.header {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.iconWidth {
+  width: 23px;
+  padding-top: 0px;
+}
+
+.headerTitle {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: $screen-desktop) {
+    flex-direction: column;
+  }
+}
+
+.col1 {
+  width: 35%;
+  min-width: 200px;
+}
+
+.col2 {
+  width: 35%;
+  min-width: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+ > * {
+   width: 100%;
+ }
+  @media (max-width: $screen-desktop) {
+    width: 45%;
+  }
+}
+
+.col3 {
+  width: 40%;
+  min-width: 180px;
+
+  @media (max-width: $screen-desktop) {
+    width: 65%;
+  }
+}
+
+.col4 {
+  width: 65%;
+}
+
+
+// .col1 {
+//   width: 35%;
+//   max-width: 250px;
+//   padding: 6px 0;
+//   display: flex;
+//   align-items: center;
+//   min-width: 200px;
+
+//   @media (max-width: $screen-desktop) {
+//     width: 100%;
+//   }
+// }
+
+// .col2 {
+//   width: 100%;
+//   max-width: 360px;
+//   position: relative;
+//   min-height: 32px;
+//   display: flex;
+//   align-items: center;
+
+//   >* {
+//     width: 100%;
+//   }
+// }
+
+.form {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.pad {
+  padding: 40px;
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: $semiBold;
+}
+
+
+.description1 {
+  font-size: 11px;
+  color: $gray;
+}
+
+
+.container2 {
+  background: blue;
+  position: relative;
+}
+
+.container3 {
+  color: $blue;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  z-index: 2200000;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.percent {
+  padding-left: 5px;
+  position: absolute;
+  left: 100%;
+}
+
+.btnGroup {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 12px;
+
+  button {
+    margin-left: 10px;
+  }
+
+  @media (max-width: $screen-desktop) {
+    justify-content: flex-start;
+
+    button {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,212 @@
+@import "../../assets/ui-kit/variables";
+
+.container {
+  overflow: auto;
+  max-height: 500;
+}
+
+.itemDetails {
+  font-size: 14px;
+}
+
+.chevron {
+  align-self: center;
+  margin-left: 10;
+  color: rgb(161, 159, 157);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.itemIndex {
+  font-size: 12px;
+  color: rgb(161, 159, 157);
+  margin-bottom: 10;
+}
+
+.itemSingle {
+  padding: 8px;
+  font-size: 14px;
+  width: 45px;
+}
+
+.listrightwidth {
+  width: 190px;
+}
+
+.itemName {
+  -webkit-font-smoothing: antialiased;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemImage {
+  flex-shrink: 0;
+}
+
+.itemCell {
+  outline: transparent;
+  position: relative;
+  min-height: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(237, 235, 233);
+  display: flex;
+}
+
+.itemhover {
+  background: inherit;
+  :hover {
+    background: rgb(237, 235, 233);
+  }
+}
+
+.odd {
+  background-color: #f8f8f8;
+}
+
+.even {
+  background-color: #ffffff;
+}
+
+.headerTitle {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.newsTitle {
+  
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: -25px;
+}
+
+.schoolName {
+  
+  font-size: 24px;
+  color: #605e5c;
+}
+
+.imgSize {
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+.calendarList {
+  max-width: 70%;
+}
+
+.bgColor {
+  background-color: white;
+  margin-top: -40px;
+}
+
+.dateFontColor {
+  color: #0078d4;
+}
+
+.relatedPostlbl {
+  font-size: 14px;
+  font-weight: bold;
+}
+.relatedPostContainer {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.leftArrow {
+  font-size: 20px !important;
+  color: #6c35d4 !important;
+  float: left !important;
+  padding-left: 5px !important;
+}
+
+.rightArrow {
+  font-size: 20px !important;
+  color: #6c35d4 !important;
+  float: right !important;
+  padding-right: 15px !important;
+}
+
+hr.dividerNewsDetails {
+  margin: 40px 5px;
+  border: 1px solid #6c35d4;
+  opacity: 50;
+}
+
+.prevLabel {
+  font-size: 16px !important;
+  margin-left: 6px;
+  float: left;
+  margin-top: -2px;
+  color: black !important;
+}
+
+.nextLabel {
+  font-size: 16px !important;
+  margin-right: 6px;
+  margin-top: -2px;
+  color: black !important;
+}
+
+.arrowDiv {
+  margin-bottom: -40px;
+}
+
+.rightArrowDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.newsDiv{
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.prevHover:hover{
+  background-color: lightgray;
+  width: 130px;
+}
+
+.nextHover:hover{
+  background-color: lightgray;
+  width: 113px;
+}
+
+.newsIcon {
+  color: $purple-bg;
+  font-size: 11px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.newsLabel {
+  color: $purple-bg;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.labeliconMargin{
+  margin-top: 19px;
+  margin-left: -25px;
+}
+
+.imagecontainer  {
+  position: relative;
+  width: 100%;
+}
+.imagecontainer .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+}
+.imagecontainer:hover .after {
+  display: block;
+
+}

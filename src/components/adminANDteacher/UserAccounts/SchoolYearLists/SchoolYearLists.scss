@@ -1,0 +1,44 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.contentDataSchoolYear {
+  .ms-DetailsList-headerWrapper {
+    border-top: 1px solid $gray-lighter !important;
+  }
+  .ms-DetailsHeader {
+    padding-top: 5px !important;
+    height: 70px;
+  }
+
+  .ms-DetailsHeader-cell:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 50px !important;
+    border-top: 1px solid $gray-lighter !important;
+  }
+
+  .ms-DetailsHeader-cell {
+    height: 70px !important;
+  }
+
+  .ms-DetailsHeader-cell:hover {
+    background-color: white !important;
+  }
+
+  .ms-DetailsHeader-cellName {
+    margin-top: 5px;
+    font-weight: $regular;
+    font-size: $text-small;
+    color: $gray-dark;
+  }
+
+  span > span > .ms-Icon {
+    margin: 5px 0px 0px 5px !important;
+  }
+
+  .ms-DetailsRow-cell {
+    font-size: $text-normal;
+  }
+}

@@ -1,0 +1,31 @@
+.color-swatches{
+    h5{
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        small{
+            font-weight: normal;
+            display: block;
+        }
+    }
+}
+.shade-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .shade-color {
+        display: inline-block;
+        width: 120px;
+        height: 60px;
+        border: 1px solid #fff;
+        font-size: 14px;
+        font-weight: normal;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        &:after{
+            content: attr(data-color-var);
+        }
+    }
+}

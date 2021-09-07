@@ -1,0 +1,165 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.container {
+  overflow: auto;
+}
+
+.assignmentHeader {
+  padding: 15px 15px;
+}
+
+.assignmentDetails {
+  padding: 15px 7px 0;
+
+  @media (max-width: $screen-desktop) {
+    padding: 0;
+  }
+}
+.cursor {
+  cursor: pointer;
+}
+
+.itemDetailsBold {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.itemDetails {
+  font-size: 12px;
+}
+
+.chevron {
+  align-self: center;
+  margin-left: 10;
+  color: rgb(161, 159, 157);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.itemIndex {
+  font-size: 12px;
+  color: rgb(161, 159, 157);
+  margin-bottom: 10;
+  cursor: pointer;
+}
+
+.itemIndex:hover {
+  text-decoration: underline;
+}
+
+.itemSingle {
+  padding: 8px;
+  font-size: 12px;
+  width: 80px;
+}
+.itemSingle:hover {
+  text-decoration: underline;
+}
+
+.itemIconTitle {
+  padding: 8px;
+  font-size: 10px;
+  width: 20px;
+  flex-grow: 1;
+}
+
+.itemIcon {
+  padding: 8px;
+  font-size: 10px;
+  width: 10px;
+  flex-grow: 1;
+}
+
+.itemDate {
+  padding: 8px;
+  font-size: 12px;
+  width: 180px;
+}
+
+.listrightwidth {
+  width: 190px;
+}
+
+.itemName {
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.itemName:hover {
+  text-decoration: underline;
+}
+
+.itemContentRight {
+  margin-left: 10;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.itemContent {
+  margin-left: 10;
+  overflow: hidden;
+  flex-grow: 2;
+}
+
+.itemImage {
+  flex-shrink: 0;
+}
+
+  .itemCell{
+    outline: transparent;
+    position: relative;
+    min-height: 54px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(237, 235, 233);
+    display: flex;
+  
+  }
+  
+  .mb2{
+    margin-bottom: 2px;
+    min-width: 610px;
+    .myTasklink {
+      color: $black;
+    } 
+  }
+
+  .itemIndex .myTasklink {
+    color: $gray;
+  }
+
+.itemhover {
+  background: inherit;
+  :hover {
+    background: rgb(237, 235, 233);
+  }
+}
+
+.fontIcon {
+  font-size: 20px;
+  color: $purple-bg;
+  padding: 6px 8px 6px 8px;
+  background-color: #e6e6ff;
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+.icontitle {
+  font-size: 20px;
+}
+
+.icon {
+  font-size: 15px;
+}
+
+.iconEdit {
+  color: $purple-bg;
+  font-size: 15px;
+}
+.shared {
+  font-size: 18px;
+}

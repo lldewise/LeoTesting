@@ -1,0 +1,96 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.newsTitle {
+  font-weight: bold;
+  padding: 12px;
+}
+
+.imgHeight {
+  object-fit: cover;
+  max-height: 140px;
+  height: 110px;
+  width: 130px;
+  border-radius: 5px;
+}
+
+.newsIcon {
+  color: $purple-bg;
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.newsContent {
+  font-family: Segoe UI Regular;
+  font-size: 15px;
+}
+
+.newsDateFont {
+  color: #605e5c;
+  font-family: Segoe UI Semibold;
+  font-size: 10px;
+}
+
+.focus {
+  outline: none !important;
+  :focus {
+    outline: none !important;
+  }
+  padding-bottom: 10px;
+  height: 133px;
+}
+
+.iconPadding {
+  padding-right: 10px;
+}
+
+.customBackgroundAttendance {
+  background: white;
+  height: 500px;
+  max-width: 100% !important;
+  display: block;
+}
+
+.Title {
+  font-weight: bold;
+  padding: 15px;
+  position: absolute;
+}
+
+.divPadding {
+  padding-top: 50px;
+  height: 410px;
+}
+
+.btnPadding {
+  padding-right: 10px;
+}
+
+.btnSize {
+  width: 100%;
+  color: #0078d4;
+  pointer-events: none;
+  cursor: pointer;
+  border: 1px solid #e6e6e6 !important;
+}
+
+.icon {
+  padding-top: 18px;
+  position: absolute;
+  margin-left: 35px;
+  color: #0078d4;
+  font-size: 14px;
+}
+
+.createNewStory {
+  font-weight: bold;
+  padding: 15px;
+  position: absolute;
+  margin-left: 40px;
+  color: #0078d4;
+  font-size: 14px;
+  font-family: "Segoe UI";
+}
+
+.descPadding {
+  padding-left: 10px;
+}

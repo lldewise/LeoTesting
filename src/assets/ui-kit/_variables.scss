@@ -1,0 +1,178 @@
+// ==== Neutrals
+$white: #fff;
+$black: #323130;
+$gray: #c8c6c4;
+$gray-light: #e1dfdd;
+$gray-lighter: #edebe9;
+$gray-lightest: #faf9f8;
+$gray-dark: #595959;
+$gray-darker: #373737;
+$gray-option:#a3a3a3;
+
+// ==== Colors
+$red: #d43b35;
+$red-dark: #a12c28;
+$red-darker: #77211e;
+$red-light: #ef977c;
+$red-lighter: #fef8f6;
+
+$orange-red: #e4572e;
+$orange-red-dark: #ac4322;
+$orange-red-darker: #7f3119;
+$orange-red-light: #ef977c;
+$orange-red-lighter: #fdefe9;
+
+$orange: #f7a93b;
+$orange-dark: #df9836;
+$orange-darker: #8b5f21;
+$orange-light: #f8b451;
+$orange-lighter: #fff8ef;
+
+$green: #6bb700;
+$green-dark: #518c00;
+$green-darker: #3c6700;
+$green-light: #8ed85f;
+$green-lighter: #f1fbea;
+
+$blue: #0078d4;
+$blue-dark: #005ba1;
+$blue-darker: #004377;
+$blue-light: #5da8e5;
+$blue-lighter: #e5f1fb;
+
+$purple: #6c35d4;
+$purple-dark: #5128a1;
+$purple-darker: #3d1e77;
+$purple-light: #a27de5;
+$purple-lighter: #f3effc;
+
+// ==== Theme
+$primary-color: $purple;
+$secondary-color: $orange;
+$success-color: $green;
+$danger-color: $red;
+
+// ==== Text Color
+$font-color: $black;
+$text-body: $black;
+$link: $blue;
+$seemore: $link;
+$text-muted: $gray-option;
+
+
+// ==== Background Color
+$gray-bg: #f7f7f7;
+$white-bg: $white;
+$purple-bg: $purple;
+$yellow-bg: $orange;
+$red-bg: $red;
+$lightgray-bg: $gray-light;
+
+// ==== Borders
+$card-border: $gray-light;
+$border: #e6e6e6;
+
+// ==== Dashboard
+$good-job: $green-light;
+$gray-label: #a19f9d;
+$icon-bg: #e6e6ff;
+$btn-banner: #eca944;
+
+// ==== admin todos
+$todo-today: #8ed85f;
+$todo-tomorrow: #eca944;
+$todo-original: #5128a1;
+
+// ==== Quizzes
+$progress-pass-bg: #e9ecef;
+$pass-bg: #6bb700;
+
+//required
+$text-muted:#a3a3a3;
+
+/* calendar school event */
+$school-event-br: $orange;
+$school-event-bg: $orange-lighter;
+/* calendar private event */
+$private-event-br: $green;
+$private-event-bg: $green-lighter;
+/* calendar exam event */
+$exam-event-br: $orange-red;
+$exam-event-bg: $orange-red-lighter;
+/* calendar class schedule */
+$class-schedule-br: $purple;
+$class-schedule-bg: $purple-lighter;
+/* calendar others */
+$others-event-br: $blue;
+$others-event-bg: $blue-lighter;
+
+:export {
+  classScheduleBorder: $class-schedule-br;
+  classScheduleBackground: $class-schedule-bg;
+  schoolEventBorder: $school-event-br;
+  schoolEventBackground: $school-event-bg;
+  examEventBorder: $exam-event-br;
+  examEventBackground: $exam-event-bg;
+  privateEventBorder: $private-event-br;
+  privateEventBackground: $private-event-bg;
+  otherEventBorder: $others-event-br;
+  otherEventBackground: $others-event-bg;
+  standardFontColor: $font-color;
+  whiteBackground: $white;
+  grayBackground: $gray-bg;
+}
+
+// ==== Font
+$font-default: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+$fluentui-icon: "Fabric Icon";
+$light: 300;
+$regular: 400;
+$semiBold: 600;
+$bold: 700;
+$h1: 68px;
+$h2: 42px;
+$h3: 32px;
+$h4: 28px;
+$h5: 24px;
+$h6: 20px;
+$text-normal: 14px;
+$text-small: 12px;
+$text-xsmall: 11px;
+$text-medium: 16px;
+$text-lg: $h6;
+
+
+// ==== Media queries breakpoints
+// The breakpoints at which your layout will change, adapting to different screen sizes.
+// For example:
+// @media (max-width: $screen-xs-max) {
+//   ...
+// }
+
+// Extra small screen / phone
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+$screen-phone: $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm: 640px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-tablet: $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md: 1024px !default;
+$screen-md-min: $screen-md !default;
+$screen-desktop: $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg: 1366px !default;
+$screen-lg-min: $screen-lg !default;
+$screen-lg-desktop: $screen-lg-min !default;
+
+// Extra Large Screens
+$screen-xlg-min: 1920px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;

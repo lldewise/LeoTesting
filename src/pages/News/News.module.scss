@@ -1,0 +1,209 @@
+@import "../../assets/ui-kit/_variables.scss";
+
+.newContent {
+  margin: 4px;
+  cursor: pointer;
+}
+.imagePad {
+  margin: 0px 10px;
+}
+
+.iconSize {
+  padding-top: 2px;
+  font-size: 18px;
+}
+
+.personaName {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.personSecondary {
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.pad10 {
+  padding-right: 10px;
+}
+.iconColor {
+  color: $purple-bg;
+  font-size: 14px;
+}
+.fontIcon {
+  font-size: 14px;
+}
+
+.newtyoe {
+  color: $purple-bg;
+}
+
+.topNew {
+  height: 320px;
+  border-radius: 6px 6px 6px 6px;
+  opacity: 1;
+  background-size: 110% 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  margin-right: 5px;
+}
+
+.topNewGradient {
+  // background: linear-gradient( #7c4ad9, #5128a1, #000000) ;
+}
+
+.headerTitleAdmin {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.header {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.iconWidth {
+  width: 23px;
+  padding-top: 0px;
+}
+
+.padTBTitle {
+  padding: 20px 5px;
+}
+
+.padBName {
+  padding-bottom: 15px;
+}
+
+.documentRaduis {
+  border-radius: 6px 6px 6px 6px;
+  border: 0px;
+  max-width: 500px !important;
+}
+.documentRaduisImage {
+  border-radius: 6px 6px 0 0;
+}
+
+.newTopHeader {
+  font-size: 12px;
+  color: $white-bg;
+}
+
+.newTopTitle {
+  font-size: 24px;
+  color: $white-bg;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.newTopDate {
+  font-size: 24px;
+  color: $white-bg;
+}
+
+.imageDiv {
+  width: 100%;
+  height: 196px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  animation-name: css-1;
+  animation-duration: 0.367s;
+  animation-timing-function: cubic-bezier(0.1, 0.25, 0.75, 0.9);
+  animation-fill-mode: both;
+  position: relative;
+}
+
+.imageDiv canvas {
+  width: 100% im !important;
+}
+
+
+.imageList {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px 6px 0 0;
+  border: 0px;
+}
+
+.coverBlack {
+
+  -moz-box-shadow: inset 0 -100px 122px -10px #262626;
+  -webkit-box-shadow: inset 0 -100px 122px -10px #262626;
+  box-shadow: inset 0 -100px 122px -10px #262626;
+  border-radius: 6px;
+
+}
+
+.imagecontainer  {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  -moz-box-shadow: inset 0 -100px 122px -10px #262626;
+  -webkit-box-shadow: inset 0 -100px 122px -10px #262626;
+  box-shadow: inset 0 -100px 122px -10px #262626;
+  border-radius: 6px;
+
+}
+.imagecontainer .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+  
+}
+
+.imagecontainer:hover .after {
+  display: block;
+
+}
+
+.container {
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.branch_1 {
+  width:100% !important;
+  height:100%;
+  position:absolute;
+  z-index:1;
+  top:0;
+  left:0;
+
+  -moz-box-shadow: inset 0 -100px 122px -10px #262626;
+  -webkit-box-shadow: inset 0 -100px 122px -10px #262626;
+  box-shadow: inset 0 -100px 122px -10px #262626;
+  border-radius: 6px;
+}
+
+.newsFeatured{
+  margin-top: 230px;
+  margin-left: 10px;
+}
+
+.news{
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-top: 8px;
+  padding-bottom: 45px;
+}

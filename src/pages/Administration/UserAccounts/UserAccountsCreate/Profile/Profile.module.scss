@@ -1,0 +1,168 @@
+@import "../../../../../assets/ui-kit/_variables";
+
+.headerContainer {
+  width: 100%;
+}
+
+.header {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.iconWidth {
+  width: 23px;
+  padding-top: 0px;
+}
+
+.headertitle {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: $screen-desktop) {
+    flex-direction: column;
+  }
+}
+
+.col1 {
+  width: 35%;
+  max-width: 250px;
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+
+  @media (max-width: $screen-desktop) {
+    width: 100%;
+  }
+}
+
+.col2 {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.form {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.formHeader {
+  margin: 32px 0 12px;
+}
+
+.col2profilepic {
+  display: flex;
+  align-items: center;
+}
+
+.pad {
+  padding: 40px;
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: $semiBold;
+}
+
+.description1 {
+  font-size: 11px;
+  color: #a3a3a3;
+}
+
+.container2 {
+  background: blue;
+  position: relative;
+}
+
+.container3 {
+  color: $blue;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  z-index: 2200000;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.customBtnupload {
+  background-color: white;
+  width: 150px;
+  float: right;
+  visibility: hidden;
+}
+
+// .customBtn{
+//     background-color: #FFFFFF !important;
+//     width: 70px;
+//     border-color: black;
+//     color: #0B0B0B;
+//     border-radius: 5px;
+//     margin-top: 10px;
+// }
+
+// .customBtn:hover {
+//     background-color: $gray-light !important;
+//     border: 1px solid #FFFFFF !important;
+//     color: #0B0B0B !important;
+//     border-color: black;
+// }
+
+.label {
+  font-weight: $semiBold;
+}
+
+.customWidth {
+  width: 50% !important;
+}
+
+.guardianMargin {
+  margin-top: -20px;
+}
+
+.profileMargin {
+  margin-bottom: 20px;
+}
+
+.btnGroup {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 12px;
+
+  button {
+    margin-left: 10px;
+  }
+  @media (max-width: $screen-desktop) {
+    justify-content: flex-start;
+    button {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+}
+.optional {
+  margin-left: 10px;
+  font-size: 11px;
+  color: $gray;
+}
+
+.required {
+  margin-left: 10px;
+  font-size: 11px;
+  color: $gray;
+}

@@ -1,0 +1,128 @@
+@import '../../../../assets/ui-kit/_variables.scss';
+
+  .itemDetails {
+    font-size: 12px;
+  }
+  
+  .itemSingle {
+    padding-top: 15px;
+  }
+
+
+  .itemContentTitle {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+  }
+
+  .itemContent {
+    padding-top: 5px;
+    width: 20px;
+  
+  }
+
+  .fontIcon{
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+   
+  }
+
+ 
+  .img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+  }
+
+
+  
+.favStyle {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .delstyle {
+    font-size: 16px;
+    padding: 18px;
+  }
+
+ .favStyleCheck  {
+  padding: 12px;
+    font-size: 16px;    
+    color: $yellow-bg;
+    width: 20px;
+ }
+ 
+ 
+
+.calloutbtn{
+  padding:10px 20px 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.searchbox{
+  text-align: right;
+  float: right !important;
+  top: -23px;
+}
+
+.statusPublished{
+  color: $green;
+}
+
+.statusToBePublished{
+  color: $yellow-bg;
+}
+
+.statusArchived{
+  color: $gray;
+}
+
+.borderbot{
+  border-bottom: $purple-bg  3px solid;
+}
+
+.BreadcrumbContainer{
+  margin:0px !important;
+
+  div{
+    color: $purple-bg !important;
+    font-size: 14px;
+  }
+}
+
+.newsList{
+  margin-top: 50px;
+}
+
+.icon{
+  padding-top: 3px;
+  position: absolute;
+  margin-left: -20px;
+  color: $purple;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.createNewStory{
+  color: $purple;
+  font-size: 14px;
+  font-family: 'Segoe UI';
+  cursor: pointer;
+}
+
+.createNewStoryDiv{
+  padding-top: 10px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.dashboard {
+  padding-right: 6px;
+   .fRight {
+     float: right;
+   }
+ 
+}

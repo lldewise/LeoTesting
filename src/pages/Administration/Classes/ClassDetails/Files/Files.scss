@@ -1,0 +1,61 @@
+@import '../../../../../assets/ui-kit/_variables';
+.FilesDetailList {
+  .ms-DetailsHeader-cellName {
+    font-size: 14px !important;
+    font-weight: $regular;
+  }
+  .ms-DetailsRow-cell {
+    font-size: 14px;
+  }
+
+  .ms-DetailsHeader {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .is-checked::before {
+      height: 15px;
+    }
+    .ms-Icon {
+      padding-right: 10px;
+    }
+    // .ms-DetailsHeader-cell {
+    //   background-color: inherit;
+    //   :hover {
+    //     background-color: inherit;
+    //   }
+    // }
+    .ms-DetailsRow-check {
+      margin-top: 0px;
+    }
+
+    .ms-Check-checkHost {
+      height: 30px !important;
+      .ms-Check {
+        height: 30px !important;
+      }
+      .ms-Check::before {
+        height: 15px !important;
+      }
+    }
+  }
+  .ms-DetailsRow {
+    .ms-DetailsRow-check {
+      margin-top: 10px;
+    }
+    .ms-Check-checkHost {
+      height: 30px !important;
+      .ms-Check {
+        height: 30px !important;
+      }
+      .ms-Check::before {
+        height: 15px !important;
+      }
+    }
+  }
+}
+
+.btnNoBorder {
+  .ms-Button {
+    border: none;
+  }
+}

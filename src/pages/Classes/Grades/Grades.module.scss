@@ -1,0 +1,129 @@
+
+@import '../../../assets/ui-kit/_variables.scss';
+
+.barcontainer{
+    height: 290px !important;  
+}
+
+.container{
+    padding: 24px 20px;    
+    border-top: 1px solid #e7e7ee;
+    border-bottom: 1px solid #e7e7ee;
+}
+
+.headerleft{
+
+    font-weight: $semiBold;
+}
+
+.headerright {    
+
+    text-align: right;
+        label{
+            font-weight:bold !important;
+        }   
+
+        float: right;
+              
+}
+
+.legend{
+    text-align: center;
+}
+
+.fontIcon{
+    font-size: 12px;
+}
+
+
+
+.toggleSelected {       
+        button{
+            background:$purple-bg !important;     
+        }    
+        
+}
+
+.barHeader{
+    padding: 10px 5px 0 15px;
+    
+}
+
+.gradeBorder{
+    border-right:1px solid  #ece5ec ;
+    
+}
+
+.statusHeader{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.statusScore{
+    padding-top:15px;
+    font-weight: 600;
+    font-size: 20px;
+    font-weight: 640;
+    color:$purple-bg;
+}
+
+.statuslabel{
+    padding-top:5px;
+    font-weight: normal;
+    font-size: 12px;
+    color: $gray-dark;
+}
+
+.subContainer{
+    padding:20px
+}
+
+.remarksheader{
+    padding-left: 50px;
+}
+
+.persona{
+    outline: transparent;
+    position: relative;
+    display: flex;
+}
+
+.personaremarks{
+    padding-left: 10px;
+    width: 330px;
+    white-space: normal;
+    font-size: 12px;
+    font-weight: 600;
+    color: $gray-dark;
+}
+
+.remarksheadertitle{
+    font-weight: $semiBold;
+    font-size: 14px;
+}
+.remarksheaderdate{
+    font-size: 12px;
+    font-weight: normal; 
+    color: $black;
+}
+
+.trophy{
+    color: gold;
+}
+
+@media screen and (max-width: 800px) {
+   .remarksheader {
+        padding-left: 20px;
+   }
+
+    .container {
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        padding: 24px 0px;
+    }
+}

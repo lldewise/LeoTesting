@@ -1,0 +1,115 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.headerContainer {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.iconWidth {
+  width: 23px;
+  padding-top: 0px;
+}
+
+.headertitle {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidenav {
+  width: 16%;
+  max-width: 200px;
+  min-width: 180px;
+  border-top: 1px solid $gray-light;
+  border-left: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+}
+
+.content {
+  min-width: 50%;
+  // max-width: 800px;
+  background-color: $white-bg;
+  border-top: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+  overflow-y: auto;
+  height: calc(100vh - 169px);
+
+  @media (max-width: $screen-lg) {
+    min-width: 65%;
+  }
+}
+
+.containerbg {
+  border-top: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.containerbg {
+  background-color: $white-bg;
+}
+
+.persona {
+  padding: 15px 10px 15px 10px;
+  background-color: $white-bg;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.headerTitle {
+  font-size: 15px;
+  font-weight: $semiBold;
+}
+
+.headerdesc {
+  font-size: 12px;
+}
+
+.containerPad {
+  padding: 12px;
+  padding-top: 0;
+}
+
+.col1 {
+  width: 35%;
+  max-width: 250px;
+  padding: 6px 0;
+  min-width: 200px;
+  @media (max-width: $screen-desktop) {
+    width: 100%;
+  }
+}
+
+.col2 {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.form {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.helpIcon {
+  float: right;
+}

@@ -1,0 +1,30 @@
+@mixin fontSizes($className, $size){
+    #{'.text-' + $className}{
+        font-size: $size;
+    }
+}
+
+@include fontSizes("normal",$text-normal);
+@include fontSizes("medium",$text-medium);
+@include fontSizes("small",$text-small);
+@include fontSizes("xsmall",$text-xsmall);
+
+
+
+@mixin heading($element, $size, $weight: $semiBold){
+    #{$element}{
+        font-size: $size;
+        font-weight: $weight;
+        line-height: $size * 1.618 ;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@include heading("h1", $h1, $bold);
+@include heading("h2", $h2);
+@include heading("h3", $h3);
+@include heading("h4", $h4);
+@include heading("h5", $h5);
+@include heading("h6", $h6);
+

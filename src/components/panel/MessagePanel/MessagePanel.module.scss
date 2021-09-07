@@ -1,0 +1,25 @@
+.Panel {
+  margin-top: 50px;
+  position: fixed;
+}
+
+.customWidth {
+  width: 200px;
+}
+.unRead {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.linkAllMessages {
+  color: blue;
+  font-size: 12px;
+}
+
+.messageTitle {
+  position: absolute;
+  padding-bottom: -17px;
+  bottom: -25px;
+  left: 52px;
+  font: normal normal 400 12px/15px Segoe UI;
+}

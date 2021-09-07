@@ -1,0 +1,60 @@
+@import '../../assets/ui-kit/_variables';
+
+.headerContainer {
+  width: 100%;
+}
+
+.header {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.iconWidth {
+  position: relative;
+  width: 23px;
+  padding-top: 0px;
+  top: 2px;
+}
+
+.headerTitle {
+  font-size: 15px;
+}
+
+.printIcon {
+  float: right;
+}
+
+.actionButton {
+  color: $purple-bg;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sideNav {
+  width: 210px;
+  max-width: 250px;
+  min-width: 210px;
+  border-top: 1px solid $gray-light;
+  border-left: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+}
+
+.content {
+  min-width: 60%;
+  background-color: $white-bg;
+  border-top: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+  overflow-y: auto;
+  height: calc(100vh - 102px);
+
+  @media (max-width: $screen-lg) {
+    min-width: 65%;
+  }
+}

@@ -1,0 +1,129 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.container {
+  overflow: visible;
+  max-height: 500;
+  padding: 10px 10px 0;
+}
+
+.assignmentHeader {
+  padding: 15px 15px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.itemDetailsBold {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.itemDetails {
+  font-size: 12px;
+}
+
+.chevron {
+  align-self: center;
+  margin-left: 10;
+  color: rgb(161, 159, 157);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.itemIndex {
+  font-size: 12px;
+  color: rgb(161, 159, 157);
+  margin-bottom: 10;
+}
+
+.itemSingle {
+  padding: 0 8px;
+  font-size: 12px;
+  width: 45px;
+  text-align: center;
+}
+
+.iconEdit {
+  color: #6c35d4;
+}
+
+.listrightwidth {
+  width: 190px;
+}
+
+.itemName {
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemContentRight {
+  margin-left: 10;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.itemContent {
+  margin-left: 10;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.itemImage {
+  flex-shrink: 0;
+}
+
+.itemCell {
+  outline: transparent;
+  position: relative;
+  min-height: 54px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(237, 235, 233);
+  display: flex;
+}
+
+.mb2 {
+  margin-bottom: 2px;
+}
+
+.studDashTable {
+  .ms-List-page {
+    margin-bottom: 15px;
+  }
+}
+
+.itemhover {
+  background: inherit;
+  cursor: pointer;
+}
+
+.itemCell:hover {
+  -webkit-box-shadow: 0px 7px 30px -8px rgba(186, 186, 186, 1);
+  -moz-box-shadow: 0px 7px 30px -8px rgba(186, 186, 186, 1);
+  box-shadow: 0px 7px 30px -8px rgba(186, 186, 186, 1);
+}
+
+.fontIcon {
+  font-size: 20px;
+  color: $purple-bg;
+  padding: 6px 8px 6px 8px;
+  background-color: #e6e6ff;
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.iconEdit {
+  color: $purple-bg;
+  font-size: 15px;
+}
+.shared {
+  font-size: 18px;
+}

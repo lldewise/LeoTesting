@@ -1,0 +1,17 @@
+
+.ms-Pivot{
+    button:not(.is-selected){
+        color: $gray-dark;
+    }
+    .badge{
+        font-size: 1em;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 1em;
+        padding: 0 .4em;
+        margin-left: .3em;
+        @extend .purple-bg;
+        padding: 0;
+    }
+
+}

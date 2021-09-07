@@ -1,0 +1,125 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+$body-color: #fff;
+$app-height: 100vh;
+$sidebar-width: 214px;
+
+.sidebarItems {
+  padding: 0px;
+  margin: 0px;
+}
+.itemCount {
+  border-radius: 5px;
+  float: right;
+  padding: 2px 8px;
+  margin: -2px -8px;
+  
+}
+
+.listItem {
+  color: #34393d;
+  cursor: pointer;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  transition: background 0.1s linear;
+  width: auto;
+  font-weight: 500;
+}
+.icon {
+  margin-right: 10px;
+}
+
+.sidebarCompose {
+  color: $blue;
+  padding: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.1s linear;
+  width: 100%;
+  border-bottom: 1px solid $gray-lightest;
+}
+
+.btnNewMessage {
+  width: 80%;
+}
+
+.activeItem {
+  background-color: $purple-lighter;
+  transition: background 0.1s linear;
+  color: $purple;
+  font-weight: $semiBold;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  font-weight: $semiBold;
+}
+.icon {
+  padding-top: 2px;
+}
+
+.newFolder {
+  padding: 5px;
+}
+
+.newActiveItem {
+  color: none;
+}
+.newInActiveItem {
+  color: $blue;
+}
+
+.newFolderContainer {
+  padding: 5px 5px 5px 30px;
+}
+
+.textField {
+  padding-right: 15px;
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+}
+
+.container2 {
+  color: $blue;
+  position: absolute;
+  top: 5px;
+  z-index: 2;
+}
+
+.nflistItem {
+  color: #34393d;
+  cursor: pointer;
+  display: block;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  transition: background 0.1s linear;
+  width: auto;
+  font-weight: 500;
+}
+
+.activeItemFont {
+  color: $purple;
+}
+
+.buttom {
+  width: 100%;
+}
+
+
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+}
+.iconAlign{
+  padding-top:2px;
+}
+
+.displayName{
+  width: 90%;
+}

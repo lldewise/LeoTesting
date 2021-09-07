@@ -1,0 +1,8 @@
+{
+  "realm": "Atedu",
+  "auth-server-url": "https://atedusso.westeurope.cloudapp.azure.com/auth/",
+  "ssl-required": "external",
+  "resource": "AteduSSO.DEV",
+  "public-client": true,
+  "confidential-port": 0
+}

@@ -1,0 +1,81 @@
+@import '../../../../assets/ui-kit/variables.scss';
+
+
+.containerSub{
+    margin:30px 30px 0px 30px;
+   
+}
+.container{
+  background-color: $white-bg;
+  border-right: 1px solid $gray-light;
+  border-top: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+  height: 92vh;
+}
+
+.index0{
+    position: relative;
+    top:-55px;
+  }
+
+  .index2{
+    z-index: 2;
+    height: 55px;
+  
+   position: relative;
+    display: flex; justify-content: flex-end
+  }
+
+  .header{
+    font-size: 20px;
+    font-weight: $semiBold;
+  }
+
+  .headerdesc{
+    font-size: 12px;
+    font-weight: $regular; 
+  }
+
+.headerprofile{
+   color:$blue;
+}
+
+.inputhalf{
+   width: 96%;
+}
+
+.inputwhole{
+   width: 98%;
+}
+
+.guardian{
+  font-size: 16px;
+  font-weight: $semiBold;
+}
+
+.customBtnupload{  
+  visibility: hidden;
+}
+
+.imgUpload{
+   padding: 10px 0px 0px 20px;
+}
+
+.actionColor{
+  color: $black;
+}
+
+.blue{
+   color:$blue;
+   font-weight: $semiBold;
+   font-size: 14px;
+}
+.publish{
+  border-top: 1px solid $gray-light;
+  padding-top: 15px;
+
+}
+.floatR{
+  float:right;
+  padding-right: 20px;
+}

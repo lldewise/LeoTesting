@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Atedu Icon';
+  src:  url('fonts/atedu-icon.eot?vhjj8b');
+  src:  url('fonts/atedu-icon.eot?vhjj8b#iefix') format('embedded-opentype'),
+    url('fonts/atedu-icon.ttf?vhjj8b') format('truetype'),
+    url('fonts/atedu-icon.woff?vhjj8b') format('woff'),
+    url('fonts/atedu-icon.svg?vhjj8b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="custom-icon-"]{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Atedu Icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-todo-item-fill:before {
+  content: "\e900";
+}
+.custom-icon-event-check:before {
+  content: "\e901";
+}

@@ -1,0 +1,105 @@
+.customBackgroundAttendance {
+  height: 500px;
+  display: block;
+}
+
+hr.customDivider {
+  margin-top: 0 important;
+}
+
+.emailItem {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 0;
+
+  &:hover {
+    background: #EDEBE9;
+
+    .onHover{
+      display: inline-block;
+    }
+  }
+}
+.onHover{
+  display: none;
+}
+.emailInfo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.divPadding {
+  height: 410px;
+}
+
+.unread {
+  color: white;
+  text-decoration: none;
+  padding: 15px 0px;
+  position: relative;
+  border-radius: 2px;
+}
+
+.unread .badge {
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  background: #6C35D4;
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  padding: 0;
+}
+
+.messagesPadding {
+  margin: 0 0 0 52px;
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: calc(100% - 60px);
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+}
+
+.emailCtrl {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.date {
+  font-size: 11px;
+  text-align: right;
+  width: 60px;
+}
+
+.icon {
+  font-size: 30px;
+  color: red;
+}
+
+.iconHover {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.iconHoverRed {
+  font-size: 25px;
+  color: red;
+}
+
+.btnPadding {
+  padding: 0 20px 20px;
+}
+
+.btnSize {
+  width: 100%;
+  color: #0078D4;
+  border: 1px solid #E6E6E6 !important;
+}

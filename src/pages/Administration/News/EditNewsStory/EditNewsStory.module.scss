@@ -1,0 +1,240 @@
+@import '../../../../assets/ui-kit/_variables.scss';
+
+
+
+.borderbot {
+    border-bottom: $purple-bg 3px solid;
+}
+
+.BreadcrumbContainer {
+    margin: 0px !important;
+
+    div {
+        color: $purple-bg !important;
+        font-size: 14px;
+    }
+}
+
+.newContent {
+    margin: 4px;
+    cursor: pointer;
+}
+
+.imagePad {
+    margin: 0px 10px;
+}
+
+.iconSize {
+    padding-top: 2px;
+    font-size: 18px;
+}
+
+.personaName {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.personSecondary {
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.pad10 {
+    padding-right: 10px;
+}
+
+.fontIcon {
+    font-size: 14px;
+}
+
+.newtyoe {
+    color: $purple-bg;
+}
+
+.topNew {
+    height: 325px;
+    border-radius: 6px 6px 6px 6px;
+    opacity: 1;
+    background-size: 110% 100%;
+    background-repeat: no-repeat;
+}
+
+.padTBTitle {
+    padding: 20px 5px;
+}
+
+.padBName {
+    padding-bottom: 15px;
+    ;
+}
+
+.documentRaduis {
+    border-radius: 6px 6px 6px 6px;
+    border: 0px;
+    max-width: 500px !important;
+}
+
+.documentRaduisImage {
+    border-radius: 6px 6px 0 0;
+}
+
+
+.newTopHeader {
+    font-size: 12px;
+    color: $white-bg;
+}
+
+.newTopTitle {
+    font-size: 24px;
+    color: $white-bg;
+}
+
+.newTopLabel {
+    padding-top: 230px;
+}
+
+
+.imageDiv {
+    width: 100%;
+    height: 196px;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    animation-name: css-1;
+    animation-duration: 0.367s;
+    animation-timing-function: cubic-bezier(0.1, 0.25, 0.75, 0.9);
+    animation-fill-mode: both;
+    position: relative;
+}
+
+.imageList {
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px 6px 0 0;
+    border: 0px;
+}
+
+.coverBlack {
+    padding-left: 10px;
+    padding-bottom: 14px;
+    -moz-box-shadow: inset 0 -100px 122px -10px #262626;
+    -webkit-box-shadow: inset 0 -100px 122px -10px #262626;
+    box-shadow: inset 0 -100px 122px -10px #262626;
+    border-radius: 6px;
+}
+
+.customBgImage {
+    background-image: url(../../../../assets/images/news/createnews.png);
+    background-size: 100%;
+    height: 350px;
+    max-height: 350px;
+}
+
+.customBgImageBlend {
+    background-repeat: no-repeat;
+    background-color: #E5DAF8; //light violet
+    background-blend-mode: color-burn;
+}
+
+.customBtn{
+    background-color: #FFFFFF !important;
+    width: 155px;
+    float: right;
+    margin-top: -50px;
+    margin-right: 50px;
+    border: #FFFFFF;
+    color: #0B0B0B;
+    border-radius: 5px;
+}
+
+.customBtn:hover, .customBtnDropdown:hover {
+    background-color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+    color: #0B0B0B !important;
+}
+
+.customBtnDropdown {
+    background-color: #FFFFFF !important;
+    border: #FFFFFF;
+    color: #0B0B0B;
+}
+
+.customBtnDropdownContainer {
+    border-radius: 5px;
+    border: #FFFFFF;
+    color: #0B0B0B;
+    margin-top: 5px;
+    padding-left: 5px;
+    background-color: #FFFFFF;
+    width: 200px;
+}
+
+.customBtnupload{
+    background-color: white;
+    width: 150px;
+    float: right;
+    margin-top: -45x;
+    margin-right: 115px;
+    visibility: hidden;
+}
+
+.iconStyle {
+    padding-right: 15px;
+}
+
+.example-enter {
+    opacity: 0;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+.custImageSize{
+    background-size:100% 330px;
+    height: 350px;
+    max-height: 350px;
+    background-repeat: no-repeat;    
+}
+
+.imagecontainer  {
+    position: relative;
+    width: 100%;
+    height: 100%px;
+
+  }
+  .imagecontainer .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+.imagecontainer:hover .after {
+    display: block;
+
+}
+.containerheight{
+    overflow-y: auto;
+}

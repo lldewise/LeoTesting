@@ -1,0 +1,100 @@
+@import "../../../../assets/ui-kit/_variables";
+
+.activityForm {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.formTitle {
+  font-size: 15px;
+  font-weight: $semiBold;
+  padding-bottom: 20px;
+}
+
+.fieldName {
+  font-size: 14px;
+  font-weight: $regular;
+}
+
+.textField {
+  width: 380px;
+}
+
+
+
+.statusToggleDiv {
+  position: relative;
+  display: inline;
+}
+
+.statusToggleIcon {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+}
+
+.statusToggleLabel {
+  position: absolute;
+  left: 28px;
+}
+
+.activityInfoForm {
+  margin-bottom: 15px;
+}
+
+.activityStartRow {
+  display: flex;
+}
+
+.activityStartEnd {
+  display: inline-block;
+}
+
+.activityInfoItem {
+  vertical-align: middle;
+
+  .activityTextField {
+    max-width: 380px;
+  }
+}
+
+.activityInfoItem label {
+  width: 100%;
+  white-space: normal;
+
+}
+
+.activitySched {
+  display: inline-block;
+}
+
+@media screen and (max-width: 900px) {
+  .activityInfoItem .activityTextField {
+    width: 100%;
+  }
+}
+
+// @media screen and (max-width: 895px) {
+//   .activityInfoItem .activityTextField {
+//     width: 380px;
+//   }
+// }
+
+@media screen and (max-width: 800px) {
+  .activityInfoForm {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .horizontal-textfield{
+    display: block;
+  }
+
+  .activityInfoItem,
+  .activityInfoItem label {
+    width: 100% !important;
+    min-width: auto;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.contentDataAccount {
+  .ms-DetailsHeader {
+    padding-top: 0px !important;
+    font-weight: $regular;
+    height: 50px;
+  }
+
+  .ms-DetailsHeader-cell:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 50px !important;
+    border-top: 1px solid $gray-lighter !important;
+    border-right: 1px solid $gray-lighter !important;
+  }
+
+  .ms-DetailsHeader-cell {
+    border-right: 1px solid $gray-lighter !important;
+    height: 50px !important;
+  }
+
+  .ms-DetailsHeader-cell:hover {
+    background-color: white !important;
+  }
+
+  .ms-DetailsHeader-cellName {
+    font-weight: $regular !important;
+    text-align: center !important;
+    margin-top: 5px;
+  }
+
+  span > span > .ms-Icon {
+    margin: 5px 0px 0px 5px !important;
+  }
+
+  .ms-DetailsRow-cell {
+    border-right: 1px solid $gray-lighter;
+    font-size: $text-normal;
+  }
+}

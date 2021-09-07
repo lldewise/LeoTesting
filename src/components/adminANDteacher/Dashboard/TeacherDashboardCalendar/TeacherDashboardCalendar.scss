@@ -1,0 +1,234 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+$font-color: #a2a4a6;
+
+.teacherDashboardCalendar {
+  margin: 20px 5px 5px 10px;
+
+  .miniCalendarContainer {
+    background-color: $white-bg;
+    &:hover {
+      .iconPrevious {
+        cursor: pointer;
+        visibility: visible;
+      }
+
+      .iconNext {
+        cursor: pointer;
+        visibility: visible;
+      }
+    }
+    .iconPrevious {
+      cursor: pointer;
+      visibility: hidden;
+    }
+
+    .iconNext {
+      cursor: pointer;
+      visibility: hidden;
+    }
+  }
+
+  .teacherFilterDateContainer {
+    .monthDisplay {
+      font-weight: 600;
+    }
+
+    .btnDatePicker {
+      top: 3px;
+      left: 5px;
+      position: relative;
+      font-size: 14px;
+      color: $purple-bg;
+      cursor: pointer;
+    }
+
+    .linkToggle {
+      font-weight: 600;
+      float: right;
+      cursor: pointer;
+      position: relative;
+      right: 12px;
+    }
+
+    .calloutContainer {
+      width: 400px;
+      height: 200px;
+    }
+  }
+
+  .prevBtnDiv {
+    color: #ccc;
+    position: relative;
+    top: 40px;
+    visibility: visible;
+  }
+
+  .nextBtnDiv {
+    color: #ccc;
+    position: relative;
+    top: 40px;
+    float: right;
+    visibility: visible;
+  }
+
+  .teacherCalendarContainer {
+    .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+      position: relative !important;
+      min-height: 0px !important;
+    }
+
+    .fc td,
+    .fc th,
+    .fc .fc-scrollgrid {
+      border: none !important;
+    }
+
+    .fc tr,
+    .f thead {
+      font-weight: 400 !important;
+      color: $font-color;
+    }
+
+    .fc .fc-daygrid-day.fc-day-today {
+      background-color: #fff !important;
+
+      .fc-daygrid-day-number {
+        background-color: $purple-bg;
+        color: #fff;
+        border-radius: 50%;
+        width: 26px !important;
+        height: 26px !important;
+        display: flex !important;
+        justify-content: center !important;
+      }
+    }
+
+    .fc-daygrid-day-frame.fc-scrollgrid-sync-inner {
+      height: 40px !important;
+    }
+
+    .fc-col-header-cell-cushion {
+      font-weight: normal !important;
+      color: $font-color;
+    }
+
+    .fc-view-harness {
+      height: 60px !important;
+    }
+
+    .fc-scroller {
+      overflow: hidden !important;
+    }
+
+    .fc-col-header {
+      width: 100% !important;
+    }
+
+    .fc-highlight {
+      background: lightgray !important;
+      border-radius: 50%;
+      width: 26px !important;
+      height: 26px !important;
+      margin-left: calc(100% - 25px) !important;
+    }
+    .fc {
+      text-align: center !important;
+    }
+    .fc td {
+      padding: 0;
+      vertical-align: middle !important;
+    }
+  }
+
+  .teacherCalendarPickerContainer {
+    .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+      position: relative !important;
+      min-height: 0px !important;
+    }
+
+    .fc td,
+    .fc th,
+    .fc .fc-scrollgrid {
+      border: none !important;
+    }
+
+    .fc tr,
+    .f thead {
+      font-weight: 400 !important;
+      color: $font-color;
+    }
+
+    .fc .fc-daygrid-day.fc-day-today {
+      background-color: #fff !important;
+
+      .fc-daygrid-day-number {
+        background-color: $purple-bg;
+        color: #fff;
+        border-radius: 50%;
+        width: 26px !important;
+        height: 26px !important;
+        display: flex !important;
+        justify-content: center !important;
+      }
+    }
+
+    .fc-col-header-cell-cushion {
+      font-weight: normal !important;
+      color: $font-color;
+    }
+
+    .fc-view-harness {
+      height: 210px !important;
+    }
+
+    .fc-scroller {
+      overflow: hidden !important;
+    }
+
+    .fc-col-header {
+      width: 100% !important;
+    }
+
+    .fc-highlight {
+      background: lightgray !important;
+      border-radius: 50%;
+      width: 26px !important;
+      height: 26px !important;
+      margin-left: calc(100% - 25px) !important;
+    }
+    .fc {
+      text-align: center !important;
+    }
+    .fc td {
+      padding: 0;
+      vertical-align: middle !important;
+    }
+  }
+}
+
+.adminWeekList {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 450px;
+
+  .todaySched {
+    font-weight: 600;
+    margin: 15px 12px;
+  }
+
+  .tomorrowSched {
+    font-weight: 600;
+    margin: 12px 12px;
+  }
+
+  .locationDot {
+    margin: 5px;
+  }
+}
+
+hr.adminCalendarDivider {
+  border: 1px solid #e0e0e0;
+  margin: 10px 5px;
+  opacity: 0.4;
+}

@@ -1,0 +1,99 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+$body-color: #fff;
+$app-height: 100vh;
+$sidebar-width: 230px;
+$list-and-content: 90%;
+
+.header {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.iconWidth {
+  width: 23px;
+  padding-top: 2px;
+}
+
+.actionButton {
+  color: $purple-bg;
+  font-size: 14px;
+}
+.commandButton {
+  color: $purple-bg;
+  font-size: 14px;
+}
+.headertitle {
+  font-size: 15px;
+}
+
+.helpIcon {
+  float: right;
+}
+
+.container {
+  height: $app-height;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  background: $body-color;
+  height: $app-height;
+  width: $sidebar-width;
+  border-right: 1px solid $gray-lightest;
+}
+
+.emailListAndContentContainer {
+  width: $list-and-content;
+  background-color: $body-color;
+}
+
+.headerIcon {
+  padding: 8px 15px;
+  border-bottom: 1px solid $gray-lightest;
+  background-color: $body-color;
+  width: 100%;
+}
+
+.headerIconNewMessage {
+  padding: 8px 15px 8px 350px;
+  border-bottom: 1px solid $gray-lightest;
+  background-color: $body-color;
+  width: 100%;
+}
+
+.content {
+  background-color: $body-color;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.emailList {
+  min-width: 350px;
+  max-width: 350px;
+  border-right: 1px solid $gray-lightest;
+}
+
+.emailDetails {
+  width: 85%;
+}
+
+
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+}
+.iconAlign{
+  padding-top:2px;
+}
+
+.notifButton{
+  visibility: hidden;
+}

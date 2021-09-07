@@ -1,0 +1,241 @@
+.jodit-container:not(.jodit_inline) {
+    min-height: 100px;
+    position: relative;
+  }
+  
+  .jodit-toolbar__box:not(:empty) {
+    background-color: white !important;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    border-top: 1px solid #dadada !important;
+    border-bottom: none !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  .joditFormatPainter {
+    background-image: url(../../../../assets/images/joditIcon/format_painter.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditFont {
+    background-image: url(../../../../assets/images/joditIcon/font.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditFontSize {
+    background-image: url(../../../../assets/images/joditIcon/font_size.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditBold {
+    background-image: url(../../../../assets/images/joditIcon/bold.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditItalic {
+    background-image: url(../../../../assets/images/joditIcon/italic.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditUnderline {
+    background-image: url(../../../../assets/images/joditIcon/underline.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditHighlight {
+    background-image: url(../../../../assets/images/joditIcon/highlight.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditLink {
+    background-image: url(../../../../assets/images/joditIcon/link.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditBullets {
+    background-image: url(../../../../assets/images/joditIcon/bullets.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditNumbering {
+    background-image: url(../../../../assets/images/joditIcon/numbering.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditOutdent {
+    background-image: url(../../../../assets/images/joditIcon/outdent.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditIndent {
+    background-image: url(../../../../assets/images/joditIcon/indent.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditAlignLeft {
+    background-image: url(../../../../assets/images/joditIcon/align_left.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditAlignCenter {
+    background-image: url(../../../../assets/images/joditIcon/align_center.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditAlignRight {
+    background-image: url(../../../../assets/images/joditIcon/align_right.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+   
+  .joditSuperScript {
+    background-image: url(../../../../assets/images/joditIcon/superscript.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditSubScript {
+    background-image: url(../../../../assets/images/joditIcon/subscript.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditStrikeThrough {
+    background-image: url(../../../../assets/images/joditIcon/strikethrough.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditUndo {
+    background-image: url(../../../../assets/images/joditIcon/undo.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditRedo {
+    background-image: url(../../../../assets/images/joditIcon/redo.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditEraser {
+    background-image: url(../../../../assets/images/joditIcon/eraser.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .joditTable {
+    background-image: url(../../../../assets/images/joditIcon/table.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .joditDots {
+    background-image: url(../../../../assets/images/joditIcon/dots.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 32px 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .jodit-toolbar-editor-collection .jodit-toolbar-button {
+      margin: 2px -1px !important;
+  }
+
+  .buttonContainer{
+    padding: 5px;
+    
+    .ms-Button--icon{
+      color: black;
+    }
+  }
+
+  .btn{
+    margin-left: 10px;
+  }
+
+  .customBtnupload{  
+    visibility: hidden;
+  }
+
+  .attachments {
+    padding: 10px 0px;
+    white-space: nowrap;
+    width: auto;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .fileAttachments {
+    display: flex;
+    padding: 10px 0px;
+    white-space: nowrap;
+    width: auto;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .divBG{
+    background-color: white;
+  }

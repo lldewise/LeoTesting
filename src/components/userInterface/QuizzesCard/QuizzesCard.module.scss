@@ -1,0 +1,118 @@
+@import "../../../assets/ui-kit/variables.scss";
+
+.fontIcon {
+  font-size: 20px;
+  color: $purple-bg;
+  padding: 6px;
+  background-color: #e6e6ff;
+  margin-right: 3px;
+  margin-top: 5px;
+}
+
+.divpad10 {
+  padding: 10px;
+}
+
+.container {
+  background-color: $white-bg;
+  padding: 15px 20px;
+  border-radius: 3px;
+  border: 0.5px solid rgb(238, 233, 233);
+}
+
+.duedate {
+  font-size: 12px;
+  color: rgb(243, 159, 33);
+}
+
+.title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.postedby {
+  font-size: 12px;
+  color: $gray-dark;
+}
+
+.customChart {
+  margin-top: -35px;
+}
+
+.customLabel {
+  margin-top: -10px;
+}
+
+.gradeDesc {
+  margin-left: 5px;
+  font-weight: normal;
+}
+
+.quiznum {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.customScorePass {
+  font-size: 20px;
+  color: $green;
+  position: absolute;
+  margin-left: 17px;
+  margin-top: 9px;
+}
+
+.customScoreFail {
+  font-size: 20px;
+  color: red;
+  position: absolute;
+  margin-left: 17px;
+  margin-top: 9px;
+}
+
+.quizNumfont {
+  color: $gray-dark;
+  font-size: 12px;
+}
+
+.daysfont {
+  color: $gray-dark;
+  font-size: 10px;
+}
+
+.divPadding {
+  padding-right: 15px !important;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    padding: 15px 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .customLabel {
+    margin-top: -18px;
+  }
+
+  .gradeDesc {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .divPadding {
+    padding-right: 5px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .customLabel {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gradeDesc {
+    margin: 0;
+  }
+}

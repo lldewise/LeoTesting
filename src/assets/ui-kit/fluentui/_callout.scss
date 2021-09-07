@@ -1,0 +1,40 @@
+.primaryCallout {
+    .ms-Callout-main {  
+        background-color: $primary-color;
+        color: $white;
+    }
+
+    .ms-Button {
+        background-color: transparent;
+        border-color: $white;
+    }
+
+    .ms-Button:nth-child(2) {
+        background-color: $white;
+    }
+
+    .ms-Button:nth-child(2) .ms-Button-label {
+        color: $primary-color;
+    }
+}
+
+
+.secondaryCallout {
+    .ms-Callout-main {  
+        background-color: $secondary-color;
+        color: $white;
+    }
+
+    .ms-Button {
+        background-color: transparent;
+        border-color: $white;
+    }
+
+    .ms-Button:nth-child(2) {
+        background-color: $white;
+    }
+
+    .ms-Button:nth-child(2) .ms-Button-label {
+        color: $secondary-color;
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../../assets/ui-kit/_variables.scss';
+
+.studentEnrolleeList {
+  margin-top: 30px;
+  width: 1060px !important;
+  color: $black !important;
+
+  .ms-DetailsHeader {
+    height: 40px !important;
+    padding-top: 0px !important;
+  }
+
+  .ms-DetailsRow:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .ms-DetailsHeader-cell {
+    height: 50px !important;
+    border-top: 1px solid $gray-lighter;
+    border-right: 1px solid $gray-lighter;
+  }
+
+  .ms-DetailsHeader-cell:nth-child(1) {
+    border-left: 1px solid $gray-lighter;
+  }
+
+  .ms-DetailsHeader-cellName {
+    font-weight: $regular !important;
+    text-align: center !important;
+    overflow: visible;
+    width: 100%;
+  }
+
+  .ms-DetailsRow-cell {
+    display: flex;
+    align-items: center;
+    font-size: $text-normal;
+    color: $black;
+    border-right: 1px solid $gray-lighter;
+  }
+
+  .ms-DetailsRow-cell:nth-child(1) {
+    border-left: 1px solid $gray-lighter;
+  }
+
+  .headerClassName span > span,
+  .headerClassName span > i {
+    position: relative;
+    top: 15px;
+    left: 10px;
+  }
+
+  .ms-TextField-field {
+    color: $black !important;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../assets/ui-kit/_variables";
+
+.padL15 {
+  padding-left: 15px;
+}
+
+.container {
+  background-color: $white-bg;
+}
+
+.date {
+  font-weight: 500;
+}
+
+.defaultbtn {
+  border: 1px solid $white_bg;
+  background-color: $white_bg;
+  cursor: pointer;
+}
+
+.primarybtn {
+  background-color: #f7a93b;
+  border: 1px solid #f7a93b;
+}
+
+.padTop {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.textRight {
+  text-align: right;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.divider {
+  border: 1px solid red;
+  background-color: red;
+}
+
+.footerContainer {
+  background-color: $white-bg;
+  padding-bottom: 10px;
+  position: sticky;
+  height: 15vh;
+}

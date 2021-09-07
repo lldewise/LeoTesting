@@ -1,0 +1,20 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.comments {
+  border: none;
+}
+
+.inputContainer {
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.persona {
+  width: 5% !important;
+}
+
+.container {
+  padding: 10px;
+  background-color: $white-bg;
+  border: 1px solid $card-border;
+}

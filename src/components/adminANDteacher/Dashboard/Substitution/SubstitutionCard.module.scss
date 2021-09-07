@@ -1,0 +1,231 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.customFontColor {
+  color: $white-bg;
+}
+
+.BgColor {
+  background: $white-bg;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content {
+  width: 150px;
+}
+
+.teacherBtn {
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+.personaSpace {
+  margin-left: 20px;
+}
+
+.ms-Persona-details {
+  display: none;
+}
+
+.contentContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.illnessCountContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-right: 1px solid #e6e6e6;
+  flex-wrap: wrap;
+
+  article {
+    z-index: 1;
+    text-align: center;
+  }
+
+  img {
+    width: 186px;
+    max-width: 50%;
+    margin-bottom: -10px;
+    margin-bottom: -30px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    min-width: 300px;
+  }
+
+  @media (max-width: $screen-tablet) {
+    flex-direction: column;
+  }
+}
+
+.illnessTeacherContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media (min-width: $screen-desktop) {
+    padding: 0 10px;
+  }
+}
+
+.btnPlain {
+  height: auto;
+  padding: 10px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.wrap {
+  width: 100px;
+}
+
+.purple {
+  color: $purple-bg !important;
+  font-size: 14;
+}
+
+.userDetails {
+  padding-top: 10px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.test {
+  word-wrap: break-word;
+}
+
+.imgOpacity {
+  opacity: 0.5;
+}
+
+.facePile {
+  padding-top: 2px;
+  padding-left: 4px;
+}
+
+.user2ndDetails {
+  padding-top: 10px;
+  font: normal normal 600 14px/20px Segoe UI;
+  font: var(--unnamed-font-style-normal) normal 600 14px/20px
+    var(--unnamed-font-family-segoe-ui);
+  letter-spacing: var(--unnamed-character-spacing-0);
+}
+
+.padRight {
+  padding-right: 20px;
+}
+
+.NumberOfIll {
+  background: $orange;
+  border-radius: 12px;
+  opacity: 1;
+  padding: 4px 12px;
+  margin-bottom: 4px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  display: inline-block;
+  border: 2px solid #fff;
+}
+
+.iconStyle {
+  color: $white-bg;
+  padding-top: 20px;
+  padding-right: 25px;
+  cursor: pointer;
+  float: right;
+}
+
+.gridGetStarted {
+  padding-top: 115px;
+  padding-left: 30px;
+}
+
+.customBtn {
+  background-color: $btn-banner;
+  width: 115px;
+  float: right;
+  margin-top: 70px;
+  margin-right: 25px;
+}
+
+.showBanner {
+  padding-bottom: 15px;
+  display: block;
+}
+
+.hideBanner {
+  padding-bottom: 15px;
+  display: none;
+}
+
+.customBtnBG {
+  background-color: $btn-banner !important;
+}
+
+.callout {
+  width: 280px;
+  height: 550px;
+
+  .listStyle {
+    padding: 8px 20px !important;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .listStyle:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+}
+
+.calloutContainer {
+  padding: 10px;
+}
+
+.teacherContainer {
+  display: block;
+  padding: 10px 25px;
+}
+
+.sickTeacher {
+  padding: 0px 0px 10px;
+}
+
+.btnSubstitute {
+  margin: auto;
+}
+
+.btnEdit {
+  position: relative;
+  right: 35px;
+  color: $white-bg;
+  background-color: $purple-bg;
+  border-style: none;
+  padding: 3px 15px;
+  border-radius: 3px;
+  outline: 0px;
+  cursor: pointer;
+}

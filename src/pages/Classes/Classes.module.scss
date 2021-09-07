@@ -1,0 +1,154 @@
+
+
+@import '../../assets/ui-kit/_variables.scss';
+
+
+.BreadcrumbContainer{
+    margin:0px !important;
+
+    div{
+      color: $purple-bg !important;
+      font-size: 14px;
+    }
+}
+
+.borderbot{
+    border-bottom: $purple-bg  3px solid;
+}
+
+.padUS{
+    padding: 30px 9px 10px 0px;
+  }    
+  .iconColor{
+    color:$purple-bg;
+    font-size: 20px;
+  }
+
+  .padUS{
+    padding: 0px;
+  }
+
+  .uploadText{
+    vertical-align: super;
+    color:$purple-bg;
+    font-size: 14px;
+    
+  }
+
+  .aLink {
+    position: relative;
+    display: block;
+    font-family: $font-default;
+    margin: 0 12px;
+    font-weight: $regular;
+    font-size: 14px;        
+    color:$gray-dark;
+    text-decoration: none;    
+    padding-bottom: 12px;
+  }
+  
+  .aLinkactive {    
+    position: relative;
+    display: block;    
+    margin: 0 12px;
+    font-weight:$semiBold;
+    font-size: 14px;        
+    color: $font-color;
+    text-decoration: none;    
+    padding-bottom: 10px;
+    border-bottom: $purple-bg  3px solid;
+    font-family: $font-default;
+  }
+
+
+
+  .container{
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+  }
+
+
+
+  .cursor{
+    cursor: pointer;
+}
+
+.titleSubject{
+  font-size: 24px;
+  font-weight: $bold;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+.titleSubjectDetils{
+  font-size: 12px;  
+  padding-left: 10px;
+  margin-top: 7px;
+  color:$gray-dark;
+}
+
+.titleDate{
+  margin-top: 20px;  
+  margin-right: 10px;
+}
+
+
+
+.dateBoxMonth{
+  border: 2px solid $purple-bg;
+  padding:2px 20px 2px 20px;
+  background-color: $purple-bg;
+  color:$white-bg;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: $regular;
+}
+
+.dateBoxDay{
+  border: 2px solid $purple-bg;
+  padding:5px 20px 5px 20px;
+  background-color: $white-bg;
+  color:$purple-bg;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 30px;
+  font-weight: $bold;
+  text-align: center;
+}
+
+
+.borderbottab{
+  border-bottom: 1px $purple-bg ;
+  
+}
+
+.righLayout{
+  margin-top: 0px;
+}
+
+.lateColor{
+  color:$orange;
+}
+
+.addNoteWidth{
+  width: 105px;
+}
+
+.uploadHomework{
+  width: 160px;
+}
+
+.floatR{
+  float :right;
+}
+
+.badge{
+   background-color: $purple-bg;
+   color: $white-bg;
+   padding: 2px 7px 2px 7px;
+   border-radius: 50%;
+   margin-left: 7px;
+}
+

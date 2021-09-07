@@ -1,0 +1,49 @@
+@import "../../assets/ui-kit/_variables";
+
+.formPanel {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 20px;
+  width: 571px;
+}
+
+.formTitle {
+  font-size: 15px;
+  font-weight: $semiBold;
+  padding-bottom: 20px;
+  padding-top: 24px;
+}
+.name {
+  font-size: 14px;
+  font-weight: $semiBold;
+}
+
+.backButton {
+  font-size: 14px;
+  color: $purple;
+  text-align: right;
+  padding-top: 6px;
+}
+
+.searchBox {
+  padding-top: 24px;
+  padding-bottom: 15px;
+}
+.fieldName {
+  font-size: 14px;
+  font-weight: $regular;
+}
+
+.textField {
+  width: 295px;
+}
+.description2 {
+  font-size: 11px;
+  font-weight: $regular;
+  color: $gray;
+  margin-left: 10px;
+}
+.persona {
+  margin-bottom: 24px;
+}

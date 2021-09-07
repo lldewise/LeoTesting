@@ -1,0 +1,121 @@
+$standard-color: #7c4ad9;
+$yellow-color: #f7a93b;
+
+.subjectDetail {
+  padding: 10px 25px;
+  color: #000;
+
+  .subjectTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .todoTitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .iconExp {
+    float: right;
+    top: -25px;
+    right: -30px;
+
+    .fullScreenIcon {
+      font-size: 18px;
+      font-weight: bold;
+      color: $standard-color;
+    }
+  }
+
+  .calendarIcon {
+    margin-right: 3px;
+  }
+
+  .mTop15 {
+    margin-top: 15px;
+  }
+
+  hr.divider {
+    margin: 15px 10px;
+    border: 1px solid #e0e0e0;
+    opacity: 0.4;
+  }
+
+  .itemCell {
+    outline: transparent;
+    position: relative;
+    padding: 5px;
+    display: flex;
+  }
+
+  .itemName {
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .container {
+    margin: 10px;
+  }
+
+  .itemContent {
+    margin-left: 10px;
+    overflow: hidden;
+    flex-grow: 1;
+    font-size: 14px;
+    padding-top: 8px;
+
+    .itemIndex {
+      font-size: 12px;
+      color: $yellow-color;
+    }
+
+    .itemImage {
+      flex-shrink: 0;
+    }
+  }
+
+  .linkMore {
+    font-size: 12px;
+  }
+
+  .linkMore:hover {
+    text-decoration: none;
+    color: $standard-color;
+  }
+
+  .uploadContainer {
+    margin: 15px 10px;
+    border: 1px solid #e0e0e0;
+    padding: 5px 30px;
+    display: flex;
+    cursor: pointer;
+
+    .uploadedFileName {
+      line-height: 2;
+      font-size: 14px;
+    }
+
+    .imgUploaded {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
+
+.callout {
+  max-width: 320px !important;
+}
+
+.buttonArea {
+  vertical-align: "top";
+  display: "inline-block";
+  text-align: center;
+  margin: "0 100px";
+  min-width: 130px;
+  height: 32;
+}

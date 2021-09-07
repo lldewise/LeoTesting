@@ -1,0 +1,98 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.customBackgroundNews {
+  background: $white-bg;
+  height: 220px;
+  max-width: 100% !important;
+}
+
+.customDiv {
+  width: 100%;
+  padding-top: 35px;
+  margin-left: 10px;
+}
+
+.newsTitle {
+  font-weight: 600;
+  padding: 12px;
+}
+
+.imgHeight {
+  object-fit: cover;
+  max-height: 140px;
+  height: 120px;
+  width: 120px;
+  vertical-align: bottom;
+  border-radius: 5px;
+}
+
+.carouselNewsDesc {
+  padding-left: 22px;
+}
+
+.newsTitleFont {
+  color: $purple-bg;
+  font-family: Segoe UI Semibold;
+  font-size: 12px;
+  padding-left: 10px;
+  float: left;
+  margin-top: 6px;
+}
+
+.newsIcon {
+  color: $purple-bg;
+  font-size: 15px;
+  margin-top: 6px;
+  float: left;
+}
+
+.newsContent {
+  font-family: Segoe UI Regular;
+  font-size: 15px;
+  height: 60px;
+  width: 258px;
+  margin: 30px 0 10px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.newsDateFont {
+  color: $gray-label;
+  font-family: Segoe UI Semibold;
+  font-size: 12px;
+  float: right;
+  margin-top: 6px;
+}
+
+.focus {
+  outline: none !important;
+  :focus {
+    outline: none !important;
+  }
+}
+
+.iconPadding {
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  .newsContent {
+    width: 225px;
+  }
+
+  .colNewsTitle {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .colNewsTitle {
+    padding-left: 30px;
+  }
+
+  .newsContent {
+    width: 175px;
+  }
+}

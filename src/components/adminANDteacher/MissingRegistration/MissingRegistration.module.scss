@@ -1,0 +1,195 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.container {
+  overflow: auto;
+  max-height: 500;
+}
+
+.assignmentHeader {
+  padding: 15px 15px;
+}
+
+.assignmentDetails {
+  margin: 0px 15px;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.itemDetailsBold {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.itemDetails {
+  font-size: 12px;
+}
+
+.chevron {
+  align-self: center;
+  margin-left: 10;
+  color: rgb(161, 159, 157);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.itemIndex {
+  font-size: 12px;
+  color: rgb(161, 159, 157);
+  margin-bottom: 10;
+  cursor: pointer;
+}
+
+.itemIndex:hover {
+  text-decoration: underline;
+}
+
+.itemSingle {
+  padding: 8px;
+  font-size: 12px;
+  width: 150px;
+  color: $black;
+}
+.itemSingle:hover {
+  text-decoration: underline;
+}
+
+.itemIconTitle {
+  padding: 8px;
+  font-size: 10px;
+  width: 20px;
+}
+
+.itemIcon {
+  padding: 8px;
+  font-size: 14px;
+  width: 10px;
+}
+
+.itemDate {
+  padding: 8px;
+  font-size: 12px;
+  width: 180px;
+}
+
+.listrightwidth {
+  width: 190px;
+}
+
+.itemName {
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: $black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.itemName:hover {
+  text-decoration: underline;
+}
+
+.itemContentRight {
+  margin-left: 10;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.itemContent {
+  margin-left: 10;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.itemImage {
+  flex-shrink: 0;
+}
+
+.itemCell {
+  outline: transparent;
+  position: relative;
+  min-height: 54px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(237, 235, 233);
+  display: flex;
+}
+
+.ms-List-page .itemCell:last-child {
+  border-bottom: none !important;
+}
+
+.mb2 {
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+
+.itemhover {
+  background: inherit;
+  :hover {
+    background: rgb(237, 235, 233);
+  }
+}
+
+.fontIcon {
+  font-size: 18px;
+  color: $purple-bg;
+  padding: 6px 8px 6px 8px;
+  background-color: #e6e6ff;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.icontitle {
+  font-size: 18px;
+}
+
+.icon {
+  font-size: 15px;
+}
+
+.iconEdit {
+  color: $purple-bg;
+  font-size: 15px;
+}
+.shared {
+  font-size: 18px;
+}
+
+.containerTitle {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+}
+
+.number {
+  text-align: center;
+  color: $white-bg;
+  padding: 1px 7px 1px 7px;
+  border-radius: 50%;
+  background-color: $purple-bg;
+  font-weight: $semiBold;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: $semiBold;
+  padding-top: 2px;
+  margin-right: 15px;
+}
+
+.mrlist {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-top: 28px;
+}
+
+.noData {
+  padding: 10px 0px 30px;
+  font-weight: 600;
+}
+
+.missingRegLink {
+  text-decoration: none;
+}

@@ -1,0 +1,104 @@
+@import "../../../assets/ui-kit/variables";
+
+.searchContainer {
+  width: 100%;
+  padding: 20px;
+  border-right: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+  background-color: $white-bg;
+}
+.search {
+  border: none;
+  // width: 185px;
+}
+
+.dataContainer {
+  height: calc(100vh - 247px);
+}
+
+.itemIconTitle {
+  padding: 8px;
+  font-size: 10px;
+  width: 20px;
+}
+
+.itemIcon {
+  padding: 8px;
+  font-size: 14px;
+  width: 10px;
+}
+
+.fontIcon {
+  font-size: 16px;
+  font-weight: normal;
+  color: $purple-light;
+  padding: 12px 8px 18px 13px;
+  background-color: #e6e6ff;
+  margin-right: 8px;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+}
+
+.customPadding {
+  padding: 10px;
+}
+
+.titleFont {
+  margin-top: 3px;
+  color: black;
+}
+
+.itemCell {
+  outline: transparent;
+  position: relative;
+  min-height: 54px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.customWidth {
+  text-align: right;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1320px) {
+  .titleFont {
+    white-space: nowrap;
+    width: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .itemCell {
+    margin-left: 0px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .fontIcon {
+    margin: 0;
+  }
+
+  .titleFont {
+    width: 50px;
+  }
+
+  .customWidth {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 920px) {
+  .fontIcon {
+    width: auto;    
+    height: fit-content;
+    padding: 10px;
+  }
+}

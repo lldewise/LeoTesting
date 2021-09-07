@@ -1,0 +1,32 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.ulList {
+  list-style: none;
+  padding: 0px 0px;
+}
+
+.ulListBorder {
+  list-style: none;
+  padding: 0px 0px;
+  border-bottom: 1px solid #e7e7ee;
+  margin: 0px;
+}
+
+.liitem {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.count {
+  height: 19px;
+  width: 20px;
+  background-color: $purple-bg;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}

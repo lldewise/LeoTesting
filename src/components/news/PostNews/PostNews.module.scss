@@ -1,0 +1,141 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.newContent {
+  margin: 4px;
+  cursor: pointer;
+}
+.imagePad {
+  margin: 0px 10px 0 0;
+}
+
+.personaName {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.personSecondary {
+  font-size: 12px;
+  vertical-align: top;
+  color: $gray-dark;
+}
+
+.pad10 {
+  padding-right: 10px;
+}
+
+.fontIcon {
+  font-size: 14px;
+  color: $purple-bg;
+}
+
+.newtyoe {
+  color: $purple-bg;
+}
+
+.topNew {
+  height: 325px;
+  border-radius: 6px 6px 6px 6px;
+  opacity: 1;
+  background-size: 110% 100%;
+  background-repeat: no-repeat;
+}
+
+.divNewsCard {
+  padding: 0 20px;
+}
+.padTBTitle {
+  padding: 20px 0 0;
+  font-size: 16px;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $gray-dark;
+  }
+}
+
+.rowPostCardDetails {
+  padding-top: 15px;
+}
+
+.padBName {
+  padding-bottom: 15px;
+}
+
+.documentRaduis {
+  border-radius: 6px 6px 6px 6px;
+  border: 0px;
+  max-width: 700px !important;
+}
+.documentRaduisImage {
+  border-radius: 6px 6px 0 0;
+}
+
+.newTopHeader {
+  font-size: 12px;
+  color: $white-bg;
+}
+
+.newTopTitle {
+  font-size: 24px;
+  color: $white-bg;
+}
+
+.newTopLabel {
+  padding-top: 230px;
+}
+
+.imageDiv {
+  width: 100%;
+  height: 196px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  animation-name: css-1;
+  animation-duration: 0.367s;
+  animation-timing-function: cubic-bezier(0.1, 0.25, 0.75, 0.9);
+  animation-fill-mode: both;
+  position: relative;
+}
+
+.imageDiv canvas {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 4px;
+  width: 100% !important;
+}
+
+.imageList {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px 6px 0 0;
+  border: 0px;
+}
+
+.coverBlack {
+  padding-left: 10px;
+
+  padding-bottom: 14px;
+
+  -moz-box-shadow: inset 0 -100px 122px -10px #262626;
+  -webkit-box-shadow: inset 0 -100px 122px -10px #262626;
+  box-shadow: inset 0 -100px 122px -10px #262626;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+  .imageDiv {
+    height: 164px;
+  }
+}

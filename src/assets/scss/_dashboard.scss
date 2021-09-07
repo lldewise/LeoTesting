@@ -1,0 +1,344 @@
+/*
+  List of stylesheets that are similar, therefore, needs to be included here. 
+  These stylesheets will have an effect to markup codes.
+
+  1. ScheduleWeeklist.module.scss = TeacherAgendaView.module.scss
+  2. 
+*/
+
+$font-color: #95989a;
+
+.dashboard-title {
+  font-size: $text-normal;
+  font-weight: $semiBold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card-default {
+  padding: 10px;
+}
+
+.main-right-panel {
+  .dashboardCalendar {
+    margin: 14px 0 0;
+
+    .miniCalendarContainer {
+      background-color: $white-bg;
+      padding: 0 12px;
+
+      &:hover {
+        .prevBtnDiv,
+        .nextBtnDiv {
+          visibility: visible;
+          background-color: $gray-lighter;
+
+          &:active,
+          &:focus {
+            background-color: $gray;
+          }
+        }
+      }
+    }
+
+    .calendarContainer {
+      padding: 0;
+    }
+
+    .fc {
+      .fc-daygrid-day-top {
+        display: flex;
+        flex-direction: row;
+        padding: 6px 0;
+        justify-content: center;
+      }
+
+      .fc-day {
+        cursor: pointer;
+
+        &:not(.fc-day-today):hover .fc-daygrid-day-number {
+          color: $purple;
+        }
+      }
+    }
+
+    .filterDateContainer {
+      padding: 0 12px;
+
+      .monthDisplay {
+        font-weight: 600;
+      }
+
+      .btnDatePicker {
+        top: 3px;
+        left: 0;
+        position: relative;
+        font-size: 14px;
+      }
+
+      .linkToggle {
+        font-weight: 600;
+        float: right;
+        cursor: pointer;
+        position: relative;
+        right: 0px;
+        top: 6px;
+      }
+
+      .calloutContainer {
+        width: 400px;
+        height: 200px;
+      }
+    }
+
+    .ctrlBtnDiv {
+      color: $gray-dark;
+      position: absolute;
+      z-index: 2;
+      top: 27px;
+      padding: 0 2px;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      transition: all 0.15s ease-in-out;
+      visibility: hidden;
+      cursor: pointer;
+      width: auto;
+      height: auto;
+
+      &:hover {
+        background-color: $gray-light;
+      }
+
+      .ms-Icon {
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+
+    .prevBtnDiv {
+      left: -1px;
+      @extend .ctrlBtnDiv;
+    }
+
+    .nextBtnDiv {
+      right: 1px;
+      @extend .ctrlBtnDiv;
+    }
+
+    .calendarContainer {
+      .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+        position: relative !important;
+        min-height: 0px !important;
+      }
+
+      .fc .fc-scrollgrid-section-liquid {
+        height: 40px !important;
+      }
+
+      .fc td,
+      .fc th,
+      .fc .fc-scrollgrid {
+        border: none !important;
+      }
+
+      .fc tr,
+      .f thead {
+        font-weight: 400 !important;
+        color: $font-color;
+        transition: color 0.12s ease-in-out;
+      }
+
+      .fc .fc-daygrid-day.fc-day-today {
+        background-color: #fff !important;
+
+        .fc-daygrid-day-number {
+          background-color: $purple-bg;
+          color: #fff;
+          border-radius: 50%;
+          width: 26px !important;
+          height: 26px !important;
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+
+      .fc-daygrid-day-frame.fc-scrollgrid-sync-inner {
+        height: 40px !important;
+      }
+
+      .fc-col-header-cell-cushion {
+        font-weight: normal !important;
+        color: $font-color;
+      }
+
+      .fc-view-harness {
+        height: 60px !important;
+      }
+
+      .fc-scroller {
+        overflow: hidden !important;
+        padding-right: 6px;
+      }
+
+      .fc-col-header {
+        width: 100% !important;
+      }
+
+      .fc-highlight {
+        background: lightgray !important;
+        border-radius: 50%;
+        width: 26px !important;
+        height: 26px !important;
+        margin: auto;
+      }
+
+      .fc {
+        text-align: center !important;
+      }
+
+      .fc td {
+        padding: 0;
+        vertical-align: middle !important;
+      }
+    }
+
+    .calendarPickerContainer {
+      .fc .fc-scrollgrid-section-liquid {
+        height: 40px !important;
+      }
+
+      padding: 0 12px;
+
+      .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+        position: relative !important;
+        min-height: 0px !important;
+      }
+
+      .fc td,
+      .fc th,
+      .fc .fc-scrollgrid {
+        border: none !important;
+      }
+
+      .fc tr,
+      .f thead {
+        font-weight: 400 !important;
+        color: $font-color;
+      }
+
+      .fc .fc-daygrid-day.fc-day-today {
+        background-color: #fff !important;
+
+        .fc-daygrid-day-number {
+          background-color: $purple-bg;
+          color: #fff;
+          border-radius: 50%;
+          width: 26px !important;
+          height: 26px !important;
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+
+      .fc-col-header-cell-cushion {
+        font-weight: normal !important;
+        color: $font-color;
+      }
+
+      .fc-view-harness {
+        height: 216px !important;
+      }
+
+      .fc-scroller {
+        overflow: hidden !important;
+        padding-right: 6px;
+      }
+
+      .fc-col-header {
+        width: 100% !important;
+      }
+
+      .fc-highlight {
+        background: lightgray !important;
+        border-radius: 50%;
+        width: 26px !important;
+        height: 26px !important;
+        margin: auto;
+      }
+
+      .fc {
+        text-align: center !important;
+      }
+
+      .fc td {
+        padding: 0;
+        vertical-align: middle !important;
+      }
+    }
+  }
+  .scheduleWeekList {
+    &:hover {
+      background-color: $gray-lighter;
+      cursor: pointer;
+    }
+  }
+  .weekList {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 290px);
+
+    .todaySched {
+      font-weight: 600;
+      margin: 15px 12px;
+    }
+
+    .tomorrowSched {
+      font-weight: 600;
+      margin: 12px 12px;
+    }
+
+    .locationDot {
+      margin: 5px;
+    }
+  }
+
+  hr.calendarDivider {
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 12px 0 0;
+    background: $border;
+    display: inline-block;
+  }
+
+  .createNewSchedBtn {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 49px;
+    border-top: 1px solid $border;
+    border-bottom: 0 none;
+    background-color: $white-bg;
+    z-index: 2;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .expandCal {
+    position: absolute;
+    display: block;
+    margin: 6px 0;
+    color: #373737;
+    right: 12px;
+
+    .ms-Icon {
+      font-size: 20px;
+    }
+  }
+}

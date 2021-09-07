@@ -1,0 +1,82 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.newsTitle {
+  font-weight: bold;
+  padding: 12px;
+}
+
+.imgHeight {
+  object-fit: cover;
+  max-height: 140px;
+  height: 110px;
+  width: 130px;
+  border-radius: 5px;
+}
+
+.noTPad {
+  padding-top: 0;
+}
+
+.newsTitleFont {
+  color: $purple-bg;
+  font-size: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.newsIcon {
+  color: $purple-bg;
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.newsDateFont {
+  color: $gray-darker;
+  font-size: 11px;
+}
+
+.iconPadding {
+  padding-right: 10px;
+}
+
+.customBackgroundAttendance {
+  background: white;
+  height: 500px;
+  max-width: 100% !important;
+  display: block;
+}
+
+.Title {
+  font-weight: bold;
+  padding: 15px;
+  position: absolute;
+}
+
+.btnPadding {
+  padding: 10px;
+}
+
+.btnSize {
+  width: 100%;
+  color: #0078d4;
+  border: 1px solid #e6e6e6 !important;
+  margin-top: 14px;
+}
+
+.icon {
+  padding-top: 18px;
+  position: absolute;
+  margin-left: 35px;
+  color: #0078d4;
+  font-size: 14px;
+}
+
+.createNewStory {
+  font-weight: bold;
+  padding: 15px;
+  position: absolute;
+  margin-left: 40px;
+  color: #0078d4;
+  font-size: 14px;
+  font-family: "Segoe UI";
+}

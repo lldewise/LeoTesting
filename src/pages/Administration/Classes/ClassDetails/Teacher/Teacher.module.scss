@@ -1,0 +1,32 @@
+@import "../../../../../assets/ui-kit/_variables";
+
+.teacherMainContainer {
+  background-color: $white;
+  padding: 45px 40px;
+  width: 100%;
+
+  .teacherInfo {
+    border: 1px solid $gray-lighter;
+    min-height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .persona {
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  .subjects {
+    width: 100%;
+    display: flex;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: right;
+    margin-right: 20px;
+  }
+}

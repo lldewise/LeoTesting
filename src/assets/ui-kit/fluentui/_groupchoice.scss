@@ -1,0 +1,65 @@
+.ms-ChoiceField-field:hover::after, 
+.ms-ChoiceField-field::after {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-width: 6px;   
+    background-color: transparent;
+}
+
+.cg-default .ms-ChoiceField-field:before,
+.cg-primary .ms-ChoiceField-field:before,
+.cg-secondary .ms-ChoiceField-field:before,
+.cg-disabled .ms-ChoiceField-field:before {
+    border-color: $gray-lighter;
+
+}
+
+.cg-default .ms-ChoiceField-field:hover:before {
+    border-color: $gray-light;
+    width: 20px;
+    height: 20px;
+    border-width: 6px;
+}
+.cg-primary .ms-ChoiceField-field:hover:before {
+    border-color: $primary-color;
+    width: 20px;
+    height: 20px;
+    border-width: 6px;
+}
+.cg-secondary .ms-ChoiceField-field:hover:before {
+    border-color: $secondary-color;
+    width: 20px;
+    height: 20px;
+    border-width: 6px;
+}
+.cg-disabled .ms-ChoiceField-field:hover:before {
+    border-color: $gray-light ;
+    width: 20px;
+    height: 20px;
+    border-width: 6px;
+}
+
+.cg-default .ms-ChoiceField-field:hover {
+    border-color: $gray-light ;
+}
+.cg-primary .ms-ChoiceField-field:hover {
+    border-color: $primary-color ;
+}
+.cg-secondary .ms-ChoiceField-field:hover {
+    border-color: $secondary-color ;
+}
+.cg-disabled .ms-ChoiceField-field:hover {
+    border-color: $gray-light ;
+}
+
+.cg-default .ms-ChoiceField-field::after {
+    border-color: $gray-light ;
+}
+.cg-primary .ms-ChoiceField-field::after {
+    border-color: $primary-color ;
+}
+.cg-secondary .ms-ChoiceField-field::after {
+    border-color: $secondary-color ;
+}

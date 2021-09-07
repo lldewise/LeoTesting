@@ -1,0 +1,35 @@
+.picker {
+  width: 100%;
+}
+
+.container {
+  outline: transparent;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.pad40 {
+  padding-right: 40px;
+}
+
+.pad20 {
+  padding-right: 20px;
+}
+
+.pad10 {
+  padding-right: 10px;
+}
+
+.textfield {
+  width: 100%;
+}
+.itemtitle {
+  padding-bottom: 5px;
+}
+
+.warning{
+  padding-top:5px ;
+  font-size: 12px;
+  color :rgb(164, 38, 44);
+}

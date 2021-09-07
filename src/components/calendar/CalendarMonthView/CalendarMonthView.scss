@@ -1,0 +1,207 @@
+@import "../../../assets/ui-kit/_variables";
+
+.calendarMonthView {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  position: relative;
+
+  .monthViewSchedule {
+    font-weight: normal !important;
+    height: auto !important;
+    padding: 5px 2px !important;
+  }
+
+  /* calendar scss */
+
+  .fc-scrollgrid-sync-inner:hover {
+    .fc-daygrid-day-number {
+      background: $purple-lighter;
+    }
+  }
+
+  .fc-view-harness.fc-view-harness-active {
+    font-weight: normal !important;
+    height: calc(100vh - 93px) !important;
+  }
+
+  .fc-timegrid-slot.fc-timegrid-slot-label.fc-timegrid-slot-minor {
+    border-style: none !important;
+  }
+
+  .fc-timegrid-slot.fc-timegrid-slot-label.fc-scrollgrid-shrink {
+    border-style: none !important;
+  }
+
+  .fc-timegrid-slot-label-cushion.fc-scrollgrid-shrink-cushion {
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+  }
+
+  .fc-timegrid-event-harness {
+    cursor: pointer;
+  }
+
+  .fc {
+    margin-top: -20px !important;
+  }
+
+  .fc td,
+  .fc th {
+    border-right: none !important;
+    border-left: none !important;
+  }
+
+  .fc-timegrid-event {
+    border-color: 1px solid #f8f8f8 !important;
+  }
+
+  .fc-event-main {
+    color: #000 !important;
+    border-style: none !important;
+    padding: 2px !important;
+    margin: auto !important;
+  }
+
+  .fc-h-event {
+    border: 0px !important;
+    height: 30px !important;
+  }
+
+  .fc-scrollgrid-sync-inner {
+    font-weight: normal !important;
+    text-align: left !important;
+  }
+
+  .fc-direction-ltr .fc-timegrid-col-events {
+    margin: 0px !important;
+  }
+
+  .fc-theme-standard th {
+    height: 40px;
+    vertical-align: middle;
+    text-align: left !important;
+  }
+
+  .fc-daygrid-event {
+    position: unset !important;
+    overflow: hidden;
+  }
+
+  .fc-col-header {
+    height: 50px !important;
+  }
+
+  .fc-scrollgrid {
+    border: none !important;
+  }
+
+  .fc .fc-daygrid-day-bottom {
+    font-size: 12px !important;
+    margin: 2px 3px 0px !important;
+    display: flex !important;
+    justify-content: center !important;
+    color: #0078d4 !important;
+  }
+
+  .fc-popover-title {
+    color: $purple-bg !important;
+  }
+
+  .fc .fc-scrollgrid-section table {
+    border-top-style: inherit !important;
+  }
+
+  .fc-scrollgrid-sync-inner a::first-letter {
+    text-transform: uppercase !important;
+  }
+  .fc-scroller .fc-scroller-liquid-absolute {
+    border-right: 1px solid $gray-bg !important;
+    overflow: hidden !important;
+  }
+  .fc .fc-timegrid-col.fc-day-today {
+    background-color: $white-bg !important;
+  }
+  .fc-day-today {
+    background-color: $white-bg !important;
+  }
+  .fc-day-past {
+    background-color: $gray-bg !important;
+  }
+
+  .fc-daygrid-day-number {
+    color: $gray-dark;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  .fc .fc-daygrid-day.fc-day-today {
+    background-color: #fff !important;
+
+    .fc-daygrid-day-number {
+      background-color: $purple-bg;
+      color: #fff;
+      border-radius: 50%;
+      width: 25px !important;
+      height: 25px !important;
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+
+  .fc .fc-daygrid-day-top {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: flex-start !important;
+  }
+
+  .fc-highlight {
+    background: lightgray !important;
+    color: #fff;
+    border-radius: 50%;
+    width: 26px !important;
+    height: 26px !important;
+    position: absolute !important;
+    left: calc(1vw - 18px) !important;
+  }
+
+  /* calendar css end */
+}
+
+.calendarDaySched {
+  position: relative;
+  top: 1px;
+  border-left: 1px solid $gray !important;
+
+  .dayTitle {
+    border: 1px solid #ddd;
+    border-left-style: none !important;
+    padding: 0 10px 5px 10px;
+    height: 43px;
+    line-height: 50px;
+    position: relative;
+    font-size: 20px;
+    color: $purple-bg;
+    display: flex;
+
+    .day::first-letter {
+      text-transform: uppercase !important;
+    }
+
+    .month {
+      margin-left: 5px;
+      &::first-letter {
+        text-transform: uppercase !important;
+      }
+    }
+  }
+
+  .dayList {
+    background-color: #f8f8f8;
+    height: 84vh !important;
+    overflow: hidden scroll;
+    &::first-letter {
+      text-transform: uppercase !important;
+    }
+  }
+}

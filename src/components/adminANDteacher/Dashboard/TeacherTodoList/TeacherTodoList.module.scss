@@ -1,0 +1,141 @@
+@import "../../../../assets/ui-kit/_variables";
+
+.container {
+  overflow: auto;
+  max-height: 500;
+}
+
+.assignmentHeader {
+  padding: 15px 15px;
+}
+
+.assignmentDetails {
+  margin: 15px;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.itemDetailsBold {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.itemDetails {
+  font-size: 12px;
+}
+
+.chevron {
+  align-self: center;
+  margin-left: 10;
+  color: rgb(161, 159, 157);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.checkItem {  
+  padding: 15px 5px 5px 10px;
+}
+
+.checkItem div{  
+  border-radius: 50%;
+}
+
+.itemIndex {
+  font-size: 12px;
+  color: rgb(161, 159, 157);
+  margin-bottom: 10;
+}
+
+.itemSingle {
+  padding: 8px;
+  font-size: 12px;
+  width: 45px;
+}
+
+.listrightwidth {
+  width: 190px;
+}
+
+.itemName {
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemContentRight {
+  margin-left: 10;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.itemContent {
+  padding: 5px;
+  font-size: 12px;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.itemImage {
+  flex-shrink: 0;
+}
+
+.itemCell {
+  outline: transparent;
+  position: relative;
+  min-height: 54px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(237, 235, 233);
+  display: flex;
+}
+
+.mb2 {
+  margin-bottom: 2px;
+}
+
+.itemhover {
+  background: inherit;
+  :hover {
+    background: rgb(237, 235, 233);
+  }
+}
+
+.fontIcon {
+  font-size: 20px;
+  color: $purple-bg;
+  padding: 6px;
+  background-color: #e6e6ff;
+  margin-right: 3px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.iconEdit {
+  color: $purple-bg;
+  font-size: 15px;
+}
+
+.checkboxdiv div {
+  border-radius: 10px !important;
+}
+.checkboxdiv {
+  padding-top: 5px;
+}
+
+.divCheck {
+  width: 3%;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.date {
+  font-size: 12px;
+}

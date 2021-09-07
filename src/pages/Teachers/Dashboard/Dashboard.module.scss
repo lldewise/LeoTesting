@@ -1,0 +1,156 @@
+@import "../../../assets/ui-kit/_variables";
+
+.dashboard {
+  padding-left: 6px;
+
+  .dashboardMessageBanner {
+    padding-right: 10px;
+  }
+
+  .dashboardUnreadMessages {
+    margin-bottom: 15px;
+  }
+
+  .dashboardNewsCard {
+    margin-bottom: 15px;
+  }
+
+  .dashboardSharedDocument {
+    margin-top: 15px;
+
+    .fRight {
+      float: right;
+    }
+  }
+
+  .padUS {
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+    top: 15px;
+    height: 32px;
+  }
+
+  .pivotDefault {
+    margin: 10px;
+  }
+
+  .cardCustom {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.aLink {
+  position: relative;
+  display: block;
+
+  margin: 0 12px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: $font-color;
+  text-decoration: none;
+  padding-bottom: 12px;
+}
+
+.aLinkactive {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: $font-color;
+  text-decoration: none;
+  padding-bottom: 10px;
+  border-bottom: $purple-bg 3px solid;
+}
+
+.assignmentHeader {
+  padding: 15px 15px;
+}
+
+
+
+.iconFont {
+  font-size: 25px !important;
+  margin-bottom: 8px;
+  padding-right: 10px;
+}
+
+.iconColor {
+  color: $purple-bg;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.assignmentHeader {
+  padding: 15px 15px;
+}
+
+.uploadAlign {
+  text-align: center;
+  margin-bottom: 15px;
+
+  .uploadLabelComplete {
+    padding: 20px 5px;
+    color: $purple-bg;
+    font-weight: bold;
+  }
+
+  .uploadProgress {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.actionButton {
+  // color:$black; 
+}
+
+
+.iconFont {
+  padding-right: 10px;
+  margin-bottom: 3px;
+  font-size: 20px !important;
+  font-weight: $semiBold;
+  cursor: pointer;
+}
+
+
+.iconFont1 {
+  padding-right: 10px;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: $semiBold;
+  cursor: pointer;
+
+
+}
+
+
+// .index0{
+//   position: relative;
+// }
+
+// .index1{
+//   position: relative;
+// }
+
+
+
+.taskBtn {
+  // color:$black;
+}
+
+.sharedBtn {
+  padding-bottom: 10px;
+}

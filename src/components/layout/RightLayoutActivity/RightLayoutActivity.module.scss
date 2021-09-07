@@ -1,0 +1,40 @@
+@import "../../../assets/ui-kit/_variables";
+
+.rightLayoutContainer {
+  padding: 12px 12px 0px 12px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.secondCol {
+  width: 10%;
+  text-align: right;
+}
+.fistCol {
+  width: 90%;
+}
+.title {
+  font-weight: $semiBold;
+}
+
+.desc {
+  color: $gray-dark;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 18px;
+  color: $purple;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon1 {
+  cursor: pointer;
+  font-size: 16px;
+  color: $purple;
+}

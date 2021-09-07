@@ -1,0 +1,86 @@
+@import '../../assets/ui-kit/_variables.scss';
+
+.divPadding{
+    background: $white-bg;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;     
+    padding: 0 10px;
+    margin: 20px 5px;
+}
+
+.alarmCLock{
+    padding: 10px 0;
+}
+
+.leftArrow {
+    font-size: 14px;
+    color: $purple-bg;
+    float: left;
+  }
+  
+.rightArrow {
+    font-size: 14px;
+    color: $purple-bg;
+    float: right;
+    margin-left: 10px;
+  }
+  
+.rightArrowDiv {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+.dueSoon{
+    font-weight: bold;
+}
+
+.label{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.iconStyle{
+  font-size: 20px;
+  display: block;
+  color: $purple-bg;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.divBgColor{
+  display: block;
+  background-color: $icon-bg;
+  width: 100%;
+  height: 90px;
+}
+
+.labelMargin{
+  margin-top: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.labelMarginSubject{
+  font-size: 12px;
+  color: $gray-label;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.labelTime{
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.iconTime{
+  font-size: 12px;
+  vertical-align: revert;
+}

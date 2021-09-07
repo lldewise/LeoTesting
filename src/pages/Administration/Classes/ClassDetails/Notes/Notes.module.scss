@@ -1,0 +1,114 @@
+@import '../../../../../assets/ui-kit/variables';
+
+.pad {
+  padding: 30px 40px;
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: $semiBold;
+}
+
+.customMargin {
+  margin-top: 0px;
+}
+
+.contentMargin {
+  margin: 0px 6px 0px 2px;
+  background-color: white;
+}
+
+//Notes tab -----
+.divnewFeeds {
+  margin-bottom: 15px;
+  border: 1px solid $card-border;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.headerFilter {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-weight: 500;
+}
+
+.likePerson {
+  padding-bottom: 12px;
+}
+
+.container {
+  border-top: 1px solid #e7e7ee;
+}
+
+.addNotesBtn {
+  align-self: center;
+  margin-right: 10px;
+  text-align: right;
+  margin-top: 15px;
+  left: 100px;
+}
+
+.options {
+  width: 136px;
+}
+
+.filterwidth {
+  width: 25px;
+  padding: 8px;
+}
+
+.noteFlexContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  @media (max-width: $screen-desktop) {
+    flex-direction: column;
+  }
+}
+
+.col1 {
+  width: 13%;
+  padding: 6px 0;
+
+  @media (max-width: $screen-desktop) {
+    width: 100%;
+  }
+}
+
+.col2 {
+  width: 100%;
+  position: relative;
+  min-height: 32px;
+  align-items: center;
+  margin-top: 10px;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.save {
+  text-align: right;
+}
+
+.emptyDiv {
+  border: 1px solid $gray-light;
+  position: relative;
+  top: -14px;
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+}
+
+.subtitle {
+  font-weight: $semiBold;
+}
+
+.subtitle1 {
+  color: $gray;
+}
+
+.contentColor {
+  padding: 32px;
+}

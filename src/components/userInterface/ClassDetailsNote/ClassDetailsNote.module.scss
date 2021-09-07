@@ -1,0 +1,43 @@
+@import '../../../assets//ui-kit/variables.scss';
+
+.imagePad {
+  margin: 0px 10px;
+}
+
+.divComment {
+  height: 98px;
+  max-height: 98px;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.name {
+  font-weight: $semiBold;
+}
+.divname {
+  padding-bottom: 5px;
+}
+
+.container {
+  background-color: $white-bg;
+}
+
+.containerPad {
+  padding: 20px 20px 10px 20px;
+}
+
+.seeMore {
+  padding-top: 10px;
+  font-size: 14px;
+  color: $blue;
+  cursor: pointer;
+}
+
+.personadetail {
+  color: $gray-dark;
+}
+
+// .imgStyle {
+//   margin-right: 24px;
+// }

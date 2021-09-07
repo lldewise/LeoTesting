@@ -1,0 +1,204 @@
+@import '../../../assets/ui-kit/_variables.scss';
+
+.searchField {
+  width: 400px;
+}
+
+table.tableContainer {
+  table-layout: auto;
+  width: 1050px !important;
+  border-collapse: collapse;
+  border: 1px solid $gray-lighter;
+  margin-top: 30px;
+}
+
+table.tableContainer th,
+table.tableContainer td {
+  border: 1px solid $gray-lighter;
+}
+
+table.tableContainer th,
+table.tableContainer td {
+  height: 35px;
+}
+
+table.tableContainer th.leftCol,
+table.tableContainer td.leftCol {
+  width: auto;
+}
+
+table.tableContainer th.rightCol,
+table.tableContainer td.rightCol {
+  font-weight: $regular;
+  position: relative;
+  align-items: center;
+
+  .tblHeader {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+table.tableContainer tbody {
+  height: 200px;
+
+  .uploadSectionContainer {
+    align-items: center;
+    position: relative;
+
+    .info {
+      align-items: center;
+      text-align: center;
+      font-weight: $regular;
+      width: 100%;
+      position: absolute;
+      top: 60%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  .tblHeader {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sortIcon {
+    position: relative;
+    top: 3px;
+  }
+  .emptyIcon {
+    font-size: $text-lg;
+  }
+
+  .emptyMessageTitle {
+    margin-top: 0px;
+  }
+
+  .emptyMessage {
+    font-weight: normal;
+    color: $text-muted;
+    font-size: $text-small;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: $screen-desktop) {
+    flex-direction: column;
+  }
+}
+
+.col1 {
+  width: 35%;
+  max-width: 250px;
+  padding: 6px 0;
+  min-width: 200px;
+
+  @media (max-width: $screen-desktop) {
+    width: 100%;
+  }
+}
+
+.col2 {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.form {
+  width: 1050px !important;
+  margin-bottom: 12px;
+  padding: 0px !important;
+}
+
+.btnGroup {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 50px;
+
+  button {
+    margin-left: 10px;
+  }
+  @media (max-width: $screen-desktop) {
+    justify-content: flex-start;
+    button {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+.calloutStudentTab {
+  top: 312px !important;
+  width: 400px;
+  min-height: 100px;
+  height: auto;
+
+  .listStyle {
+    padding: 8px 20px !important;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .listStyle:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+}
+
+.calloutContainer {
+  padding: 5px 0px;
+}
+
+.title {
+  font-size: 14px;
+  display: flex;
+  justify-content: left;
+  color: $blue;
+  border-bottom: 1px solid $gray-lightest;
+  padding: 5px 10px 10px 10px;
+}
+
+.listItems {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  &:hover {
+    background-color: $gray-lightest;
+    cursor: pointer;
+  }
+}
+
+.secondElem {
+  font-size: 12px;
+}
+
+.studentPersona {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.personaInfo {
+  padding: 10px;
+}
+
+.name {
+  font-size: $regular;
+}
+
+.batch {
+  font-size: $text-small;
+  color: $gray-dark;
+}

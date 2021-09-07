@@ -1,0 +1,12 @@
+.callout {
+  width: 210px;
+
+  .listStyle {
+    padding: 8px 20px !important;
+  }
+
+  .listStyle:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+}

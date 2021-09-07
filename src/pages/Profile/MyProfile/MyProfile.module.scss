@@ -1,0 +1,74 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.myProfile {
+  .filterContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: $white-bg;
+    border-bottom: 3px solid $purple-bg;
+    
+
+    .leftContainer {
+      background-color: $white-bg;
+      margin-left: 16px;
+      display: flex;
+      color: $font-color;
+      font-size: 16px;
+      font-weight: 600;
+      padding-top: 10px;
+
+      .iconProfile {
+        position: relative;
+        // margin-left: calc(100% - 125px) !important;
+        right: 0;
+        text-align: left;
+        width: 200px;        
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+ 
+  }
+  .myProfileContainer {
+    padding: 80px 20px;
+    
+    // .profileCard {
+    //   margin-left: 20px;
+    //   width: 25%;
+    // }
+    // .profileInfoCard {
+    //   margin-left: 20px;
+    //   width: 70%;
+    // }
+  }
+}
+
+// @media screen and (max-width: 640px) {  
+//     .profileCard {
+//       width: 100%;
+//     }
+//     .profileInfoCard {
+//       width: 100%;
+//     }
+// }
+
+.profileInfoCard{
+  top:-25px;
+
+}
+
+@media screen and (min-width: 1600px) {
+  .profileCard {
+    width: fit-content;
+  }
+}
+
+.rightContainer{
+ margin-left: auto;
+}
+
+.risk{
+  color: $red;
+}

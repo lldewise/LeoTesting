@@ -1,0 +1,44 @@
+@import '../../../../assets/ui-kit/_variables.scss';
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.titledesc {
+  font-size: 16px;
+}
+
+.container {
+  outline: transparent;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.squareBGImage {
+  background-image: url(../../../../assets/images/small_disk.png);
+  background-size: 100%;
+  width: 330px;
+  height: 130px;
+}
+.landscapeBGImage {
+  background-image: url(../../../../assets/images/disk.png);
+  background-size: 100%;
+  height: 300px;
+}
+.OrangeButton {
+  background-color: $btn-banner;
+  border: none;
+}
+.OrangeButton:hover {
+  background-color: $btn-banner;
+}
+.image {
+  width: 228px;
+}
+
+.imagehalf {
+  width: 228px;
+  padding-right: 21px;
+}

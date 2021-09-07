@@ -1,0 +1,69 @@
+
+@import '../../../../assets/ui-kit/variables.scss';
+
+.container{
+    padding: 12px;    
+    border-top: 1px solid $card-border;
+    border-bottom: 1px solid $card-border;
+}
+
+.commandright{
+    text-align: right;
+    font-weight: $regular;
+}
+
+.itemSingle {
+  font-size: 12px;
+  text-align: center;
+}
+
+.iconEdit {
+  padding: 5px 0;
+  color: #6c35d4;
+}
+
+.options{
+    width: 136px;
+ }
+
+ .filterwidth{
+    width: 25px;
+    padding: 8px;
+  }
+
+  .actionButton{
+      color:$black;
+     
+  }
+
+  .nudoptions{
+    width: 100px;
+ }
+
+ .icon{
+    font-size: 20px;
+  }
+
+  .iconEdit{
+    color:$purple-bg;
+    font-size: 15px;
+    
+  }
+  .moreVertical{
+    font-size: 15px;
+  
+  }
+
+  .itemDetailsBold{
+      font-weight: $bold;
+  }
+
+  .title{
+      font-size: 14px;
+  }
+
+  .mouseover{
+    padding:10px;
+    background-color: red;
+  }
+

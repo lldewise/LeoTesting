@@ -1,0 +1,243 @@
+@import "../../assets/ui-kit/_variables.scss";
+
+.schedules {
+  height: 100vh !important;
+  background-color: #fff !important;
+  position: relative;
+  //left: -8px;
+  border: 0px;
+
+  .filterContainer {
+    color: $purple-bg !important;
+    display: flex;
+    background-color: $gray-bg;
+    height: 42px;
+    position: relative;
+    z-index: 2;
+
+    /* filter css for commandBar */
+    .leftContainer {
+      background-color: $gray-bg;
+      margin-left: 16px;
+      display: flex;
+      align-items: flex-start;
+      margin-top: 2px;
+      .btnCalendarToday {
+        font-size: 14px;
+        color: $purple-bg !important;
+        background-color: $gray-bg;
+        padding: 12px;
+        border: none;
+        outline: none;
+        top: 5px;
+
+        .todayCalendarIcon {
+          margin-right: 8px;
+          font-size: 14px;
+          position: relative;
+        }
+      }
+      .btnCalendarToday:hover {
+        cursor: pointer;
+        background-color: $gray-lighter;
+      }
+
+      .btnPrevious {
+        font-size: 15px;
+        color: $purple-bg !important;
+        background-color: $gray-bg;
+        padding: 12px;
+        border: none;
+        outline: none;
+        top: 5px;
+
+        .previousCalendarIcon {
+          margin-right: 8px;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .btnPrevious:hover {
+        cursor: pointer;
+        background-color: $gray-lighter;
+      }
+
+      .btnNext {
+        font-size: 14px;
+        color: $purple-bg !important;
+        background-color: $gray-bg;
+        padding: 12px;
+        border: none;
+        outline: none;
+        top: 5px;
+
+        .nextCalendarIcon {
+          margin-right: 8px;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .btnNext:hover {
+        cursor: pointer;
+        background-color: $gray-lighter;
+      }
+
+      .btnCalendar {
+        // font-size: 14px;
+        // color: $purple-bg !important;
+        // background-color: $gray-bg;
+        // border: none;
+        // outline: none;
+        // top: -2px;
+        // height: 40px;
+        &::first-letter {
+          text-transform: uppercase;
+        }
+
+        .calendarIconChevronDown {
+          margin-left: 8px;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .btnCalendar:hover {
+        cursor: pointer;
+        background-color: $gray-lighter;
+      }
+
+      .btnDatePicker {
+        font-size: 14px;
+        color: $purple-bg !important;
+        padding: 10px;
+        border: none;
+        outline: none;
+
+        .datePickerIcon {
+          margin-left: 8px;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .btnDatePicker:hover {
+        cursor: pointer;
+        background-color: $gray-lighter;
+      }
+    }
+
+    .rightContainer {
+      background-color: $gray-bg;
+      margin-right: 30px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: -10px;
+
+      .btnCalendarAll {
+        font-size: 14px;
+        color: $purple-bg !important;
+        padding: 10px;
+        background-color: $gray-bg;
+        border: none;
+        outline: none;
+        top: 5px;
+
+        .calendarAllIcon {
+          margin-right: 8px;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+        }
+
+        .calendarDownIcon {
+          margin-left: 8px;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .btnCalendarAll:hover {
+        cursor: pointer;
+        background-color: $gray-lighter;
+      }
+
+      .btnFilterEvent {
+        font-size: 14px;
+        color: $purple-bg !important;
+        padding: 10px;
+        background-color: $gray-bg;
+        border: none;
+        outline: none;
+        top: 5px;
+
+        .filterEventIcon {
+          margin-right: 8px;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+        }
+
+        .filterDownIcon {
+          margin-left: 8px;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .btnFilterEvent:hover {
+        cursor: pointer;
+        background-color: $gray-lighter;
+      }
+
+      .btnPrint {
+        font-size: 14px;
+        color: $purple-bg !important;
+        padding: 10px;
+        background-color: $gray-bg;
+        border: none;
+        outline: none;
+        top: 5px;
+
+        .printIcon {
+          margin-right: 8px;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .btnPrint:hover {
+        cursor: pointer;
+        background-color: $gray-lighter;
+      }
+    }
+    /* end of filter css for commandBar */
+
+    #id:hover {
+      background-color: #f2f2f2;
+      cursor: pointer;
+    }
+
+    .title-134,
+    .title-128 {
+      border: 1px solid $purple-bg !important;
+      outline: none !important;
+    }
+    .dropdown-162:hover .ms-Dropdown-title {
+      color: $purple-bg !important;
+      border-color: $purple-bg !important;
+    }
+
+    .dropdown-133:focus::after,
+    .dropdown-127:focus::after,
+    .dropdown-162:focus::after {
+      border: 1px solid $purple-bg !important;
+      color: $purple-bg !important;
+    }
+  }
+  .multiSchedule {
+    position: relative;
+  }
+}

@@ -1,0 +1,168 @@
+@import "../../../assets/ui-kit/variables";
+
+.subjectDetail {
+  padding: 20px 24px;
+
+  .subjectTitle {
+    font-weight: $semiBold;
+
+    &:focus {
+      color: $black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .itemhover {
+    background-color: $white-bg;
+
+    &:hover {
+      background-color: $gray-lighter;
+      cursor: pointer;
+    }
+  }
+
+  .itemImage {
+    width: 40px;
+    height: 38px;
+    background-color: $purple-lighter;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+
+    .itemIcon {
+      margin-top: 8px;
+      margin-left: 5px;
+      align-items: center;
+      height: 35px;
+      width: 25px;
+      font-size: 20px;
+      color: $purple-bg;
+    }
+  }
+
+  .todoTitle {
+    font-weight: $semiBold;
+    margin-bottom: 5px;
+  }
+
+  .iconExp {
+    float: right;
+    top: -25px;
+    right: -35px;
+
+    .fullScreenIcon {
+      font-size: 18px;
+      font-weight: bold;
+      color: $purple-bg;
+    }
+  }
+
+  .calendarIcon {
+    margin-right: 3px;
+  }
+
+  .eventTitle {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mTop15 {
+    margin-top: 15px;
+  }
+
+  hr.divider {
+    margin: 15px 0;
+    border: 1px solid #e0e0e0;
+    opacity: 0.4;
+  }
+
+  .itemCell {
+    outline: transparent;
+    position: relative;
+    padding: 5px 0;
+    display: flex;
+  }
+
+  .itemName {
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .container {
+    margin: 10px 0;
+  }
+
+  .itemContent {
+    margin-left: 10px;
+    overflow: hidden;
+    flex-grow: 1;
+    font-size: 14px;
+    padding-top: 2px;
+    position: relative;
+    top: -5px;
+
+    .itemIndex {
+      font-size: 12px;
+      color: $orange-light;
+    }
+
+    .itemImage {
+      flex-shrink: 0;
+    }
+    .itemIndexConfirm {
+      font-size: 12px;
+      color: $green;
+    }
+  }
+
+  .linkMore {
+    font-size: 12px;
+    color: $blue;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  .alignCenter {
+    display: flex;
+    align-items: center;
+  }
+  .uploadContainer {
+    margin: 15px 0;
+    border: 1px solid $gray-lighter;
+    display: flex;
+    cursor: pointer;
+    height: 52px;
+    width: 100%;
+
+    .uploadedFileName {
+      line-height: 2;
+      font-size: 14px;
+    }
+
+    .imgUploaded {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
+
+.callout {
+  max-width: 320px !important;
+}
+
+.buttonArea {
+  vertical-align: "top";
+  display: "inline-block";
+  text-align: center;
+  margin: "0 100px";
+  min-width: 130px;
+  height: 32;
+}

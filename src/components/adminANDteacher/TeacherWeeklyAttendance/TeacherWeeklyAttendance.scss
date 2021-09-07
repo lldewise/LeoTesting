@@ -1,0 +1,77 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.contentData {
+  .ms-DetailsHeader {
+    height: 65px !important;
+    padding-top: 0px !important;
+  }
+
+  .ms-DetailsRow:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+
+  .ms-DetailsHeader-cell:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 65px !important;
+    border-top: 1px solid $gray-lighter;
+    border-right: 1px solid $gray-lighter;
+  }
+
+  .ms-DetailsHeader-cell:hover {
+    background-color: white !important;
+  }
+
+  .ms-DetailsHeader-cellName {
+    font-weight: $semiBold !important;
+    text-align: center !important;
+  }
+
+  .ms-DetailsRow-cell {
+    border-right: 1px solid $gray-lighter;
+  }
+
+  .ms-DetailsRow:after {
+    border-bottom: 1px solid $gray-lighter;
+  }
+
+  .headerClassName span > span,
+  .headerClassName span > i {
+    position: relative;
+    top: 15px;
+    left: 20px;
+  }
+}
+
+.dot {
+  width: 4px !important;
+  height: 4px !important;
+  margin-top: 10px;
+}
+
+.not-confirmed::after {
+  content: "";
+  background: #f00;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: relative;
+  left: -7px;
+  display: inline-block;
+}
+
+.confirmed::after {
+  content: "";
+  width: 2px;
+  position: relative;
+  display: inline-block;
+}

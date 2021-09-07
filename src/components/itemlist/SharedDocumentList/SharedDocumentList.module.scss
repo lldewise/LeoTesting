@@ -1,0 +1,83 @@
+.sharedDocumentHeader {
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+.sharedDocumentDetails {
+  margin: 15px;
+}
+
+.container {
+  overflow: auto;
+  max-height: 500;
+}
+
+.itemDetails {
+  font-size: 14px;
+}
+
+.chevron {
+  align-self: center;
+  margin-left: 10;
+  color: rgb(161, 159, 157);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.itemIndex {
+  font-size: 12px;
+  color: rgb(161, 159, 157);
+  margin-bottom: 10;
+}
+
+.itemSingle {
+  padding: 8px;
+  font-size: 14px;
+  width: 45px;
+}
+
+.listrightwidth {
+  width: 190px;
+}
+
+.itemName {
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemContentRight {
+  margin-left: 10;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.itemContent {
+  margin-left: 10;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.itemImage {
+  flex-shrink: 0;
+}
+
+.itemCell {
+  outline: transparent;
+  position: relative;
+  min-height: 54px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(237, 235, 233);
+  display: flex;
+}
+
+.itemhover {
+  background: inherit;
+  :hover {
+    background: rgb(237, 235, 233);
+  }
+}

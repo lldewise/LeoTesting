@@ -1,0 +1,67 @@
+@import "../../../assets/ui-kit/variables.scss";
+
+.fontIcon {
+  font-size: 20px;
+  color: $purple-bg;
+  padding: 6px;
+  background-color: #e6e6ff;
+  margin-right: 3px;
+  margin-top: 5px;
+}
+
+.divpad10 {
+  width: 152px;
+  height: 152px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #edebe9;
+  border-radius: 3px;
+  opacity: 1;
+  text-align: center;
+  padding: 24px;
+}
+.container {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: $white-bg;
+  cursor: pointer;
+}
+
+.duedate {
+  font-size: 12px;
+  color: rgb(243, 159, 33);
+}
+
+.title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.postedby {
+  font-size: 12px;
+  color: $gray-dark;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 140px;
+    height: 152px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 128px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 118px;
+  }
+}
+
+@media screen and (max-width: 800x) {
+  .container {
+    width: 100px;
+  }
+}

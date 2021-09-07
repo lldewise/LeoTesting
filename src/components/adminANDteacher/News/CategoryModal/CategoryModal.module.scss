@@ -1,0 +1,54 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.titleHeader{
+    font-size: 20px;
+    font-weight: $semiBold;    
+    text-align: center;
+}
+
+.titleHeaderbot{
+    font-size: 14px;    
+    text-align: center;
+    font-weight: $regular;
+}
+.fontIcon{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.container{  
+    outline: transparent;
+    position: relative;
+    box-sizing: border-box;    
+    display: flex;      
+    justify-content: center;
+    height: 200px;
+}
+
+.box{
+    padding:35px 30px 30px 30px;
+    color:$purple-bg;   
+    border: 1px solid $white_bg;     
+    background-color: $white_bg;
+    width: 160px;
+  
+}
+
+
+
+.boxActive{
+    padding:34px 29px 29px 29px;
+    color:$purple-bg;   
+    border: 1px solid #f9f6fd;     
+    background-color: #f9f6fd;
+    width: 160px;
+}
+.boxtitle{
+    font-weight: $semiBold;
+    font-size: 14px;
+}
+
+.description{
+    font-size: 12px;
+    max-width: 150px;
+}

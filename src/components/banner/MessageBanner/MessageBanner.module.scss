@@ -1,0 +1,66 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.introHi {
+  font-weight: $semiBold;
+  margin: 0;
+}
+
+.introBannerContent {
+  background: url(../../../assets/images/intro-banner-bg-horizontal.svg),
+    url(../../../assets/images/intro-banner-bg-sphere.svg) no-repeat;
+  background-size: cover, 100px;
+  background-position: right top, -25px -25px;
+  overflow: hidden;
+  padding: 25px;
+  display: flex;
+}
+.introGreet {
+  float: none;
+  flex-grow: 1;
+}
+.introBoy {
+  background: url(../../../assets/images/intro-banner-boy.png);
+  width: 259px;
+  height: 184px;
+  background-size: cover;
+  margin: -16px 0 -25px -80px;
+  align-self: flex-end;
+}
+
+.imgStyle {
+  height: 167px;
+  margin-bottom: -3px;
+}
+.introBtns {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: flex-end;
+}
+.closeBtn {
+  color: #fff;
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  &:active {
+    background: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.showBanner {
+  padding-bottom: 15px;
+  display: block;
+}
+
+.hideBanner {
+  padding-bottom: 15px;
+  display: none;
+}
+
+.customBtnBG {
+  background-color: $btn-banner !important;
+}
+
+.bannerBtn {
+  width: max-content;
+}

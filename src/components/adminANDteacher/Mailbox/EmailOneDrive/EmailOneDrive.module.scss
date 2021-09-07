@@ -1,0 +1,125 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.container{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 5px 0px 0px;
+}
+.subContainer1{
+  width: 25%;
+  max-width: 350px;
+  //border-right: 1px solid $gray-light;
+  height: 50vh;
+}
+
+.subContainer2{
+  width: 80%; 
+  padding:0px 10px 0px 10px;
+  border-left:1px solid $gray-light ;
+  height: calc(100vh - 180px) !important;
+}
+
+.content{
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;  
+  
+}
+
+.contentactive{
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;  
+  background-color: $gray-lightest;  
+  font-weight: $semiBold;
+}
+
+.content:hover{
+  background-color:$gray-lightest; 
+}
+
+
+.contentactive:hover{
+  background-color:$gray-lightest; 
+}
+
+.icon{
+      color: $purple;      
+}
+
+.imagePad{
+   padding: 0px 15px 0px 0px;
+}
+
+.space{
+  width: 20px;
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.subFileContent{
+  width: 27px;
+}
+
+.chevIcon{
+  font-size: 10px;
+}
+
+.titleBold{
+  font-weight: $semiBold;
+}
+
+.myTeamContainer{
+  height: calc(100% - 75px);
+  padding: 20px 0 0 0;
+}
+.persona{
+    cursor: pointer;
+  
+}
+
+.icon{
+  color:$purple;
+  font-size: 18px;
+}
+
+.contentBody{
+  overflow: auto;
+  height:59vh;
+  
+}
+
+.button{
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.closeIcon{
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.titleContent{
+  width: 80%;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.titleContent1{
+  width: 20%;
+  text-align: right;
+  padding: 30px 25px 0px 0px;
+}
+
+.headerTitle{
+  font-size: 20px;
+  padding: 20px 0px 10px 10px;
+  font-weight: $semiBold;
+  width: 80%;
+}

@@ -1,0 +1,36 @@
+@import '../../../../../assets/ui-kit/_variables';
+.container {
+  margin: 0px 10px 0px 10px;
+  background-color: $white-bg;
+}
+
+.searchContainer {
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+
+  background-color: $white-bg;
+  height: 73px;
+}
+
+.search {
+  border: none;
+  width: 300px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $gray-lighter;
+  padding: 0px 0px 0px 0px;
+}
+
+.marginLeft {
+  margin-left: auto;
+  padding: 15px 10px 0 0;
+}
+
+.borderPage {
+  border-left: 1px solid $gray-lighter !important;
+  border-right: 1px solid $gray-lighter !important;
+  padding: 1px;
+}

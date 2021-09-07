@@ -1,0 +1,55 @@
+@import "../../../../assets/ui-kit/_variables";
+.divBg{
+    background-color: white;
+}
+
+.searchbox{
+    padding: 25px 0px 25px 25px;
+    
+}
+.doubleBookingPanel {
+  margin-top: 50px;
+  position: fixed;
+}
+.divSearch {
+  padding: 12px;
+}
+.confirmButton {
+    padding: 25px 0px;
+}
+
+.toggleMargin{
+    margin-top: 5px;
+}
+.index1 {
+    color: $blue;
+    position: absolute;
+    top: 60px;
+    right: 5px;
+    z-index: 1;
+    font-size: 12px;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+  
+  .headerFlex {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  .btnDoubleBooking {
+    height: 33px !important;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .icon1 {
+    cursor: pointer;
+    font-size: 16px;
+    color: $purple;
+  }
+  .itemContainer {
+    display: flex;
+    flex-direction: row;
+  }

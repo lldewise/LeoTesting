@@ -1,0 +1,96 @@
+@import "../../../assets/ui-kit/_variables";
+
+.headerContainer {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.headerTitle {
+  color: $black;
+  font-weight: $semiBold;
+  padding: 10px 0px;
+}
+
+.listheaderTitle {
+  color: $black;
+  font-weight: $semiBold;
+}
+
+.headerTitle2 {
+  color: $gray-dark;
+  font-weight: $regular;
+  padding: 10px 0px;
+  font-size: 12px;
+}
+
+.iconWidth {
+  width: 40px;
+  padding: 12px 15px 0px 15px;
+}
+
+.actionButton {
+  color: $purple-bg;
+  font-size: 14px;
+}
+
+.headertitle {
+  font-size: 15px;
+}
+
+.helpIcon {
+  float: right;
+  padding: 12px 10px 0px 0px;
+}
+
+.bannerMessage {
+  height: 80px;
+  width: 100%;
+  background-color: $gray-bg;
+  border-bottom: 1px solid $gray-lighter;
+  padding: 20px 15px 24px;
+
+  .messageTitle {
+    font-size: $text-normal;
+    font-weight: $bold;
+    margin-bottom: 5px;
+  }
+
+  .messageBody {
+    font-weight: $regular;
+    font-size: $text-small;
+    color: $gray-dark;
+  }
+
+  .btnCreate {
+    text-align: right;
+  }
+}
+
+.box {
+  padding: 35px 30px 30px 30px;
+  color: $purple-bg;
+  border: 1px solid $white_bg;
+  background-color: $white_bg;
+  width: 160px;
+}
+
+.boxActive {
+  padding: 34px 29px 29px 29px;
+  color: $purple-bg;
+  border: 1px solid #f9f6fd;
+  background-color: #f9f6fd;
+  width: 160px;
+}
+
+@media screen and (max-width: 650px) {
+  .userAccCol {
+    width: 100%;
+  }
+}

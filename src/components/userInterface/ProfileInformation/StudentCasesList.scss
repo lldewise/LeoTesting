@@ -1,0 +1,70 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.contentStudentCasesList {
+  .ms-DetailsHeader {
+    height: 42px !important;
+    padding-top: 0px !important;
+  }
+
+  .ms-DetailsRow:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .ms-DetailsHeader-cell:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 50px !important;
+    border-top: 1px solid $gray-lightest;
+    border-left: 1px solid $gray-lightest;
+  }
+
+  .ms-DetailsHeader-cell:last-child {
+    border-right: 1px solid $gray-lightest;
+  }
+
+  .ms-DetailsRow-cell:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    border-left: 1px solid $gray-lightest;
+  }
+
+  .ms-DetailsRow-cell:last-child {
+    border-right: 1px solid $gray-lightest;
+  }
+
+  .ms-DetailsHeader-cell:hover {
+    background-color: white !important;
+  }
+
+  .ms-DetailsHeader-check {
+    margin-top: 5px !important;
+  }
+
+  .ms-DetailsRow-check {
+    align-items: center;
+  }
+
+  .ms-DetailsHeader-cellName {
+    font-weight: $regular !important;
+    text-align: center !important;
+  }
+
+  .headerClassName span > span,
+  .headerClassName span > i {
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+}

@@ -1,0 +1,225 @@
+@import "../../../../assets/ui-kit/_variables";
+
+.teacherDailyCalendar {
+  height: 100vh;
+
+  .event-card {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 0;
+    &:before {
+      content: "";
+      width: 3px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      left: -2px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    &.type-classSchedule:before {
+      background-color: $class-schedule-br;
+    }
+    &.type-private:before {
+      background-color: $private-event-br;
+    }
+    &.type-exam:before {
+      background-color: $exam-event-br;
+    }
+    &.type-schoolEvent:before {
+      background-color: $school-event-br;
+    }
+    .event-title {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      margin: 0 6px 4px 12px;
+      i {
+        margin-right: 6px;
+      }
+    }
+    .event-details {
+      margin: 0 6px 0 12px;
+      color: #605e5c;
+      .event-time {
+        margin-right: 6px;
+        &:empty {
+          display: none;
+        }
+      }
+      .event-loc {
+        &:empty {
+          display: none;
+        }
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .teacherDailySchedule {
+    font-weight: normal !important;
+    position: relative;
+    top: -45px;
+
+    /* calendar scss */
+    .fc-theme-standard .fc-scrollgrid {
+      border-color: #f8f8f8;
+    }
+
+    .fc-view-harness.fc-view-harness-active {
+      font-weight: normal !important;
+      height: calc(100vh - 268px) !important;
+    }
+
+    .fc-timegrid-slot.fc-timegrid-slot-label.fc-timegrid-slot-minor {
+      border-style: none !important;
+    }
+
+    .fc-timegrid-slot.fc-timegrid-slot-label.fc-scrollgrid-shrink {
+      border-style: none !important;
+    }
+
+    .fc-timegrid-slot-label-cushion.fc-scrollgrid-shrink-cushion {
+      text-transform: uppercase !important;
+      font-size: 12px !important;
+      color: #4d4f5c;
+    }
+
+    .fc-timegrid-event-harness {
+      cursor: pointer;
+    }
+
+    .fc {
+      margin-top: 20px !important;
+      .fc-timegrid-slot-minor {
+        border-top-style: dashed;
+      }
+
+      .fc-timegrid-divider {
+        padding: 0;
+        border: transparent;
+        background-color: transparent;
+      }
+    }
+
+    .fc .fc-daygrid-day-frame,
+    .fc .fc-timegrid-col.fc-day-today {
+      background-color: #fff !important;
+    }
+
+    .fc-timegrid-event {
+      border-color: 1px solid #f8f8f8 !important;
+    }
+
+    .fc-event-main {
+      color: #000 !important;
+      border-color: 1px solid $gray-bg !important;
+      height: 100% !important;
+    }
+
+    .fc-event {
+      border-width: 5px !important;
+      border-right: 1px !important;
+      border-bottom: 0px !important;
+      border-top: 0px !important;
+      margin-left: 2px !important;
+    }
+
+    .fc-h-event {
+      border-right: 0px !important;
+      border-bottom: 0px !important;
+      border-top: 0px !important;
+    }
+
+    .fc-v-event {
+      border: 1px solid var(--fc-event-border-color, $gray-bg);
+    }
+
+    .fc-daygrid-day-events {
+      margin-bottom: 1px !important;
+      vertical-align: middle;
+    }
+
+    .fc-toolbar-title {
+      font-size: 16px !important;
+      font-weight: normal !important;
+    }
+
+    .fc-button-primary {
+      border-color: $white-bg !important;
+      background-color: transparent !important;
+      color: #000 !important;
+    }
+
+    .fc-today-button {
+      font-size: 16px !important;
+      background-color: $purple-bg !important;
+      color: $white-bg !important;
+    }
+
+    .fc-button-primary:active {
+      border-color: $white-bg !important;
+    }
+
+    .fc-scrollgrid-sync-inner {
+      font-weight: normal !important;
+      font-size: 12px;
+    }
+
+    .fc .fc-timegrid-slot {
+      height: 2.8em !important;
+      border-bottom: 0px !important;
+      border-color: $gray-lighter;
+    }
+
+    .fc-direction-ltr .fc-timegrid-col-events {
+      margin: 0px !important;
+    }
+
+    .fc-prev-button:active,
+    .fc-button-primary:active {
+      border-style: none !important;
+    }
+    .fc-prev-button.fc-button.fc-button-primary:active {
+      border: none !important;
+    }
+
+    .fc .fc-button-group {
+      left: 40px !important;
+    }
+
+    .fc-scrollgrid-section-header {
+      visibility: collapse !important;
+    }
+
+    .fc-scrollgrid-sync-inner a::first-letter {
+      text-transform: uppercase !important;
+    }
+
+    .fc-toolbar-chunk h2::first-letter {
+      text-transform: uppercase !important;
+    }
+    /* calendar css end */
+  }
+
+  .todayContainer {
+    position: relative;
+    top: 10px;
+    color: $purple-bg;
+
+    .day {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .week {
+      font-weight: 16px;
+      &::first-letter {
+        text-transform: uppercase !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+$purple-bg: #6c35d4;
+$font-color: #000;
+$white-bg: #fff;
+
+.divpad10 {
+  width: 152px;
+  height: 152px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #edebe9;
+  border-radius: 3px;
+  opacity: 1;
+  text-align: center;
+  padding: 24px;
+}
+.container {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: $white-bg;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .container img {
+    width: 140px;
+    height: 152px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container img {
+    width: 128px;
+    height: 152px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .container img {
+    width: 118px;
+    height: 152px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container img {
+    width: 100px;
+    height: 152px;
+  }
+}

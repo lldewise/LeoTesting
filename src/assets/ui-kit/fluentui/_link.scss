@@ -1,0 +1,36 @@
+.ms-Link.link {
+    color: $blue;
+
+    &:focus {
+        border-color: $gray-darker;
+    }
+}
+
+.ms-Link.linkDisabled {
+    color: $gray-label;
+}
+
+.btnLinkDark {
+    color: $black;
+    &:focus{
+        text-decoration: underline;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.btnLinkStandard {
+    color: $purple;
+    &:focus{
+        text-decoration: underline;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,172 @@
+@import "../../assets/ui-kit/_variables.scss";
+$paddingLeft: 170px;
+$marginLeft: 20px;
+
+.customMargin {
+  margin-top: 65px;
+  margin-left: $marginLeft !important;
+  padding-left: $paddingLeft;
+  position: absolute;
+  font-weight: bold;
+}
+.customMargin2 {
+  margin-top: 85px;
+  margin-left: $marginLeft !important;
+  padding-left: $paddingLeft;
+  position: absolute;
+}
+.customMarginAttendedPercent {
+  margin-top: 140px;
+  margin-left: $marginLeft !important;
+  padding-left: 190px;
+  position: absolute;
+  font-size: 18px;
+  color: $good-job;
+}
+.customMarginAttended {
+  margin-top: 165px;
+  margin-left: -5px !important;
+  padding-left: 190px;
+  position: absolute;
+  color: $good-job;
+}
+
+.customMarginAbsencesPercent {
+  margin-top: 140px;
+  margin-left: $marginLeft !important;
+  padding-left: 315px;
+  position: absolute;
+  font-size: 18px;
+  color: $gray;
+}
+.customMarginAbsences {
+  margin-top: 165px;
+  margin-left: -15px !important;
+  padding-left: 315px;
+  position: absolute;
+  color: $gray;
+}
+
+.customBackgroundAttendance {
+  background: $white-bg;
+  height: 220px;
+  max-width: 100% !important;
+}
+
+.attendanceTitle {
+  font-weight: 600;
+  padding: 12px;
+  position: absolute;
+}
+
+.customChart {
+  margin-top: 40px;
+  margin-left: -112px;
+}
+
+.iconPadding {
+  padding-right: 10px;
+}
+
+.attendanceContainer {
+  margin-left: 12px !important;
+}
+
+
+$breakpoint-large: 1200px;
+@media (min-width: $breakpoint-large) {
+  .attendanceContainer {
+    margin-left: 60px !important;
+  }
+
+  .customMargin {
+    margin-left: 15px !important;
+  }
+
+  .customMargin2 {
+    margin-left: 15px !important;
+    margin-right: 30px;
+
+  }  
+
+  .customMarginAttendedPercent {
+    margin-left: -5px !important;
+  }
+
+  .customMarginAbsencesPercent {    
+    margin-left: -15px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .customChart {
+    margin-left: -115px;
+  }
+
+  .iconGreenYellow {
+    margin: 90px 10px;
+  }
+
+  .customMarginAttended {
+    margin-left: -5px !important;
+  }
+
+  .customMarginAbsences {
+    margin-left: -15px !important;
+  }
+
+  
+  .customMarginAbsencesPercent {    
+    margin-left: -15px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .iconGreenYellow {
+    margin: 83px 42px;
+  }
+
+  .customChart {
+    margin-left: -70px;
+  }
+  
+  .customChart canvas {
+    height: 135px !important;
+    width: 275px !important;
+  }
+
+  .customMarginAbsences {
+    margin-left: -70px !important;
+  }
+
+  .customMarginAbsencesPercent {    
+    margin-left: -70px !important;
+  }
+  
+  .customMargin {
+    margin-left: -5px !important;
+  }
+
+  .customMargin2 {
+    margin-left: -5px !important;
+    margin-right: 30px;
+  }  
+
+  .customMarginAttendedPercent,
+  .customMarginAttended {
+    margin-left: -5px !important;
+    padding-left: 170px;
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .customMarginAbsencesPercent,
+  .customMarginAbsences {
+    margin-left: 0 !important;
+  }
+
+  .customMarginAttended {
+    width: auto;
+  }
+}

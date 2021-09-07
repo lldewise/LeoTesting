@@ -1,0 +1,88 @@
+@import '../../../assets/ui-kit/_variables.scss';
+
+.subjectDateSelection {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.checkContent {
+  position: relative;
+}
+
+.lblNames {
+  font-weight: $regular;
+  margin-left: 5px;
+}
+
+.calendarYear {
+  margin: 0px 5px;
+  color: $black !important;
+}
+
+.headerCheckboxSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.studentSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .ms-ContextualMenu-item {
+    padding: 12px;
+  }
+  .ms-ContextualMenu-item > .ms-Icon {
+    font-size: $text-normal !important;
+  }
+}
+
+.leftColHeader {
+  display: flex;
+}
+
+.rightColHeader {
+  color: $purple-bg;
+}
+
+.headerCheckbox {
+  align-items: center;
+  z-index: 99;
+}
+
+.headerColName {
+  line-height: normal;
+  font-size: $text-small;
+  font-weight: $semiBold;
+  height: 25px;
+  position: relative;
+  top: 3px;
+}
+
+.headerColYear {
+  line-height: initial;
+  font-size: $text-small;
+  font-weight: $regular;
+  height: 25px;
+  position: relative;
+  left: 8px;
+  top: -5px;
+}
+
+.studCount {
+  font-size: $text-small;
+  font-weight: $semiBold;
+  margin-left: 5px;
+  position: relative;
+  top: -1px;
+}
+
+.txtRemarks {
+  width: 200px;
+
+  .remarkField {
+    width: 180px !important;
+  }
+}

@@ -1,0 +1,92 @@
+
+
+
+// Neutrals
+$white: #fff;
+$black: #0b0b0b;
+$gray:#c8c6c4;
+$gray-light:#e1dfdd;
+$gray-lighter:#edebe9;
+$gray-dark: #595959;
+$gray-darker:#373737;
+
+
+// Colors
+$purple: #6c35d4;
+$yellow: #f7a93b;
+$orange: #f7a93b;
+$orange-dark:#df9836;
+$orange-light:#f8b451;
+$green: #6bb700;
+$green-light: #8ed85f;
+$orange: #f7a93b;
+$orange-dark:#df9836;
+$orange-light:#f8b451;
+$blue: #0078D4;
+$red: #d43b35;
+
+
+// Text Color
+$font-color: $black;
+$text-body: $black;
+$link: $blue;
+$seemore: $link;
+
+// Background
+$gray-bg: #f7f7f7;
+$white-bg: $white;
+$purple-bg: $purple;
+$yellow-bg: $yellow;
+$red-bg: $red;
+$lightgray-bg: $gray-light;
+
+// Borders
+$card-border: $gray-light;
+$border: #e6e6e6;
+
+// Dashboard
+$good-job: $green-light;
+$gray-label: #a19f9d;
+$icon-bg: #e6e6ff;
+$btn-banner: #eca944;
+
+// admin todos
+$todo-today: #8ed85f;
+$todo-tomorrow: #eca944;
+$todo-original: #5128a1;
+
+//Quizzes
+$progress-pass-bg: #e9ecef;
+$pass-bg: #6bb700;
+
+/* calendar school event */
+$school-event-br: #f7a93b;
+$school-event-bg: #fff6ed;
+/* calendar private event */
+$private-event-br: #6bb700;
+$private-event-bg: #f3f9eb;
+/* calendar exam event */
+$exam-event-br: #c96238;
+$exam-event-bg: #f9efea;
+/* calendar class schedule */
+$class-schedule-br: #6c35d4;
+$class-schedule-bg: #f3effc;
+
+:export {
+  classScheduleBorder: $class-schedule-br;
+  classScheduleBackground: $class-schedule-bg;
+  schoolEventBorder: $school-event-br;
+  schoolEventBackground: $school-event-bg;
+  examEventBorder: $exam-event-br;
+  examEventBackground: $exam-event-bg;
+  privateEventBorder: $private-event-br;
+  privateEventBackground: $private-event-bg;
+
+  standardFontColor: $font-color;
+}
+
+/* font weights */
+$light: 300;
+$regular: 400;
+$semiBold: 600;
+$bold: 700;

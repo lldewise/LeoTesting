@@ -1,0 +1,15 @@
+$standard-color: #7c4ad9;
+$yellow-color: #f7a93b;
+
+.callout {
+  width: 210px;
+
+  .listStyle {
+    padding: 8px 20px !important;
+    border-style: none !important;
+  }
+
+  .listStyle:hover {
+    background-color: #f2f2f2;
+  }
+}

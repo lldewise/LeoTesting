@@ -1,0 +1,85 @@
+@import '../../../../assets/ui-kit/variables.scss';
+
+
+
+.containerSub{
+  margin:30px 30px 0px 30px;
+ 
+}
+.container{
+background-color: $white-bg;
+border-right: 1px solid $gray-light;
+border-top: 1px solid $gray-light;
+border-bottom: 1px solid $gray-light;
+}
+
+
+.blue {
+  color:#0078D4;
+}
+
+.togglecontainer{
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+
+.floatR{
+  float: right;
+  padding-right: 20px;
+}
+
+.divWidth80{
+  width: 80%;
+  
+}
+.divWidth20{
+  width: 20%;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.border{   
+   border: 1px solid $gray-light;
+   border-radius: 5px;
+  
+}
+
+
+.header{
+  font-size: 20px;
+  font-weight: $semiBold;
+}
+
+.panelHeader {
+  font-weight: $bold;
+}
+
+.headerdesc{
+  font-size: 12px;
+  font-weight: $regular; 
+}
+
+.publish{
+  border-top: 1px solid $gray-light;
+  padding-top: 15px;
+
+}
+
+.hover{
+  padding:12px 12px 20px 12px;
+ 
+}
+.hover:hover{
+    
+    background-color: $gray-light;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+
+}
+
+.pad12{
+  padding:12px;
+}

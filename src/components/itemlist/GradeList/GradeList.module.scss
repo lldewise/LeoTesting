@@ -1,0 +1,26 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.itemSingleColumn1 {
+  padding: 8px;
+  font-size: 12px;
+  min-width: 210px;
+  min-width: 350px;
+}
+
+.itemCell {
+  outline: transparent;
+  position: relative;
+
+  display: flex;
+}
+
+.detailslist {
+  font-weight: normal;
+  font-size: 14px;
+  white-space: normal;
+  color: $black;
+}
+
+.textcenter {
+  text-align: center;
+}

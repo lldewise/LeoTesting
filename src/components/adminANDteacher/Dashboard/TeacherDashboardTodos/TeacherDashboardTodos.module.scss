@@ -1,0 +1,90 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.teacherDashboardTodos {
+  margin: 20px 5px 5px 10px;
+}
+.teacherTodoHeader {
+  font-weight: 600;
+}
+.btnToggleView {
+  top: 2px;
+  left: 5px;
+  position: relative;
+  font-size: 14px;
+  color: $purple-bg;
+  cursor: pointer;
+}
+
+hr.teacherTodosDivider {
+  border: 1px solid #e0e0e0;
+  opacity: 0.4;
+}
+
+.teacherTodoContainer {
+  height: 480px;
+  overflow-y: auto;
+}
+
+.callout {
+  width: 180px;
+  height: 140px;
+
+  .listStyle {
+    padding: 8px 20px !important;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .listStyle:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+}
+
+.calloutContainer {
+  padding: 10px;
+}
+
+.title {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: $purple-bg;
+  margin-bottom: 10px;
+}
+
+.btnCalendarToday {
+  font-size: 12px;
+  color: $purple-bg !important;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  float: right;
+  cursor: pointer;
+}
+
+.todayCalendarIcon {
+  margin-right: 8px;
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.teacherDivShowCompleted {
+  padding-top: 15px;
+  padding-bottom: 10px;  
+  height: 50px;
+  background-color:$white-bg;
+  border-top: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+  cursor: pointer;
+  margin: 25px 0px;
+}
+
+.btnShowCompleted {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c35d4;
+}

@@ -1,0 +1,73 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.save {
+  font-weight: 600;
+  color: $purple-bg;
+  font-size: 14px;
+}
+
+.container {
+  outline: transparent;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.FontIcon {
+  font-size: 20px;
+}
+.center {
+  padding-top: 6px;
+}
+
+.peoplePicker {
+  width: 100%;
+}
+
+.aLink {
+  position: relative;
+  display: block;
+  margin: 0 0px;
+
+  font-size: 16px;
+  color: $font-color;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.aLinkactive {
+  position: relative;
+  display: block;
+
+  font-size: 16px;
+  color: $font-color;
+  text-decoration: none;
+  border: 1px solid #dfd7ee;
+  background-color: #dfd7ee;
+  color: $purple-bg;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.textfield {
+  width: 100%;
+}
+
+.iconStyles {
+  margin-right: 8px;
+  color: $purple-bg;
+}
+
+.calendar {
+  width: 200px;
+}
+
+.warning {
+  padding: 6px 10px 1px 40px;
+  font-size: 12px;
+  color: rgb(164, 38, 44);
+}

@@ -1,0 +1,93 @@
+
+.ms-TextField{
+    label.ms-Label{
+        font-weight: normal;
+    }
+}
+
+
+// Underlined Textfield with Label
+.underlined-textfield .ms-TextField-fieldGroup,
+.underlined-label-textfield .ms-TextField-fieldGroup {
+    display: flex;
+    border: none;
+    background: none;
+}
+
+.underlined-textfield.is-active .ms-TextField-wrapper,
+.underlined-label-textfield.is-active .ms-TextField-wrapper {
+    border: none;
+    border-bottom: 2px solid $primary-color;
+    border-radius: 0;
+}
+
+.underlined-textfield .ms-TextField-wrapper,
+.underlined-label-textfield .ms-TextField-wrapper {
+    border-bottom: 1px solid;
+}
+
+.underlined-textfield.is-active .ms-TextField-fieldGroup:after,
+.underlined-label-textfield.is-active .ms-TextField-fieldGroup:after {
+    border: none;
+}
+
+.underlined-textfield,
+.underlined-label-textfield {
+    display: flex;
+
+    .ms-Label,
+    .ms-TextField-fieldGroup {
+        display: inline-flex;
+    }
+}
+
+// Borderless Single-line
+.borderless-textfield {
+    .ms-TextField-fieldGroup {
+        border: none;
+        background: none;
+    }
+}
+
+.borderless-textfield.is-active {
+    .ms-TextField-fieldGroup:after {
+        border: none;
+    }
+}
+
+
+// Readonly 
+.readonly-textfield  {
+    @extend .borderless-textfield;
+    label{
+        font-size: $text-small;
+        color: $gray-dark;
+    }
+    .ms-TextField-fieldGroup .ms-TextField-field {
+        padding: 0;
+        color: $black;
+        margin-top: -10px
+    }
+}
+
+.readonly-textfield.is-active {
+    @extend .borderless-textfield.is-active;
+}
+
+// Optional
+.optional-textfield .ms-Label:after {
+    content: "Optional";
+    color: $gray-dark;
+    font-size: $text-small;
+}
+
+// Horizontal Textfield
+.horizontal-textfield{
+    display: flex;
+    + .horizontal-textfield {
+        margin-top: 12px;
+    }
+    .ms-Label{
+        min-width: 80px;
+    }
+}

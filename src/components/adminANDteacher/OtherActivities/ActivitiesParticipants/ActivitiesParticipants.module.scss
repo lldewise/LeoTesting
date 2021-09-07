@@ -1,0 +1,92 @@
+@import "../../../../assets/ui-kit/_variables";
+
+.activityForm {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.formTitle {
+  font-size: 15px;
+  font-weight: $semiBold;
+  padding-bottom: 20px;
+}
+
+.searchField {
+  width: 480px;
+}
+
+.noteField {
+  width: 100%;
+}
+
+table.tableContainer {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $gray-dark;
+}
+
+table.tableContainer th,
+table.tableContainer td {
+  border: 1px solid $gray-dark;
+}
+
+table.tableContainer th,
+table.tableContainer td {
+  height: 35px;
+  padding-left: 8px;
+}
+
+table.tableContainer th.leftCol,
+table.tableContainer td.leftCol {
+  width: 190px;
+}
+
+table.tableContainer th.rightCol,
+table.tableContainer td.rightCol {
+  font-weight: $regular;
+}
+
+.groupTitle {
+  font-weight: $semiBold;
+}
+
+.holdItem,
+.studentsItem,
+.teachersItem,
+.roomsItem,
+.resourcesItem {
+  display: flex;
+  flex-direction: row;
+  background-color: $gray-lighter;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.deleteIcons {
+  vertical-align: middle;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+span.hold,
+span.rooms,
+span.resources {
+  height: 22px;
+  width: 22px;
+  background-color: $purple-bg;
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.holdIcon,
+.roomsIcon,
+.resourcesIcon {
+  position: relative;
+  left: 4px;
+  top: 3px;
+}

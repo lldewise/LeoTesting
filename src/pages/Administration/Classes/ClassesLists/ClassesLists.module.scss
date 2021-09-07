@@ -1,0 +1,89 @@
+@import "../../../../assets/ui-kit/_variables";
+
+.searchContainer {
+  width: 100%;
+  padding: 20px;
+  border-right: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+  background-color: $white-bg;
+  height: 73px;
+}
+.search {
+  border: none;
+  width: 300px;
+}
+
+.dataContainer {
+  height: calc(100vh - 250px);
+}
+
+.classNameLink {
+  font-size: 12px;
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  margin-left: 10px;
+}
+
+.contentPlaceholder {
+  // display: flex;
+  height: 525px;
+  width: 99%;
+  align-items: center;
+  background-color: $white-bg;
+
+  .info {
+    width: 99%;
+    align-items: center;
+    text-align: center;
+    font-weight: $semiBold;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    .icon {
+      background-color: $purple-lighter;
+      border-radius: 3px;
+      color: $purple-light;
+      padding: 8px 12px;
+      font-size: $text-medium;
+    }
+
+    .contentTitle {
+      font-weight: $semiBold;
+      padding: 8px;
+      font-size: $regular;
+    }
+    .description {
+      font-weight: $regular;
+      font-size: $text-small;
+    }
+  }
+}
+
+.nameLink {
+  color: $purple-bg;
+}
+
+.noData {
+  padding: 25px;
+  display: flex;
+  height: 472px;
+  width: 99%;
+  background-color: $white-bg;
+}

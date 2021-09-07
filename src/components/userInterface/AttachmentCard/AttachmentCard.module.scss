@@ -1,0 +1,72 @@
+$purple-bg: #6c35d4;
+$font-color: #000;
+$white-bg: #fff;
+
+.fontIcon {
+  font-size: 20px;
+  color: $purple-bg;
+  padding: 6px;
+  background-color: #e6e6ff;
+  margin-right: 3px;
+  margin-top: 5px;
+}
+
+.AttachmentCard {
+  width: 152px;
+  height: 152px;
+
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #edebe9;
+  border-radius: 3px;
+  opacity: 1;
+  text-align: center;
+
+  position: relative;
+}
+
+.container {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: $white-bg;
+}
+
+.title {
+  padding-top: 15px;
+}
+
+.verticalalign {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 10px;
+}
+.cursor {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .AttachmentCard {
+    width: 140px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .AttachmentCard {
+    width: 128px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .AttachmentCard {
+    width: 118px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .AttachmentCard {
+    width: 105px;
+  }
+}

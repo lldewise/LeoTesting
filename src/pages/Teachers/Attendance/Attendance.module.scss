@@ -1,0 +1,97 @@
+@import "../../../assets/ui-kit/_variables";
+
+.sectionSuject {
+  padding: 20px;
+  width: 190px;
+  background-color: $white-bg;
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+  // margin-right: 20px;
+  // margin-top: 10px;
+  // margin: 50px 20px 0px 0px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $gray-lightest;
+    transition: .2s;
+  }
+}
+
+.subjectListRow {
+  margin-top: 25px;
+}
+
+.header {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.iconWidth {
+  width: 23px;
+  padding-top: 0px;
+}
+
+.headerIcon {
+  font-size: 15px;
+  font-weight: $semiBold;
+}
+
+.actionButton {
+  color: $purple-bg;
+  font-size: 14px;
+}
+
+.headertitle {
+  font-size: 15px;
+}
+
+.printIcon {
+  float: right;
+}
+
+.sectionSubjectFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: $semiBold;
+}
+
+.titledesc {
+  font-size: 12px;
+}
+
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.fontIcon {
+  font-size: 20px;
+  color: $purple-bg;
+  padding: 5px 8px 5px 8px;
+  background-color: #e6e6ff;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.iconDesc {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.classesBtn {
+  border: none;
+  background: none;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.subjectList {
+  position: relative;
+}

@@ -1,0 +1,70 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.contentDataDoubleColumn {
+  .ms-DetailsHeader {
+    padding-top: 0px !important;
+    font-weight: $regular;
+    height: 60px;
+  }
+  .ms-DetailsRow:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .ms-DetailsHeader-cell:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 60px !important;
+    border-top: 1px solid $gray-lighter !important;
+    border-right: 1px solid $gray-lighter !important;
+  }
+
+  .ms-DetailsHeader-cell {
+    border-right: 1px solid $gray-lighter !important;
+    border-top: 1px solid $gray-lighter !important;
+    height: 60px !important;
+  }
+
+  .ms-DetailsHeader-cell:hover {
+    background-color: white !important;
+  }
+
+  .ms-DetailsHeader-cellName {
+    font-weight: $regular !important;
+    text-align: center !important;
+    margin-top: 5px;
+  }
+  .ms-DetailsHeader-cell:nth-child(1) {
+    border-left: 1px solid $gray-lighter;
+  }
+
+  span > span > .ms-Icon {
+    margin: 5px 0px 0px 5px !important;
+  }
+
+  .ms-DetailsRow-cell:nth-child(1) {
+    border-left: 1px solid $gray-lighter;
+  }
+  .ms-DetailsRow-cell {
+    border-right: 1px solid $gray-lighter;
+
+    font-size: $text-normal;
+  }
+  .ms-DetailsHeader-cellTitle {
+    top: 5px;
+    .ms-Icon {
+      top: 5px;
+    }
+  }
+}
+.teacherCheckbox {
+  .ms-Checkbox {
+    justify-content: center;
+  }
+}

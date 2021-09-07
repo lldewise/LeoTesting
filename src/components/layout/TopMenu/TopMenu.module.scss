@@ -1,0 +1,54 @@
+@import "../../../assets/ui-kit/_variables";
+
+.container {
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+ background-color: $purple;
+ height: 50px !important;
+ max-height: 50px !important;
+}
+
+.menu{
+  width: 65%;
+
+}
+
+.search{
+  width: 35%;
+}
+
+.searchContainer{
+  padding: 10px;
+  width: 450px;
+}
+
+.title{
+  font-weight: $semiBold;
+}
+
+
+.fileContainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+
+ }
+
+ .imagePad{
+  padding: 0px 15px 0px 0px;
+}
+
+.linkHover{
+  background: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: $gray-lighter;
+    transition: background 0.1s linear;
+  }
+}
+
+.callout{
+  max-height: 400px;
+  overflow-y: auto;
+}

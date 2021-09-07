@@ -1,0 +1,154 @@
+@import "../../../../../assets/ui-kit/_variables";
+
+.headerContainer {
+  width: 100%;
+}
+
+.header {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.iconWidth {
+  width: 23px;
+  padding-top: 0px;
+}
+
+.headertitle {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: $screen-desktop) {
+    flex-direction: column;
+  }
+}
+
+.col1 {
+  width: 35%;
+  max-width: 250px;
+  padding: 6px 0;
+  min-width: 200px;
+
+  @media (max-width: $screen-desktop) {
+    width: 100%;
+  }
+}
+
+.col2 {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.form {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.pad {
+  padding: 40px;
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: $semiBold;
+}
+
+.description1 {
+  font-size: 11px;
+  color: $gray-option;
+}
+
+.container2 {
+  position: relative;
+  width: 100%;
+}
+
+.container3 {
+  color: $blue;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  z-index: 2;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.validateBtn {
+  padding: 0px;
+}
+
+.headerDesc {
+  color: $gray-dark;
+}
+
+.btnGroup {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 12px;
+
+  button {
+    margin-left: 10px;
+  }
+  @media (max-width: $screen-desktop) {
+    justify-content: flex-start;
+    button {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+.copyIcon {
+  font-size: 16px;
+}
+
+.buttom {
+  padding: 0px;
+  margin: 0px;
+}
+
+.colPas1 {
+  width: 70%;
+  margin-right: 5px;
+}
+.colPas2 {
+  width: 10%;
+}
+
+.col3 {
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  padding-right: 10px;
+}
+
+.container4 {
+  position: relative;
+  width: 100%;
+}
+
+.col4 {
+  width: 30%;
+}
+
+.required {
+  margin-left: 10px;
+  font-size: 11px;
+  color: $gray;
+}

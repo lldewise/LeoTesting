@@ -1,0 +1,87 @@
+@import "../../assets/ui-kit/_variables";
+
+.formPanel {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 20px;
+  width: 571px;
+}
+
+.formTitle {
+  font-size: 15px;
+  font-weight: $semiBold;
+  padding-bottom: 20px;
+}
+
+.classTitle {
+  border:none;
+  width: 295px;
+  outline: 0;
+  border-width:0px;
+  background-color: transparent;
+  :disabled {
+    border:none;
+    background-color: transparent;
+    outline:0;
+    border-width:0px;
+  
+  }
+}
+.fieldName {
+  font-size: 14px;
+  font-weight: $regular;
+}
+
+.textField {
+    width: 295px;
+}
+.textFieldSmall {
+  width: 143px;
+}
+.description2 {
+    font-size: 12px;
+    font-weight: $regular;
+    color: #333333;
+    opacity: 0.6;
+}
+
+.classInfoForm {
+  margin-bottom: 15px;
+}
+
+.classInfoItem .ms-DatePicker {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1230px) {
+  .classInfoItem .ms-Dropdown {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .classInfoItem .classTextField {
+    width: 100%;
+  }
+  .classInfoItem {
+    display: contents;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .classInfoForm {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .horizontal-textfield{
+    display: block;
+  }
+  .classInfoItem,
+  .classInfoItem label {
+    width: 100% !important;
+    min-width: auto;
+  }
+}
+

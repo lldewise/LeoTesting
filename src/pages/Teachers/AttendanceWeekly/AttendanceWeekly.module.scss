@@ -1,0 +1,94 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.attendanceMonthly {
+  background-color: $white-bg;
+  height: 93vh;
+
+  .headerContainer {
+    display: flex;
+    background-color: $white-bg;
+    border-bottom: 3px solid $purple-bg;
+    padding: 10px 6px;
+
+    .leftContainer {
+      background-color: $white-bg;
+      margin-left: 16px;
+      display: flex;
+      color: $font-color;
+      font-size: 16px;
+      font-weight: 600;
+
+      .iconProfile {
+        position: relative;
+        margin-right: calc(100% - 125px) !important;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .rightContainer {
+      margin-top: 2px;
+      background-color: $white-bg;
+      margin-right: 30px;
+      display: flex;
+      justify-content: flex-end;
+      color: $purple-bg;
+      font-weight: 400;
+      justify-content: flex-end;
+
+      .iconManage {
+        position: relative;
+        margin-left: calc(100% - 55px) !important;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .bannerMessage {
+    height: 125px;
+    width: 100%;
+    background-color: $gray-bg;
+    border-bottom: 1px solid $gray-lighter;
+    padding: 15px 25px;
+
+    .messageTitle {
+      font-size: $text-normal;
+      font-weight: $bold;
+      margin-bottom: 5px;
+    }
+
+    .messageBody {
+      font-weight: $regular;
+      font-size: $text-small;
+      color: $gray-dark;
+    }
+
+    .contentControl {
+      margin-top: 20px;
+      display: flex;
+      font-size: 20px;
+
+      .dpSubject {
+        .iconGroup {
+          color: $purple-bg;
+        }
+        .ddlSubject {
+          width: 100px;
+          margin-left: -45px;
+          border-style: none !important;
+          font-size: 20px;
+        }
+      }
+
+      .btnConfirm {
+        text-align: right;
+      }
+    }
+  }
+
+  .contentMessage {
+    width: 100%;
+  }
+}

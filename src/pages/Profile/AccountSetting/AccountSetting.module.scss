@@ -1,0 +1,50 @@
+@import '../../../assets/ui-kit/variables.scss';
+
+
+.container{
+    margin:0px;
+    // background-color: $white-bg;
+
+}
+
+  .header{
+      padding:12px;
+      font-size: 15px;
+      font-weight: $semiBold;    
+      background-color: $white-bg; 
+      border-bottom: 3px solid $purple-bg;
+  }
+
+  .headerIcon{
+    font-size: 15px;
+    font-weight: $semiBold; 
+  }
+
+  .iconWidth{
+      width: 20px;
+      padding-top: 3px;
+  }
+
+  .persona{
+      padding:15px 10px 15px 10px;
+  }
+
+  .containerleft{
+    width: 210px;
+     background-color: $white-bg;
+     border: 1px solid $gray-light;    
+  }
+
+  .flexcontainer{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .accountSettingContainer{
+    width: 80%;
+    height: 87vh;
+    overflow-y: scroll;
+      
+  }
+
+

@@ -1,0 +1,434 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.body {
+  height: 340px;
+  background-color: transparent;
+  padding: 3px 10px;
+  color: $font-color;
+  font-weight: $regular;
+  border-radius: 5px;
+
+  .leftCol {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+
+  .rightCol {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+
+  //School tab ------
+  .schoolContentHeader {
+    padding: 0px;
+    font-weight: $regular;
+    font-size: $text-small;
+    color: $gray-dark;
+    align-self: center;
+  }
+
+  .schoolEditBtn {
+    align-self: center;
+  }
+
+  //---------------
+
+  hr.pivotDivider {
+    background-color: $gray;
+    margin: 0px 9px;
+    opacity: 0.3;
+    position: relative;
+    top: 46px;
+  }
+
+  //Guardian tab ------
+  .guardianContentHeader {
+    padding: 0px;
+    font-weight: $regular;
+    font-size: $text-small;
+    color: $gray-dark;
+    align-self: center;
+  }
+
+  .guardianInfoContainer {
+    display: block;
+  }
+
+  .guardianContentInfo {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .titlestudent {
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 5px;
+    color: $gray-dark;
+  }
+  .actionButton {
+    font-size: 14px;
+  }
+
+  .personaInfo {
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      font-size: $text-normal;
+    }
+    .relation {
+      font-size: $text-small;
+      font-weight: $regular;
+      color: $gray-dark;
+    }
+    .contact {
+      color: $gray-dark;
+      font-weight: $regular;
+      font-size: $text-small;
+    }
+  }
+
+  .icnBullet {
+    position: relative;
+    top: 2px;
+  }
+
+  .noGuardianSectionContainer {
+    align-items: center;
+    position: relative;
+    height: 290px;
+
+    .info {
+      align-items: center;
+      text-align: center;
+      font-weight: $semiBold;
+      width: 100%;
+      position: absolute;
+      top: 75%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  .noGuardianMessageTitle {
+    margin-top: 30px;
+  }
+
+  .noGuardianMessage {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0px 0px 10px;
+  }
+
+  .noGuardianMessageBtn {
+    padding: 10px 0px;
+    font-weight: normal;
+  }
+  //Guardian tab -----
+
+  //Student Cases tab
+  .casesContentHeader {
+    padding: 0px;
+    font-weight: $regular;
+    font-size: $text-small;
+    color: $gray-dark;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .casesTitle {
+    align-self: center;
+  }
+
+  .buttonHolder {
+    align-self: center;
+    position: relative;
+    right: 0px;
+    justify-content: flex-end;
+  }
+
+  .casesInfoContainer {
+    display: block;
+    padding: 10px 30px;
+  }
+
+  .dataContainer {
+    height: calc(100vh - 249px);
+    width: 99.8%;
+  }
+
+  .fontIcon {
+    font-size: 20px;
+    color: $purple-bg;
+    padding: 6px;
+    background-color: #e6e6ff;
+    margin-right: 3px;
+  }
+
+  .title {
+    font-size: 14px;
+    padding-top: 12px;
+    margin-left: 5px;
+  }
+
+  .fileNameSection {
+    display: flex;
+  }
+
+  .bntSection {
+    width: 30px;
+    position: relative;
+    top: 5px;
+    z-index: 99;
+  }
+
+  .personaSection {
+    display: flex;
+  }
+
+  .moreVerticalContainer {
+    position: absolute;
+    top: 30%;
+  }
+
+  .moreVertical {
+    font-size: 14px;
+  }
+
+  .personaSection {
+    position: absolute;
+    top: 27%;
+  }
+
+  .lastUpdated {
+    position: absolute;
+    top: 25%;
+    margin-left: 40px;
+  }
+
+  .itemDetailsBold {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .itemDetails {
+    font-size: 12px;
+  }
+
+  .fileIcon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .forUpload {
+    width: 100%;
+    position: absolute;
+    left: 20%;
+    top: 100%;
+  }
+
+  .btnUploadContainer {
+    width: 100%;
+  }
+
+  .uploadSectionContainer {
+    align-items: center;
+    position: relative;
+    height: 210px;
+
+    .info {
+      align-items: center;
+      text-align: center;
+      font-weight: $semiBold;
+      width: 100%;
+      position: absolute;
+      top: 75%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  .uploadMessageTitle {
+    margin-top: 30px;
+  }
+
+  .uploadMessage {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0px 0px 10px;
+  }
+
+  .uploadMessageBtn {
+    padding: 10px 0px;
+    font-weight: normal;
+  }
+}
+
+.flexContainer {
+  padding: 30px 30px 20px 30px;
+  display: flex;
+  flex-direction: row;
+}
+.editButton {
+  color: $purple;
+}
+
+.schoolContentInfo {
+  padding: 0px 0px 0px 30px;
+}
+
+.contentColor {
+  background-color: $white;
+  border: 1px solid $gray-light;
+  border-radius: 4px;
+  height: 407px;
+  max-height: 407px;
+}
+
+.contentMargin {
+  margin: 0px 6px 0px 2px;
+}
+
+//Notes tab -----
+.notesFlexContainer {
+  padding: 30px 30px 5px 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.divnewFeeds {
+  margin-bottom: 15px;
+  border: 1px solid $card-border;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.headerFilter {
+  padding: 0px 0px 20px 25px;
+  font-weight: 500;
+}
+
+.likePerson {
+  padding-bottom: 12px;
+}
+
+.container {
+  border-top: 1px solid #e7e7ee;
+}
+
+.imgSize {
+  width: 100%;
+  height: auto;
+}
+
+.imageContainer {
+  width: 30%;
+}
+
+.flexImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.emptyContainer {
+  padding-top: 80px;
+}
+.notesBox {
+  margin-left: 25px;
+}
+
+.addNotesBtn {
+  align-self: center;
+  margin-right: 10px;
+  width: 120px;
+}
+
+.options{
+  width: 136px;
+}
+
+.filterwidth{
+  width: 25px;
+  padding: 8px;
+}
+
+.sortIcon{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.imagePad {
+  margin: 0px 10px;
+}
+
+.divComment {
+  height: 98px;
+  max-height: 98px;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.name {
+  font-weight: $semiBold;
+}
+.divname {
+  padding-bottom: 5px;
+}
+
+.container {
+  background-color: $white-bg;
+}
+
+.containerPad {
+  padding: 20px 20px 10px 20px;
+}
+
+.seeMore {
+  padding-top: 10px;
+  font-size: 14px;
+  color: $blue;
+  cursor: pointer;
+}
+
+.personadetail {
+  color: $gray-dark;
+}
+
+.noteFlexContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  @media (max-width: $screen-desktop) {
+    flex-direction: column;
+  }
+}
+
+.col1 {
+  width: 13%;
+  padding: 6px 0;
+
+  @media (max-width: $screen-desktop) {
+    width: 100%;
+  }
+}
+
+.col2 {
+  width: 100%;
+  position: relative;
+  min-height: 32px;
+  align-items: center;
+  margin-top: 10px;
+
+  > * {
+    width: 100%;
+  }
+}

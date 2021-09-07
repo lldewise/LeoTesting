@@ -1,0 +1,79 @@
+@import '../../../assets/ui-kit/variables.scss';
+
+.cursor{
+    cursor: pointer;
+}
+
+.headerFilter{
+  padding:25px 10px 10px  10px; 
+  font-weight: 500;
+}
+
+.aLink {
+    position: relative;
+    display: block;
+    
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;        
+    color: $font-color;
+    text-decoration: none;    
+    padding-bottom: 12px;
+  }
+  
+  .aLinkactive {    
+    position: relative;
+    display: block;
+    font-weight: bold;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;        
+    color: $font-color;
+    text-decoration: none;    
+    padding-bottom: 10px;
+    border-bottom: $purple-bg  3px solid;
+  }
+
+  .dueSoon{
+    font-size: 18px;
+    font-weight: $semiBold;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .cardwith{
+      width:250px;
+      margin-bottom: 10px;
+    }
+}
+
+
+.cardwith{
+  width: 260px !important;
+ 
+}
+
+.pivotitem{
+    .ms-Pivot-text{
+      font-size: 20px;
+    }
+}
+
+
+
+.filterwidth{
+  width: 25px;
+  padding: 8px;
+}
+
+.selection{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.allhome{
+   width: 136px;
+}
+
+.container{
+  border-top: 1px solid #e7e7ee;
+}

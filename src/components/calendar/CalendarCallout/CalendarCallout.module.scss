@@ -1,0 +1,17 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.btnCalendarCallout {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  .calendarCalloutIconChevronDown {
+    margin-left: 8px;
+    font-size: 14px;
+    position: relative;
+    top: 0;
+  }
+}
+.btnCalendarCallout:hover {
+  cursor: pointer;
+}

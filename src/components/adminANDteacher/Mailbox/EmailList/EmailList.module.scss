@@ -1,0 +1,140 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+$body-color: #fff;
+$app-height: 100vh;
+
+.header {
+  padding: 4px 14px;
+  background-color: $body-color;
+  border-bottom: 1px solid $gray-lightest;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkAll div {
+  border-radius: 50%;
+  width: 23px !important;
+  height: 23px !important;
+  align-self: center;
+}
+
+.filterIcon {
+  position: relative;
+  width: 24px !important;
+  height: 24px !important;
+  top: 3px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.empty {
+  position: absolute;
+  top: 40%;
+  font-weight: $light;
+  width: 320px;
+  height: $app-height;
+  align-items: center;
+  text-align: center;
+}
+
+.time {
+  float: right;
+  text-align: right;
+  width: 40%;
+}
+
+.from {
+  width: 60%;
+}
+
+.checkItem div {
+  position: relative;
+  border-radius: 50% !important;
+  width: 23px !important;
+  height: 23px !important;
+  z-index: 99;
+}
+
+.personaCheck {
+  width: 23px;
+  position: relative;
+  display: inline-block;
+}
+
+.checkTop {
+  width: 23px;
+  position: relative;
+  display: inline-block;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-bottom: 1px solid $gray-lightest;
+  cursor: pointer;
+  padding: 14px 12px;
+  position: relative;
+  &:hover {
+    background-color: $purple-lighter;
+    transition: background 0.1s linear;
+  }
+}
+
+.contentContainerUnread {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-bottom: 1px solid $gray-lightest;
+  border-left: 3px solid $purple;
+  cursor: pointer;
+  padding: 14px 12px;
+  position: relative;
+  &:hover {
+    background-color: $purple-lighter;
+    transition: background 0.1s linear;
+  }
+}
+
+.emailItem {
+  padding: 0 2px 0 10px;
+  position: relative;
+  width: 100%;
+}
+
+.name {
+  font-size: 14px !important;
+  font-weight: $semiBold;
+  margin-bottom: 5px;
+}
+
+.subject {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subjectName {
+  font-size: 14px !important;
+}
+
+.date {
+  font-size: $text-small;
+}
+
+.details {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.btnFilterCustom {
+  height: 35px;
+  color: #000 !important;
+  font-weight: $semiBold !important;
+  &:hover {
+    cursor: pointer;
+  }
+}

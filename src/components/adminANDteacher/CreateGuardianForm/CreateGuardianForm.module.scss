@@ -1,0 +1,145 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.headerContainer {
+  width: 100%;
+}
+
+.header {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+}
+
+.iconWidth {
+  width: 23px;
+  padding-top: 0px;
+}
+.headertitle {
+  font-size: 15px;
+}
+
+.headertitleButton {
+  float: right !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: $screen-desktop) {
+    flex-direction: column;
+  }
+}
+.customWidth {
+  width: 75% !important;
+
+  @media (max-width: $screen-desktop) {
+    width: 100% !important;
+  }
+}
+
+.col1 {
+  width: 25%;
+  min-width: 160px;
+  padding: 6px 0;
+  display: flex;
+  align-items: baseline;
+  @media (max-width: $screen-desktop) {
+    width: 100%;
+  }
+}
+
+.col2 {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  min-height: 32px;
+  display: flex;
+  align-items: flex-end;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.col2profilepic {
+  width: 10%;
+  margin-top: -15px;
+}
+
+.col3profilepic {
+  width: 50%;
+  margin-top: -15px;
+}
+
+.form {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.pad {
+  padding: 20px;
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: $semiBold;
+}
+
+.description1 {
+  font-size: 11px;
+  color: $gray;
+}
+
+.container2 {
+  background: blue;
+  position: relative;
+}
+.container3 {
+  color: $blue;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  z-index: 2200000;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.customBtnupload {
+  background-color: white;
+  width: 150px;
+  float: right;
+  visibility: hidden;
+}
+
+.customBtn {
+  background-color: #ffffff !important;
+  width: 70px;
+  border-color: black;
+  color: #0b0b0b;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.customBtn:hover {
+  background-color: $gray-light !important;
+  border: 1px solid #ffffff !important;
+  color: #0b0b0b !important;
+  border-color: black;
+}
+
+.content {
+  margin-top: 25px;
+}
+
+.label {
+  font-weight: $semiBold;
+}
+
+.required {
+  margin-left: 10px;
+  font-size: 11px;
+  color: $gray;
+  font-style: italic;
+}

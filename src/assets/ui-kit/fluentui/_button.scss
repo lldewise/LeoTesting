@@ -1,0 +1,161 @@
+// .ms-Button--primary{
+//     background-color: $orange;
+// }
+
+.btnPrimary {
+  color: $white;
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    color: $white;
+    background: var(--hover) 0% 0% no-repeat padding-box;
+    background: $primary-color 0% 0% no-repeat padding-box;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    border: 2px solid var(--fg-000000);
+    border: 2px solid $black;
+  }
+}
+
+.btnSecondary {
+  color: $white;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+
+  &:hover {
+    color: $white;
+    background: var(--hover) 0% 0% no-repeat padding-box;
+    background: $secondary-color 0% 0% no-repeat padding-box;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    border: 2px solid var(--fg-000000);
+    border: 2px solid $black;
+  }
+}
+
+.btnDanger {
+  color: $white;
+  background-color: $danger-color;
+  border-color: $danger-color;
+
+  &:hover {
+    color: $white;
+    background: var(--hover) 0% 0% no-repeat padding-box;
+    background: $danger-color 0% 0% no-repeat padding-box;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    border: 2px solid var(--fg-000000);
+    border: 2px solid $black;
+  }
+}
+
+.btnDisabled {
+  color: $gray-label;
+  background-color: $gray-light;
+}
+
+.btnPlain {
+  background: transparent;
+  border: 0;
+  .ms-Icon {
+    font-size: 0.9em;
+  }
+  &.btnDefault {
+  }
+
+  &.btnPrimary {
+    color: $purple;
+
+    .ms-Icon {
+      color: $purple;
+    }
+  }
+
+  &.btnInfo {
+    color: $link;
+
+    .ms-Icon {
+      color: $link;
+    }
+  }
+
+  &:hover {
+    background: $gray-lighter;
+    opacity: 1;
+  }
+
+  &:focus,
+  &:active {
+    background: $gray-light;
+    opacity: 1;
+    border: 0;
+  }
+}
+
+.btnIconRight .ms-Button-flexContainer {
+  flex-direction: row-reverse;
+}
+
+.btnIcon {
+  &.btnIconDark {
+    .ms-Icon {
+      color: $black;
+    }
+  }
+  &.btnIconLg {
+    .ms-Icon {
+      font-size: $text-lg;
+    }
+  }
+  &.btnIconNormal {
+    .ms-Icon {
+      font-size: $text-normal;
+    }
+  }
+}
+.hideMenuIcon {
+  .ms-Button-menuIcon {
+    display: none;
+  }
+}
+
+.btnUnderlined.ms-Button {
+  color: $gray-dark;
+
+  &:hover {
+    color: $gray-dark;
+  }
+}
+
+.btnUnderlined.ms-Button:hover .ms-Button-icon {
+  color: $blue;
+}
+
+.btnUnderlined .ms-Button-label:hover {
+  text-decoration: underline;
+  color: $gray-dark;
+}
+
+.btnUnderlined i.ms-Button-icon {
+  color: $blue;
+  position: absolute;
+  right: -20px;
+  font-size: 14px;
+  top: 12px;
+}
+
+.fluentSplitButton .splitUnderlined.ms-Button {
+  border: none;
+  background: transparent;
+}
+
+.splitUnderlined.ms-Button .ms-Button-label:hover {
+  text-decoration: underline;
+}

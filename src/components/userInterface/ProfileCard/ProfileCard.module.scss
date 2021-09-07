@@ -1,0 +1,111 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.persona {
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.header {
+  height: 120px;
+  background: linear-gradient(-95deg, rgb(124, 74, 217), rgb(108, 53, 212));
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+  background-size: cover, 100px;
+
+  .userName {
+    padding-top: 50px;
+    font-size: $text-medium;
+    font-weight: $semiBold;
+    color: $white-bg;
+  }
+
+  .userId {
+    font-size: $text-small;
+    font-weight: $light;
+    padding-top: 10px;
+    color: $white-bg;
+  }
+}
+
+.body {
+  height: 255px;
+  border-bottom: 1px solid $gray-light;
+  padding: 40px 20px;
+  color: $font-color;
+  font-weight: $semiBold;
+
+  .leftCol {
+    font-size: $text-small;
+    font-weight: $semiBold;
+    margin-bottom: 10px;
+  }
+
+  .rightCol {
+    font-size: $text-small;
+    font-weight: $regular;
+    margin-bottom: 10px;
+  }
+}
+
+.footer {
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  line-height: 45px;
+
+  .linkUpdate {
+    color: $blue;
+    font-weight: $semiBold;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.popOver {
+  position: relative;
+  top: -30px;
+  margin-left: 60px;
+}
+
+.exclamationIcon {
+  border: 1px solid $white-bg;
+  font-size: 18px;
+  font-weight: $regular;
+  background-color: $red;
+  color: $white-bg;
+  border-radius: 50%;
+}
+
+.callOutContainer {
+  padding: 20px;
+}
+
+.titleCallout {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+.titleCol1 {
+  padding-top: 2px;
+  padding-right: 5px;
+  color: $red;
+}
+
+.incident {
+  background-color: $white-bg;
+  color: $red;
+}
+
+.description {
+  width: 180px;
+  font-size: 12px;
+}

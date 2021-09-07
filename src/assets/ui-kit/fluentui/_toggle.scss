@@ -1,0 +1,52 @@
+.defaultToggle {
+    .ms-Toggle-background {
+        background-color: $white;
+        border: 1px solid $gray-dark;
+    }
+    .ms-Toggle-background .ms-Toggle-thumb {
+        background-color: $secondary-color;
+    }
+}
+
+.primaryToggle {
+    .ms-Toggle-background[aria-checked="true"]  {
+        background: $primary-color;
+    }
+
+    .ms-Toggle-background[aria-checked="false"] .ms-Toggle-thumb  {
+        background: $primary-color;
+    }
+}
+
+.secondaryToggle {
+    .ms-Toggle-background[aria-checked="true"]  {
+        background: $secondary-color;
+    }
+
+    .ms-Toggle-background[aria-checked="false"] .ms-Toggle-thumb  {
+        background: $secondary-color;
+    }
+}
+
+.defaultToggle  .ms-Toggle-background:hover,
+.primaryToggle .ms-Toggle-background:hover,
+.secondaryToggle .ms-Toggle-background:hover,
+.attendanceToggle .ms-Toggle-background:hover {
+    opacity: 0.7;
+}
+
+.attendanceToggle {
+    .ms-Toggle-background[aria-checked="true"]  {
+        background: $primary-color;
+        border: $primary-color;
+        transition: .2s ease;
+    }
+
+    .ms-Toggle-background[aria-checked="false"] .ms-Toggle-thumb  {
+        background: $red;
+    }
+
+    .ms-Toggle-background {
+        border: 1px solid $red;
+    }
+}

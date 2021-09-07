@@ -1,0 +1,25 @@
+.containerAttachment {
+  background: #ffffff 0% 0% no-repeat padding-box;
+
+  height: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.containerAttachment::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.card {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-edebe9);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #edebe9;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+.cardContainer {
+  display: inline-block;
+}

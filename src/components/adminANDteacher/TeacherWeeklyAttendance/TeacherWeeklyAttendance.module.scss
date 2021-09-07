@@ -1,0 +1,94 @@
+@import "../../../assets/ui-kit/_variables.scss";
+
+.cellHeader {
+  .moduleName {
+    z-index: 1;
+    font-weight: $semiBold;
+    position: relative;
+    text-align: center;
+    top: -15px;
+    color: $purple-bg;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchContainer {
+  width: auto;
+  padding: 20px;
+  border-right: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+}
+.search {
+  border: none;
+  width: 271px;
+}
+
+.calendarContainer {
+  width: calc(100vw - 525px);
+  padding: 20px;
+  border-right: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: row;
+  color: $black;
+}
+
+.defaultBorder {
+  border: none;
+  background-color: white;
+}
+
+.iconLR {
+  padding-top: 9px;
+  color: $purple-bg;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconLR:hover {
+  cursor: pointer;
+  background-color: $gray-lighter;
+}
+
+.icon {
+  padding-top: 2px;
+  color: $purple-bg;
+}
+
+.iconDisabled {
+  padding-top: 2px;
+  color: $gray;
+}
+
+.iconLRDisabled {
+  padding-top: 9px;
+  color: $gray;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.calendarclick {
+  display: flex;
+  flex-direction: row;
+  color: $purple-bg;
+}
+
+.noData {
+  padding: 20px 40px;
+  font-weight: $semiBold;
+}

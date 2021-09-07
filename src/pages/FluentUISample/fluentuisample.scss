@@ -1,0 +1,115 @@
+@import '../../assets/ui-kit/variables';
+
+.fluentui {
+    font-family: $font-default;
+    font-weight: normal;
+}
+
+.fluentui span h5 {
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-left: 30px;
+}
+
+.fluentui .fluentDivTitle {
+    position: relative;
+    margin-top: 2em;
+}
+
+.fluentui .titleLine {
+    height: 1px;
+    width: 20px;
+    background-color:$black;
+    position: absolute;
+    top: 20px;
+}
+
+.divpadt10{
+    padding-top:10px;
+}
+
+.fluenttitle{
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+.divpadt20{
+    padding-top: 20px;
+}
+
+.fluentuicontainer{ 
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8f8f8;
+
+}
+
+.fluenttitle {
+    font-size: 18px;
+    text-transform: none;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.subName {
+    font-size: 14px;
+    color: #646464;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.subName:before {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+
+.marginR15 {
+    margin-right: 15px;
+}
+
+.marginB200 {
+    margin-right: 15px;
+}
+
+.fluentSplitButton .ms-Button {
+    margin-right: 0;
+}
+
+.fluentui {
+    margin-left: 50px;
+}
+
+.fluentui .ms-Checkbox-text,
+.fluentui .ms-Label {
+    text-transform: capitalize;
+}
+
+.fluentui .ms-ChoiceField-input,
+.fluentui .ms-MessageBar-text,
+.fluentText {
+    text-transform: none;
+}
+
+.fluentui .ms-Checkbox-label,
+.fluentui .ms-ChoiceField-wrapper {
+    padding: 10px;
+}
+
+.fluentui .ms-ComboBox,
+.fluentui .ms-TextField-fieldGroup {
+    width: 300px;
+}
+
+.ms-DetailsRow:hover {
+    box-shadow: 0px 7px 30px -8px #bababa;
+    background: #fff;
+    z-index: 999999;
+    transition: .2s ease;
+}

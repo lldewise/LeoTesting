@@ -1,0 +1,156 @@
+@import "../../../assets/ui-kit/_variables";
+
+.headerContainer {
+  width: 100%;
+}
+
+.header {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: $semiBold;
+  background-color: $white-bg;
+  border-bottom: 3px solid $purple-bg;
+  width: 100%;
+}
+
+.iconWidth {
+  width: 23px;
+  padding-top: 0px;
+}
+
+.actionButton {
+  color: $purple-bg;
+  font-size: 14px;
+}
+
+.headertitle {
+  font-size: 15px;
+}
+
+.helpIcon {
+  float: right;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.calendar{
+    width: 10%;
+ 
+}
+.search{
+  width: 30%;
+  
+}
+
+.bottom{
+  width: 50%;
+  text-align: right;
+}
+
+.flex{
+  display:flex;
+  flex-direction: row;
+  margin-top: 3px;
+  
+}
+
+.flexTitle{
+  display:flex;
+  flex-direction: row;
+
+  
+}
+
+.icon{
+  background-color: $purple-bg;
+  color: $white-bg;
+  padding: 4px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+.content{
+  padding-top: 5px;  
+}
+.contentCount{
+  color:  $purple-bg;
+  padding-top: 3px;  
+}
+
+.bgContent{
+    background-color:$gray-bg;
+    border-radius: 15px;
+    padding-right: 3px;
+    margin-right: 5px;
+}
+
+.activityTitle{
+  width: 90%;
+  color: $purple-bg;
+  
+}
+.activityIcon{
+  width: 10%;
+}
+.textright{
+  text-align: right;
+}
+
+.title{
+  font-size: 14px;
+  font-weight: $semiBold;
+}
+.titledesc{
+  font-size: 12px;
+  color: $gray-dark;
+}
+
+.titleContainer{
+  padding:12px
+}
+
+
+.flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexWrapContent{
+ word-wrap: break-word;
+ white-space: pre-wrap;
+}
+
+.tableContainer{
+  overflow-x: auto;
+
+}
+
+.contentIcon{
+  padding-top: 2px;  
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.cancelColor{
+  color:$red;
+}
+
+.calloutDiv{
+  padding: 12px;
+}
+
+
+.check{
+    color:$green;
+    font-size: 20px;
+    padding-top:5px;
+}
+
+.cross{
+  padding-top:5px;
+  color: $red;
+  font-size: 20px;
+}

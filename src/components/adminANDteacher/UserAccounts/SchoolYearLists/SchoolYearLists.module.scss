@@ -1,0 +1,51 @@
+@import "../../../../assets/ui-kit/_variables.scss";
+
+.dataContainer {
+  width: 100%;
+  border: 1px solid $gray-lighter !important;
+}
+.nameContainer {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+
+  .yearField {
+    font-size: $text-normal;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .name {
+    margin-left: 10px;
+  }
+}
+.secondLine {
+  margin-top: -22px;
+}
+
+.roleName {
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+}
+
+.moreIcon {
+  line-height: 30px;
+}
+
+.calloutContainer {
+  padding: 10px;
+}
+
+.iconStyleWidth {
+  width: 145px;
+  background-color: $white-bg !important;
+}
+
+.btnPlain:active {
+  background-color: $white-bg !important;
+}
+
+.labelColor {
+  color: $font-color;
+}

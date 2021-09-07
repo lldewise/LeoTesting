@@ -1,0 +1,60 @@
+
+@mixin color($className, $bgColor, $foreColor: '.white-text') {
+    #{$className + '-bg'}{
+        background-color: $bgColor;
+        @extend #{$foreColor};
+    }
+
+    #{$className + '-text'}{
+        color: $bgColor;
+    }
+}
+
+// Neutrals
+@include color('.white', $white, '.black-text');
+@include color('.black', $black);
+@include color('.gray', $gray, '.black-text');
+@include color('.gray-light', $gray-light, '.black-text');
+@include color('.gray-lighter', $gray-lighter, '.black-text');
+@include color('.gray-dark', $gray-dark);
+@include color('.gray-darker', $gray-darker);
+
+// ==== Shades
+@include color('.red', $red);
+@include color('.red-light', $red-light);
+@include color('.red-lighter', $red-lighter, '.red-text');
+@include color('.red-dark', $red-dark);
+@include color('.red-darker', $red-darker);
+
+@include color('.orange-red', $orange-red);
+@include color('.orange-red-light', $orange-red-light);
+@include color('.orange-red-lighter', $orange-red-lighter, '.orange-red-text');
+@include color('.orange-red-dark', $orange-red-dark);
+@include color('.orange-red-darker', $orange-red-darker);
+
+
+@include color('.orange', $orange);
+@include color('.orange-light', $orange-light);
+@include color('.orange-lighter', $orange-lighter, '.orange-text');
+@include color('.orange-dark', $orange-dark);
+@include color('.orange-darker', $orange-darker);
+
+@include color('.green', $green);
+@include color('.green-light', $green-light);
+@include color('.green-lighter', $green-lighter, '.green-text');
+@include color('.green-dark', $green-dark);
+@include color('.green-darker', $green-darker);
+
+
+@include color('.blue', $blue);
+@include color('.blue-light', $blue-light);
+@include color('.blue-lighter', $blue-lighter, '.blue-text');
+@include color('.blue-dark', $blue-dark);
+@include color('.blue-darker', $blue-darker);
+
+@include color('.purple', $purple);
+@include color('.purple-light', $purple-light);
+@include color('.purple-lighter', $purple-lighter, '.purple-text');
+@include color('.purple-dark', $purple-dark);
+@include color('.purple-darker', $purple-darker);
+

@@ -1,0 +1,400 @@
+@import "../../../assets/ui-kit/_variables";
+
+.dailyCalendar {
+  margin-right: -7px;
+
+  .event-card {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 0;
+
+    &:before {
+      content: "";
+      width: 3px;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      left: -2px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+
+    &.type-classSchedule:before {
+      background-color: $class-schedule-br;
+    }
+
+    &.type-private:before {
+      background-color: $private-event-br;
+    }
+
+    &.type-exam:before {
+      background-color: $exam-event-br;
+    }
+
+    &.type-schoolEvent:before {
+      background-color: $school-event-br;
+    }
+
+    .event-title {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      margin: 0 6px 4px 12px;
+
+      i {
+        margin-right: 6px;
+      }
+    }
+
+    .event-details {
+      margin: 0 6px 0 12px;
+      color: #605e5c;
+
+      .event-time {
+        margin-right: 6px;
+
+        &:empty {
+          display: none;
+        }
+      }
+
+      .event-loc {
+        &:empty {
+          display: none;
+        }
+
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .dailySchedule {
+    font-weight: normal !important;
+    position: relative;
+    top: -10px;
+
+    /* calendar scss */
+    .fc-theme-standard {
+      td {
+        border-color: $gray-light;
+        height: 0;
+      }
+
+      .fc-scrollgrid {
+        border-color: $gray-light;
+
+        tr td.fc-timegrid-divider {
+          border: 0;
+          background-color: transparent;
+        }
+      }
+
+      .fc-daygrid-body td {
+        // all day
+        border: 0;
+        border-right: 1px solid $gray-light;
+      }
+    }
+
+    .fc-view-harness.fc-view-harness-active {
+      font-weight: normal;
+      height: calc(100vh - 195px) !important;
+    }
+
+    .fc-timegrid-slot-label-cushion.fc-scrollgrid-shrink-cushion {
+      text-transform: uppercase !important;
+      font-size: 12px;
+      color: $gray-dark;
+      text-align: right;
+      width: 50px;
+    }
+
+    .fc-timegrid-event-harness {
+      cursor: pointer;
+      margin-right: 15px;
+    }
+
+    .fc {
+      margin-top: 25px !important;
+
+      .fc-timegrid-axis-cushion {
+        margin-right: 5px;
+      }
+
+      .fc-timegrid-slot-minor {
+        border-top-style: dashed;
+      }
+
+      .fc-daygrid-day.fc-day-today {
+        padding-right: 15px;
+        background-color: #fff;
+      }
+    }
+
+    .fc .fc-daygrid-day-frame,
+    .fc .fc-timegrid-col.fc-day-today {
+      background-color: #fff !important;
+    }
+
+    .fc-timegrid-event {
+      border-color: 1px solid #f8f8f8 !important;
+    }
+
+    .fc-event-main {
+      color: $text-body !important;
+      border-color: 1px solid $gray-bg !important;
+      height: 100% !important;
+    }
+
+    .fc-event {
+      border-width: 5px !important;
+      border-right: 1px !important;
+      border-bottom: 0px !important;
+      border-top: 0px !important;
+      margin-left: 2px !important;
+    }
+
+    .fc-h-event {
+      border-right: 0px !important;
+      border-bottom: 0px !important;
+      border-top: 0px !important;
+    }
+
+    .fc-v-event {
+      border: 1px solid var(--fc-event-border-color, $gray-bg);
+      margin: 2px 0 0;
+    }
+
+    .fc-daygrid-day-events {
+      margin-bottom: 1px !important;
+      vertical-align: middle;
+    }
+
+    .fc-toolbar.fc-header-toolbar {
+      margin: 0px 35px 12px 0;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .fc-toolbar-title {
+      font-size: 14px !important;
+      font-weight: normal !important;
+      color: $gray-dark;
+    }
+
+    .fc-button-primary {
+      border-color: transparent !important;
+      background-color: transparent !important;
+      color: #000 !important;
+    }
+
+    .fc-today-button {
+      font-size: 16px !important;
+      background-color: $purple-bg !important;
+      color: $white-bg !important;
+    }
+
+    .fc-button-primary:active {
+      border-color: $white-bg !important;
+    }
+
+    .fc-scrollgrid-sync-inner {
+      font-weight: normal !important;
+      font-size: 12px;
+    }
+
+    .fc td.fc-timegrid-slot {
+      height: 2.8em !important;
+      border-top: 0px;
+      border-color: $gray-light;
+      padding: 0 10px;
+      text-align: right;
+
+      &.fc-timegrid-slot-lane {
+        border-bottom: 1px dashed $gray-light;
+
+        &.fc-timegrid-slot-minor {
+          border-bottom: 1px solid $gray-light;
+        }
+      }
+    }
+
+    .fc-direction-ltr .fc-timegrid-col-events {
+      margin: 0px !important;
+    }
+
+    .fc-prev-button:active,
+    .fc-button-primary:active {
+      border-style: none !important;
+    }
+
+    .fc-prev-button.fc-button.fc-button-primary:active {
+      border: none !important;
+    }
+
+    .fc-scrollgrid-section-header {
+      visibility: collapse !important;
+    }
+
+    .fc-scrollgrid-sync-inner a::first-letter {
+      text-transform: uppercase !important;
+    }
+
+    .fc-toolbar-chunk h2::first-letter {
+      text-transform: uppercase !important;
+    }
+
+    .fc-button-group {
+      margin-right: calc(100% + 40px) !important;
+
+      button {
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &:active,
+        &:focus,
+        &:active:focus {
+          opacity: 0.5;
+          outline: 0;
+          border: 0;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .fc-icon {
+      vertical-align: unset;
+
+      &:before {
+        font-family: $fluentui-icon;
+        font-size: 14px;
+      }
+
+      &.fc-icon-chevron-right:before {
+        content: "\e76c";
+      }
+
+      &.fc-icon-chevron-left:before {
+        content: "\e76b";
+      }
+    }
+
+    .fc .fc-scrollgrid-section-liquid {
+      height: 100% !important;
+    }
+    /* calendar css end */
+  }
+
+  .todayContainer {
+    position: relative;
+    top: 10px;
+    color: $purple-bg;
+
+    .headerDate {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .dateCurrent {
+      width: 30%;
+    }
+
+    .dateNav {
+      width: 30%;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      height: 40px;
+
+      .iconLR {
+        padding-top: 12px;
+        color: $purple-bg;
+        width: 45px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .iconLR:hover {
+        cursor: pointer;
+        background-color: $gray-lighter;
+      }
+    }
+
+    .dateMonth {
+      width: 40%;
+      padding-top: 15px;
+      display: flex;
+      flex-direction: row;
+      height: 38px !important;
+
+      .month {
+        width: 100%;
+        margin: -5px 10px 0px 0px;
+      }
+      .month:active {
+        background-color: $white-bg;
+      }
+    }
+
+    .day {
+      font-size: 32px;
+      font-weight: $semiBold;
+      line-height: 31px;
+    }
+
+    .week {
+      font-weight: 16px;
+
+      &::first-letter {
+        text-transform: uppercase !important;
+      }
+    }
+  }
+}
+
+.studentWeekList {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100vh - 170px) !important;
+  margin-top: 20px;
+  border-top: 1px solid #e0e0e0;
+
+  .todaySched {
+    font-weight: 600;
+    margin: 15px 12px;
+  }
+
+  .tomorrowSched {
+    font-weight: 600;
+    margin: 12px 12px;
+  }
+
+  .locationDot {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .dailyCalendar {
+    .fc-prev-button,
+    .fc-next-button {
+      padding: 0;
+    }
+
+    .dailySchedule .fc-toolbar.fc-header-toolbar {
+      margin: 0px 10px 12px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dailyCalendar .dailySchedule .fc-button-group {
+    margin-right: calc(100% + 10px) !important;
+  }
+}

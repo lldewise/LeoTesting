@@ -1,0 +1,102 @@
+@import '../../../../assets/ui-kit/_variables.scss';
+
+.recentScore{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+.headerFilter{
+    font-weight: 500;
+   
+    
+  }
+  .cursor{
+    cursor: pointer;
+}
+
+.commandright{
+    text-align: right;
+    font-weight: 500;
+}
+
+.divGrade{
+  background: $white-bg;
+  border-bottom: 1px solid $gray-bg;
+  height: 50px;
+}
+
+.labelGrade{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 10px; 
+  position: absolute;
+}
+
+.progressPass {
+  display: -ms-flexbox;
+  display: flex;
+  height: .25rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: .75rem;
+  background-color: $progress-pass-bg;
+  border-radius: .25rem;
+  width: 120px;
+}
+
+.progressBarPass {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  color: $white-bg;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $pass-bg;
+  transition: width .6s ease;
+}
+
+.progressBarFail {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  color: $white-bg;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $red-bg;
+  transition: width .6s ease;
+}
+
+.scorePassLabel{
+  margin: -13px 0 0 130px;
+	display:inline-block;
+  content: attr(value) '%';
+  font-size: 15px;
+  position: absolute;
+  color: $pass-bg;
+}
+
+.scoreFailLabel{
+  margin: -13px 0 0 130px;
+	display:inline-block;
+  content: attr(value) '%';
+  font-size: 15px;
+  position: absolute;
+  color: $red-bg;
+}
+
+.scoreMargin{
+  margin-top: 8px;
+}
+
+.container{
+  border-top: 1px solid #e7e7ee;
+}
