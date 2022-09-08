@@ -51,4 +51,3 @@ jobs:
           body:
             This is to show authomatic PR Creation
           token: ${{secrets.GITHUB_TOKEN}}
-          delete-branch: true
