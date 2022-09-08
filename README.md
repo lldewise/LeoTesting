@@ -1,3 +1,5 @@
+HAHA SAMPLE LANG TO
+
 ## TO BE UPDATED - Atedu School Management System 
 
 ### Libraries Features
