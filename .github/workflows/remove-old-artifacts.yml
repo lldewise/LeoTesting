@@ -1,66 +1,19 @@
-name: Remove old artifacts
-
+name: Merge Article Schedule
 on:
+  pull_request:
+    types:
+      - opened
+      - edited
   schedule:
-    # Every day at 1am
-    - cron: "0 1 * * *"
+    # 9AM UTC
+    - cron: 0 9 * * *
     
   workflow_dispatch:
 
 jobs:
-  build:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+  merge_schedule:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
-    env:
-      CI: false
     steps:
-      #Checkout Code
-      - name: Checkout Code
-        uses: actions/checkout@v2
-
-      #Setup Node
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-
-      #Install, Build and Test if present
-      - name: npm install, build and test
-        run: |
-          npm install
-          npm run build --if present
-      #Download Build files
-      - name: Share artifacts inside workflow
-        uses: actions/upload-artifact@v1
-        with:
-          name: react-github-actions-build
-          path: build
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      # Download previusly shared build
-      - name: Get artifact
-        uses: actions/download-artifact@v1
-        with:
-          name: react-github-actions-build
-
-      #Login to Azure
-      - name: Azure Login
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.ATEDU_AUTOMATION_NONPROD }}
-
-      #Upload Files
-      - name: Azure CLI Script
-        uses: azure/CLI@v1
-        with:
-          azcliversion: 2.0.72
-          inlineScript: |
-            az storage blob upload-batch --account-name atedufrontend -d '$web' -s ./react-github-actions-build
-      #Azure Logout
-      - name: Logout
-        run: |
-          az logout
+      - uses: gr2m/merge-schedule-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
