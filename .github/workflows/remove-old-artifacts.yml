@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: gr2m/merge-schedule-action@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.ATEDU_AUTOMATION_NONPROD }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
