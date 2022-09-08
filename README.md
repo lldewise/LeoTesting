@@ -1,5 +1,3 @@
-HAHA SAMPLE LANG TO Papuntang Dev-Merged
-
 ## TO BE UPDATED - Atedu School Management System 
 
 ### Libraries Features
