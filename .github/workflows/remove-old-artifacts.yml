@@ -1,20 +1,19 @@
-name: Remove old artifacts
-
+name: Merge Article Schedule
 on:
+  pull_request:
+    types:
+      - opened
+      - edited
   schedule:
-    # Every day at 1am
-    - cron: "0 1 * * *"
+    # 9AM UTC
+    - cron: 0 9 * * *
+    
+  workflow_dispatch:
 
 jobs:
-  remove-old-artifacts:
+  merge_schedule:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
     steps:
-      - name: Remove old artifacts
-        uses: c-hive/gha-remove-artifacts@v1
-        with:
-          age: "1 month"
-          # Optional inputs
-          # skip-tags: true
-          # skip-recent: 5
+      - uses: gr2m/merge-schedule-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.ATEDU_AUTOMATION_NONPROD }}
