@@ -1,0 +1,54 @@
+name: Daily Deployment for SEA
+
+
+
+on:
+  workflow_dispatch:    
+
+
+
+jobs:
+  remove-old-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove old artifacts
+        uses: c-hive/gha-remove-artifacts@v1
+        with:
+          age: '1 week'
+
+
+
+  create-pr-to-dev-merged: #Create PR from atedu-dev -> atedu-dev-merged
+    runs-on: ubuntu-latest
+    if: success()
+    needs: [remove-old-artifacts]
+    env:
+      CI: false
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+        with: { ref: dev }
+        
+      - name: extract git commits data
+        uses: rlespinasse/git-commit-data-action@v1
+        
+      - name: print git commit data
+        run: |
+          echo "Get commit info"
+          echo " - ${{ env.GIT_COMMIT_SHA }}"
+          echo " - ${{ env.GIT_COMMIT_SHORT_SHA }}"
+          echo "Get author info"
+
+
+
+      - name: create pull request        
+        uses: peter-evans/create-pull-request@v3        
+        with:
+          branch: "adtedu-dev-merged"
+          base: adtedu-dev
+          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          body:
+            This is to show authomatic PR Creation
+          token: ${{secrets.GITHUB_TOKEN}}
+          delete-branch: true
