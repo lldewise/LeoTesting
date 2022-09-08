@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v2
-        with: { ref: dev }
+        with: { ref: atedu-dev }
         
       - name: extract git commits data
         uses: rlespinasse/git-commit-data-action@v1
@@ -44,7 +44,7 @@ jobs:
       - name: create pull request        
         uses: peter-evans/create-pull-request@v3        
         with:
-          branch: atedu-dev-merged
+          branch: "atedu-dev-merged"
           base: atedu-dev
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
           author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
