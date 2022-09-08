@@ -4,17 +4,63 @@ on:
   schedule:
     # Every day at 1am
     - cron: "0 1 * * *"
+    
+  workflow_dispatch:
 
 jobs:
-  remove-old-artifacts:
+  build:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
+    timeout-minutes: 300
+    env:
+      CI: false
     steps:
-      - name: Remove old artifacts
-        uses: c-hive/gha-remove-artifacts@v1
+      #Checkout Code
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      #Setup Node
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
         with:
-          age: "1 month"
-          # Optional inputs
-          # skip-tags: true
-          # skip-recent: 5
+          node-version: 12.x
+
+      #Install, Build and Test if present
+      - name: npm install, build and test
+        run: |
+          npm install
+          npm run build --if present
+      #Download Build files
+      - name: Share artifacts inside workflow
+        uses: actions/upload-artifact@v1
+        with:
+          name: react-github-actions-build
+          path: build
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      # Download previusly shared build
+      - name: Get artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: react-github-actions-build
+
+      #Login to Azure
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.ATEDU_AUTOMATION_NONPROD }}
+
+      #Upload Files
+      - name: Azure CLI Script
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.0.72
+          inlineScript: |
+            az storage blob upload-batch --account-name atedufrontend -d '$web' -s ./react-github-actions-build
+      #Azure Logout
+      - name: Logout
+        run: |
+          az logout
